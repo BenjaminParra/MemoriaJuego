@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538bb9d00b648e49bbab3c3854e0f12, type: 3}
+  m_Name: EstadoSeguirPersonaje
+  m_EditorClassIdentifier: 
+  Acciones:
+  - {fileID: 11400000, guid: e3c729ab6d43b304293ed8fd70200c57, type: 2}
+  - {fileID: 11400000, guid: ac0637bf6f2522647b6f3454cc1d67ac, type: 2}
+  Transiciones:
+  - Decision: {fileID: 11400000, guid: d09cd5d5413ab454591d56207e12ba14, type: 2}
+    EstadoVerdadero: {fileID: 11400000, guid: 9b329f35fae460f4595390f2bf76002a, type: 2}
+    EstadoFalso: {fileID: 11400000, guid: 1d3029cc5e430be42b36a9ca141e77b0, type: 2}
+  - Decision: {fileID: 11400000, guid: 94b02eb38fc548546907597e3df9d5b9, type: 2}
+    EstadoVerdadero: {fileID: 11400000, guid: 4c202f212d530424bac7b236dc462a2a, type: 2}
+    EstadoFalso: {fileID: 11400000, guid: 9b329f35fae460f4595390f2bf76002a, type: 2}

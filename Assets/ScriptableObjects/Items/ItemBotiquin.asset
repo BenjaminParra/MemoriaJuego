@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c4c3d391009a242b5f074123adcae2, type: 3}
+  m_Name: ItemBotiquin
+  m_EditorClassIdentifier: 
+  ID: Botiquin
+  nombre: Botiquin
+  icono: {fileID: 21300000, guid: 33009de5622cd624d95e4636a541f13b, type: 3}
+  descripcion: Botiquin capaz de curar al 100% la vida
+  tipo: 1
+  EsConsumible: 1
+  EsAcumulable: 0
+  AcumulacionMax: 1
+  cantidad: 0
+  HPRestauracion: 100000

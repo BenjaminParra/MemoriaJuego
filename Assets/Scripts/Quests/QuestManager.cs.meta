@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 8446b2d29ab5fc440bef7f0016cf8fbf
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - inspectorQuestPrefab: {instanceID: 0}
+  - inspectorQuestContenedor: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb1daaed2d9f3034d9f2b9828dbf8a98, type: 3}
+  m_Name: ItemArmaVara
+  m_EditorClassIdentifier: 
+  ID: ArmaVara
+  nombre: Vara
+  icono: {fileID: 21300000, guid: 6b661d5012d5c0f4894eddea95e65cdd, type: 3}
+  descripcion: "Arma peque\xF1a, pero letal."
+  tipo: 0
+  EsConsumible: 0
+  EsAcumulable: 0
+  AcumulacionMax: 1
+  cantidad: 0
+  arma: {fileID: 11400000, guid: 0bf06d6df0022aa4ba1de185d27cab2b, type: 2}
