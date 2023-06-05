@@ -16,8 +16,8 @@ MonoBehaviour:
   Icono: {fileID: 21300000, guid: 7fd0bd3c0a118fe408e43787f5c33aaa, type: 3}
   ContieneInteraccionExtra: 0
   interaccionExtra: 0
-  Saludo: Hola mi nombre es John Serrano
+  Saludo: Hola mi nombre es Pepito Perez
   Conversacion:
-  - Oracion: Soy de descendencia chilena canadiense, es por eso mi nombre
-  - Oracion: "\xBFSabian que soy malla nueva?"
-  Despedida: "\xBFNo quieres escucharme? Me quejare en el grupo"
+  - Oracion: Actualmente esta es una conversacion personalizable
+  - Oracion: Puedes incluir multiples frases
+  Despedida: Y finalmente la despedida

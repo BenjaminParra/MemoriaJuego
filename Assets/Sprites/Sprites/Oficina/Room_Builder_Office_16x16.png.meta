@@ -109,9 +109,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 153
-        width: 96
-        height: 71
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,7 +680,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -701,7 +701,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -722,7 +722,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -743,7 +743,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -764,7 +764,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -785,7 +785,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -793,6 +793,90 @@ TextureImporter:
       bones: []
       spriteID: cfa655c941c649f419eaf144b1447b79
       internalID: 1916869326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esquina_inf_izq
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 170
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f326828c3ede640a139b1a08291a42
+      internalID: 1692003824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esquina_inf_der
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 170
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1aff93f5f04c941a1db2b0a9e44719
+      internalID: 377216494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo_inf_med
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 170
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a881eee4397eee24a9162250e673d2ea
+      internalID: 862815605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Union_borde_oficina
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ff0c19f6afbc94db90e9a5b2fb3512
+      internalID: -860610332
       vertices: []
       indices: 
       edges: []
@@ -808,6 +892,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Room_Builder_Office_16x16_4: -200751708
       Room_Builder_Office_16x16_3: -163507503
       Piso_rojo_med_inf: -244559657
       Esquina_sup_der: 76162830
@@ -817,31 +902,34 @@ TextureImporter:
       Muralla_ladrillo_esq_izq_inf: 1338895346
       Muralla_ladrillo_esq_der_inf: 1080407064
       Muralla_der_gris_sup: -1091454702
+      Union_borde_oficina: -860610332
       Piso_grisOscuro_med_cen_inf: 820831808
       Muralla_izq_gris_sup: 1415964283
-      Muralla_ladrillo_central_izq: 347262344
+      Fondo_inf_med: 862815605
       Piso_grisOscuro_med_izq: -988387375
       Piso_rojo_med_sup: -157999222
       Muralla_izq_gris_central: 1182325317
       Esquina_sup_izq: -1091454702
       Piso_rojo_med_izq: 50372929
+      Esquina_inf_der: 377216494
       Piso_grisOscuro_med_cen_sup: 609262080
       Muralla_ladrillo_esq_der_sup: -18516493
       Muralla_ladrillo_central_der: 1916869326
       Room_Builder_Office_16x16_2: 601096480
+      Fondo_sup_med: -1707123309
       Muralla_med_gris_central: 348103390
       Muralla_ladrillo_med_sup: -1735546392
       Piso_rojo_esq_izq: -5187466
       Muralla_ladrillo_central_med: 59180471
       Muralla_ladrillo_esq_izq_sup: 601096480
-      Room_Builder_Office_16x16_4: -200751708
+      Muralla_med_gris_sup: -2107636602
+      Muralla_ladrillo_central_izq: 347262344
       Horizontal: -848615335
       Muralla_med_gris_inf: 285799168
       Muralla_der_gris_central: -1959942681
-      Fondo_sup_med: -1707123309
-      Piso_grisOscuro_esq_izq: -1540939078
-      Muralla_med_gris_sup: -2107636602
+      Esquina_inf_izq: 1692003824
       Muralla_izq_gris_inf: 1232069272
+      Piso_grisOscuro_esq_izq: -1540939078
       Lateral_der: -2107636602
       Muralla_der_gris_inf: -522701879
   spritePackingTag: 
