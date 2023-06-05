@@ -231,10 +231,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muralla_fondo_izq
+      name: Muralla_ladrillo_esq_izq_sup
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 64
         width: 16
         height: 16
@@ -252,10 +252,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Muralla_fondo_medio
+      name: Muralla_ladrillo_med_sup
       rect:
         serializedVersion: 2
-        x: 80
+        x: 16
         y: 64
         width: 16
         height: 16
@@ -273,10 +273,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Muralla_fondo_der
+      name: Muralla_ladrillo_esq_der_sup
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 64
         width: 16
         height: 16
@@ -596,7 +596,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -617,7 +617,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -638,7 +638,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -659,7 +659,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -667,6 +667,132 @@ TextureImporter:
       bones: []
       spriteID: df44d10cf021ee84fb5fc364da4157a4
       internalID: 820831808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muralla_ladrillo_esq_izq_inf
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a08558cff9c0e4b94e927dbefbbbf8
+      internalID: 1338895346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muralla_ladrillo_med_inf
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6ee72f4083f3246950759dd5c29068
+      internalID: -443133233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muralla_ladrillo_esq_der_inf
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f24352593f4c948be0b4023aa2c915
+      internalID: 1080407064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muralla_ladrillo_central_izq
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b1ec3aa3557d14db0cdd158d3c1a05
+      internalID: 347262344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muralla_ladrillo_central_med
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a12f24ac005a04299d3d6bba8e0fce
+      internalID: 59180471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muralla_ladrillo_central_der
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa655c941c649f419eaf144b1447b79
+      internalID: 1916869326
       vertices: []
       indices: 
       edges: []
@@ -686,22 +812,28 @@ TextureImporter:
       Piso_rojo_med_inf: -244559657
       Esquina_sup_der: 76162830
       Room_Builder_Office_16x16_0: -1227525325
+      Muralla_ladrillo_med_inf: -443133233
       Lateral_izq: -675703643
-      Muralla_fondo_der: -18516493
+      Muralla_ladrillo_esq_izq_inf: 1338895346
+      Muralla_ladrillo_esq_der_inf: 1080407064
       Muralla_der_gris_sup: -1091454702
       Piso_grisOscuro_med_cen_inf: 820831808
       Muralla_izq_gris_sup: 1415964283
+      Muralla_ladrillo_central_izq: 347262344
       Piso_grisOscuro_med_izq: -988387375
       Piso_rojo_med_sup: -157999222
       Muralla_izq_gris_central: 1182325317
       Esquina_sup_izq: -1091454702
       Piso_rojo_med_izq: 50372929
       Piso_grisOscuro_med_cen_sup: 609262080
+      Muralla_ladrillo_esq_der_sup: -18516493
+      Muralla_ladrillo_central_der: 1916869326
       Room_Builder_Office_16x16_2: 601096480
-      muralla_fondo_izq: -1735546392
       Muralla_med_gris_central: 348103390
+      Muralla_ladrillo_med_sup: -1735546392
       Piso_rojo_esq_izq: -5187466
-      Muralla_fondo_medio: -763490960
+      Muralla_ladrillo_central_med: 59180471
+      Muralla_ladrillo_esq_izq_sup: 601096480
       Room_Builder_Office_16x16_4: -200751708
       Horizontal: -848615335
       Muralla_med_gris_inf: 285799168
