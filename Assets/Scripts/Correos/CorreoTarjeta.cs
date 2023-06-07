@@ -17,4 +17,11 @@ public class CorreoTarjeta : MonoBehaviour
         correoRemitente.sprite = correo.IconoRemitente;
         correoAsunto.text = correo.AsuntoCorreo;
     }
+
+
+    public void SeleccionarCorreo() 
+    {
+        CorreoManager.Instance.MostrarCorreo(CorreoCargado);
+        UIManager.Instance.AbrirCerraPanelCorreoInfo(true);
+    }
 }

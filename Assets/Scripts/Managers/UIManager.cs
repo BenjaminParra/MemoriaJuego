@@ -16,6 +16,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject panelCrafting;
     [SerializeField] private GameObject panelCorreo;
     [SerializeField] private GameObject panelCraftingInfo;
+    [SerializeField] private GameObject panelCorreoInfo;
     [SerializeField] private GameObject panelInventario;
     [SerializeField] private GameObject panelInspectorQuests;
     [SerializeField] private GameObject panelPersonajeQuests;
@@ -157,6 +158,10 @@ public class UIManager : Singleton<UIManager>
         panelInventario.SetActive(!panelInventario.activeSelf);
     }
 
+    public void AbrirCerraPanelCorreoInfo(bool estado) 
+    {
+        panelCorreoInfo.SetActive(estado);
+    }
     public void AbrirCerrarPanelInspectorQuests()
     {
         panelInspectorQuests.SetActive(!panelInspectorQuests.activeSelf);
@@ -185,6 +190,7 @@ public class UIManager : Singleton<UIManager>
     public void CerrarPanelCorreo()
     {
         panelCorreo.SetActive(false);
+        AbrirCerraPanelCorreoInfo(false);
     }
 
     public void CerarPanelCrafting() 

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06efdc7d38979d94492071612102ff47, type: 3}
   m_Name: DialogoCorreo
   m_EditorClassIdentifier: 
-  Nombre: Comerciante
-  Icono: {fileID: 21300000, guid: ff4c013580c2bdc44951f3dc4efdbeb3, type: 3}
+  Nombre: Computador
+  Icono: {fileID: 616635169, guid: f5a9a5e646ae476408312e24264effed, type: 3}
   ContieneInteraccionExtra: 1
-  interaccionExtra: 1
-  Saludo: Hola tengo productos que te pueden interesar
+  interaccionExtra: 3
+  Saludo: "Deber\xEDas revisar estos correos"
   Conversacion: []
   Despedida: 
