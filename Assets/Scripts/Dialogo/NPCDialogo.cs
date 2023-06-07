@@ -7,7 +7,8 @@ public enum InteraccionExtraNPC
 {
     Quests,
     Tienda,
-    Crafting
+    Crafting,
+    Correo
 }
 [CreateAssetMenu]
 public class NPCDialogo : ScriptableObject
