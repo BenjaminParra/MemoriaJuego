@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e07d5a48911d394ebbfcd6ba7e90fc4, type: 3}
+  m_Name: ListaCorreos
+  m_EditorClassIdentifier: 
+  Correos:
+  - Nombre: Correo Pishing
+    TipoCorreo: 1
+    NombreRemitente: Benjamin Parra
+    CorreoRemitente: <benjamin.parra.l@gmail.com>
+    IconoRemitente: {fileID: 21300000, guid: 4dfe4034ba5b4e547a01c51edbcd442a, type: 3}
+    AsuntoCorreo: Acceso Banco
+    CuerpoCorreo: 'Estimado:
+
+      Me comunico con usted indicando que se encuentra
+      un problema con el acceso a su banco.
+
+      Es por esto que le solicito que
+      ingrese a este link www.lkjsdas.cl
+
+
+      Ruego  a uste que sea rapido es
+      urjente'
+  - Nombre: "Correo Saludo Cumplea\xF1os"
+    TipoCorreo: 0
+    NombreRemitente: Juan Iturbe
+    CorreoRemitente: <juan.iturbe@gmail.com>
+    IconoRemitente: {fileID: 21300000, guid: 6ab26a4b4e8a3ed4cbae9458ab00ce86, type: 3}
+    AsuntoCorreo: Saludo
+    CuerpoCorreo: "Estimado:\nEste correo es para desearle un muy feliz cumplea\xF1os!"
