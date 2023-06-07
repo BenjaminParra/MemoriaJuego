@@ -167,6 +167,279 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Estante_lleno
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 618
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e1e40d2ce038640b4ccdd5743e8544
+      internalID: 1181285830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "retrato_ni\xF1o"
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 624
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05df77a178f2fbe4e9d3134494498536
+      internalID: 158290424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizarra_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 626
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf5edb780613754b842f4d05c70d4e9
+      internalID: -141040687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizarra_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 594
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09ffd21db8f4d847b00d1f3a798fef6
+      internalID: 1322143853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diploma_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 662
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34b7cb93f30a7f4782cc4a5b9631d23
+      internalID: -284282811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diploma_2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 662
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3524731bb03cdb846bf0309689b5c946
+      internalID: -1329934486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diploma_3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 694
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f41d61dbda6cfe4991fa4b136d024a7
+      internalID: -1953182271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Separador_oficinas
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 384
+        width: 99
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8815ab52bbdb54984cc6436ef8cc77
+      internalID: -142123862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Set_1_Computador
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 405
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365a0845afcba51469d5308fe7ecd6fd
+      internalID: 689777405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Set_2_Computador
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 405
+        width: 42
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dfee008ae36e6b4abcfe06c2dc4b48d
+      internalID: -358058656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Set_3_Computador
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 406
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45410e267d835f44b207ee75db0f22f
+      internalID: 1882997294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Set_4_Computador
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 375
+        width: 46
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a359383660d6e04ba30d58851a3adee
+      internalID: -64202239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escritorio_madera
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 368
+        width: 41
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188940c56e3253f499fa798abd2dd5f1
+      internalID: 947305381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -178,10 +451,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mesa_L_pt1: -2003929130
-      Mesa_L_pt2: -1396648564
-      Modern_Office_Black_Shadow_0: 1306210372
+      Estante_lleno: 1306210372
       Poster_Marilin: 1025502650
+      Mesa_L_pt1: -2003929130
+      Escritorio_madera: 947305381
+      Set_1_Computador: 689777405
+      Set_4_Computador: -64202239
+      Pizarra_1: -141040687
+      Diploma_3: -1953182271
+      Separador_oficinas: -142123862
+      Set_2_Computador: -358058656
+      Pizarra_2: 1322143853
+      "retrato_ni\xF1o": 158290424
+      Diploma_1: -284282811
+      Mesa_L_pt2: -1396648564
+      Diploma_2: -1329934486
+      Set_3_Computador: 1882997294
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

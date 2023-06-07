@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DialogoAldeano
   m_EditorClassIdentifier: 
   Nombre: Pood
-  Icono: {fileID: 21300000, guid: 7fd0bd3c0a118fe408e43787f5c33aaa, type: 3}
+  Icono: {fileID: 21300000, guid: 4342326e84ba2fe4a885441117f64e15, type: 3}
   ContieneInteraccionExtra: 0
   interaccionExtra: 0
   Saludo: Hola mi nombre es Pepito Perez
