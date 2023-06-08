@@ -35,6 +35,11 @@ public class CorreoManager : Singleton<CorreoManager>
     [Header("Panel Botones")]
     [SerializeField] private GameObject panelBotonesReport;
 
+    [SerializeField] private AmenazaLista amenazaLista;
+
+
+    [SerializeField] private GameObject amenazaPishing;
+
     public Correo CorreoSeleccionado { get; set; }
     private void Start()
     {
@@ -81,6 +86,13 @@ public class CorreoManager : Singleton<CorreoManager>
         if (CorreoSeleccionado.TipoCorreo == TipoCorreo.Malicioso)
         {
             enemigos[CorreoSeleccionado.identificador].SetActive(true);
+            Amenaza amenaza = new Amenaza();
+            amenaza.CrearAmenaza(amenazaPishing.GetComponent<AmenazaMadre>().nombreOriginal,
+                amenazaPishing.GetComponent<AmenazaMadre>().estadoOriginal,
+                amenazaPishing.GetComponent<AmenazaMadre>().tipoOriginal,
+                amenazaPishing.GetComponent<AmenazaMadre>().consejosOriginal,
+                amenazaPishing.GetComponent<AmenazaMadre>().controlesRecomendadosOriginal);
+            amenazaLista.AñadirAmenaza(amenaza);
             panelBotonesReport.SetActive(false);
         }
         else 

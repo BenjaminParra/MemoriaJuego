@@ -31,5 +31,4 @@ public class Correo
     [HideInInspector] public int identificador;
 
 
-
 }

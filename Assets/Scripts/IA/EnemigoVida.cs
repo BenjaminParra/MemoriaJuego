@@ -14,6 +14,8 @@ public class EnemigoVida : VidaBase
     [Header("Rastros")]
     [SerializeField] private GameObject rastros;
 
+    [SerializeField] private AmenazaLista listaAmenazas;
+
 
 
 
@@ -72,7 +74,19 @@ public class EnemigoVida : VidaBase
         enemigoMovimiento.enabled = false;
         enemigoBarraVidaCreada.gameObject.SetActive(false);
         rastros.SetActive(true);
+        buscarAmenazaPishing();
         
+    }
+
+    private void buscarAmenazaPishing() 
+    {
+        for (int i = 0; i < listaAmenazas.Amenazas.Count; i++)
+        {
+            if (listaAmenazas.Amenazas[i].Nombre == "Pishing")
+            {
+                listaAmenazas.Amenazas[i].Estado = Estado.Mitigado;
+            }
+        }
     }
 
     
