@@ -28,6 +28,8 @@ public class Correo
     [Header("Cuerpo Correo")]
     [TextArea] public string CuerpoCorreo;
 
+    [HideInInspector] public int identificador;
+
 
 
 }

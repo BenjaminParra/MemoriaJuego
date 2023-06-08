@@ -24,4 +24,9 @@ public class CorreoTarjeta : MonoBehaviour
         CorreoManager.Instance.MostrarCorreo(CorreoCargado);
         UIManager.Instance.AbrirCerraPanelCorreoInfo(true);
     }
+
+    public void Desactivar(Correo correo) 
+    {
+        gameObject.SetActive(false);
+    }
 }

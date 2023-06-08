@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,6 +29,11 @@ public class CorreoManager : Singleton<CorreoManager>
     [Header("Correos")]
     [SerializeField] private CorreoLista correos;
 
+    [Header("Enemigos")]
+    [SerializeField] private GameObject[] enemigos;
+
+    [Header("Panel Botones")]
+    [SerializeField] private GameObject panelBotonesReport;
 
     public Correo CorreoSeleccionado { get; set; }
     private void Start()
@@ -38,8 +44,13 @@ public class CorreoManager : Singleton<CorreoManager>
     {
         for (int i = 0;i < correos.Correos.Length;i++) 
         {
-            CorreoTarjeta correo = Instantiate(correoTarjetaPrefab, correoContenedor);
-            correo.ConfigurarCorreoTarjeta(correos.Correos[i]); 
+            if (correos.Correos[i] != null)
+            {
+                CorreoTarjeta correo = Instantiate(correoTarjetaPrefab, correoContenedor);
+                correo.ConfigurarCorreoTarjeta(correos.Correos[i]);
+                correos.Correos[i].identificador = i;
+            }
+            
         }
     }
 
@@ -52,7 +63,30 @@ public class CorreoManager : Singleton<CorreoManager>
         nombreRemitente.text = correo.NombreRemitente;
         correoRemitente.text = correo.CorreoRemitente;
 
+        if (enemigos[CorreoSeleccionado.identificador].activeSelf)
+        {
+            panelBotonesReport.SetActive(false);
+        }
+        else
+        {
+
+            panelBotonesReport.SetActive(true);
+        }
         cuerpoCorreo.text = correo.CuerpoCorreo;
 
+    }
+
+    public void ActivarEnemigo() 
+    {
+        if (CorreoSeleccionado.TipoCorreo == TipoCorreo.Malicioso)
+        {
+            enemigos[CorreoSeleccionado.identificador].SetActive(true);
+            panelBotonesReport.SetActive(false);
+        }
+        else 
+        {
+            return;
+        }
+        
     }
 }
