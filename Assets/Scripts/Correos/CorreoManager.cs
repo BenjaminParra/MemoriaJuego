@@ -97,8 +97,42 @@ public class CorreoManager : Singleton<CorreoManager>
         }
         else 
         {
+            panelBotonesReport.SetActive(false);
             return;
         }
         
+    }
+
+    public void ReportarEnemigo()
+    {
+        if (CorreoSeleccionado.TipoCorreo == TipoCorreo.Malicioso)
+        {
+            Amenaza amenaza = new Amenaza();
+            amenaza.CrearAmenaza(amenazaPishing.GetComponent<AmenazaMadre>().nombreOriginal,
+                Estado.Mitigado,
+                amenazaPishing.GetComponent<AmenazaMadre>().tipoOriginal,
+                amenazaPishing.GetComponent<AmenazaMadre>().consejosOriginal,
+                amenazaPishing.GetComponent<AmenazaMadre>().controlesRecomendadosOriginal);
+            amenazaLista.AñadirAmenaza(amenaza);
+            panelBotonesReport.SetActive(false);
+        }
+        else 
+        {
+            panelBotonesReport.SetActive(false);
+            return;
+        }
+    }
+
+    //agregar a la amenaza madre una cantidad y solo cuando esa cantidad llegue a cero cambiar estado a mitigado
+    private bool ExisteAmenazaTipo() 
+    {
+        for (int i = 0;i< amenazaLista.Amenazas.Count;i++) 
+        {
+            if (amenazaLista.Amenazas[i].Nombre == "Pishing" && amenazaLista.Amenazas[i].Estado == Estado.Activa)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

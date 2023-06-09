@@ -14,4 +14,9 @@ public class AmenazaLista : ScriptableObject
     {
         Amenazas.Add(amenaza);
     }
+
+    public void ResetearValores() 
+    {
+        Amenazas = new List<Amenaza>();
+    }
 }

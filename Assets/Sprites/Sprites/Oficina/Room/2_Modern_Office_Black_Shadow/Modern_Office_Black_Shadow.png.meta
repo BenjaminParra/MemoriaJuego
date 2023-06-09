@@ -440,6 +440,111 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Cafetera
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 201
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9725a9abac32645b0be40f94021093
+      internalID: -355364209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maquina_Expendedora
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 441
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68ad61f3f515c741be246adb952e6c8
+      internalID: -1588714058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sillon_Negro_L
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 534
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c67593ceffc904a9a3d30267554ba4
+      internalID: 1675550312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mesa_Centro_Cafeteria
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 475
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901e57713bcad3740b9dd4d975c35793
+      internalID: -893326479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bidon_Agua
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 570
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfe1d13a8f8605418257866684f1b40
+      internalID: 112165473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -452,21 +557,26 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Estante_lleno: 1306210372
-      Poster_Marilin: 1025502650
-      Mesa_L_pt1: -2003929130
       Escritorio_madera: 947305381
+      Mesa_L_pt1: -2003929130
+      Maquina_Expendedora: -1588714058
       Set_1_Computador: 689777405
+      Set_3_Computador: 1882997294
       Set_4_Computador: -64202239
       Pizarra_1: -141040687
       Diploma_3: -1953182271
       Separador_oficinas: -142123862
       Set_2_Computador: -358058656
+      Mesa_Centro_Cafeteria: -893326479
+      Bidon_Agua: 112165473
       Pizarra_2: 1322143853
       "retrato_ni\xF1o": 158290424
+      Sillon_Negro_L: 1675550312
       Diploma_1: -284282811
       Mesa_L_pt2: -1396648564
       Diploma_2: -1329934486
-      Set_3_Computador: 1882997294
+      Cafetera: -355364209
+      Poster_Marilin: 1025502650
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
