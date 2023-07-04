@@ -49,6 +49,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI atributoDestrezaTMP;
     [SerializeField] private TextMeshProUGUI atributoPuntosDisponiblesTMP;
 
+    [Header("test")]
+    [SerializeField] private AmenazaLista amenazaLista;
 
     private float vidaActual;
     private float vidaMax;
@@ -59,13 +61,18 @@ public class UIManager : Singleton<UIManager>
     private int nivelActual;
     private int nivelMax;
 
-
+    private void Start()
+    {
+        //de esta manera se resetea siempre al iniciar
+        amenazaLista.ResetearValores();
+    }
 
     // Update is called once per frame
     void Update()
     {
         ActualizarUIPersonaje();
         ActualizarPanelStats();
+        
     }
 
     private void ActualizarUIPersonaje() 

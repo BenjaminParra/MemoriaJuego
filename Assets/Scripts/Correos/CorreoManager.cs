@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -68,6 +69,7 @@ public class CorreoManager : Singleton<CorreoManager>
         nombreRemitente.text = correo.NombreRemitente;
         correoRemitente.text = correo.CorreoRemitente;
 
+        //Verifico si el enemigo asociado a dicha amenaza esta activo
         if (enemigos[CorreoSeleccionado.identificador].activeSelf)
         {
             panelBotonesReport.SetActive(false);
@@ -87,12 +89,9 @@ public class CorreoManager : Singleton<CorreoManager>
         {
             enemigos[CorreoSeleccionado.identificador].SetActive(true);
             Amenaza amenaza = new Amenaza();
-            amenaza.CrearAmenaza(amenazaPishing.GetComponent<AmenazaMadre>().nombreOriginal,
-                amenazaPishing.GetComponent<AmenazaMadre>().estadoOriginal,
-                amenazaPishing.GetComponent<AmenazaMadre>().tipoOriginal,
-                amenazaPishing.GetComponent<AmenazaMadre>().consejosOriginal,
-                amenazaPishing.GetComponent<AmenazaMadre>().controlesRecomendadosOriginal);
+            amenaza.CrearAmenaza(amenazaPishing.GetComponent<AmenazaMadre>());
             amenazaLista.AñadirAmenaza(amenaza);
+            amenaza.ModificarCantidad(-Math.Abs(1));
             panelBotonesReport.SetActive(false);
         }
         else 
@@ -107,13 +106,12 @@ public class CorreoManager : Singleton<CorreoManager>
     {
         if (CorreoSeleccionado.TipoCorreo == TipoCorreo.Malicioso)
         {
+
+           
             Amenaza amenaza = new Amenaza();
-            amenaza.CrearAmenaza(amenazaPishing.GetComponent<AmenazaMadre>().nombreOriginal,
-                Estado.Mitigado,
-                amenazaPishing.GetComponent<AmenazaMadre>().tipoOriginal,
-                amenazaPishing.GetComponent<AmenazaMadre>().consejosOriginal,
-                amenazaPishing.GetComponent<AmenazaMadre>().controlesRecomendadosOriginal);
+            amenaza.CrearAmenaza(amenazaPishing.GetComponent<AmenazaPhising>());
             amenazaLista.AñadirAmenaza(amenaza);
+            amenaza.ModificarCantidad(2);
             panelBotonesReport.SetActive(false);
         }
         else 
@@ -123,16 +121,5 @@ public class CorreoManager : Singleton<CorreoManager>
         }
     }
 
-    //agregar a la amenaza madre una cantidad y solo cuando esa cantidad llegue a cero cambiar estado a mitigado
-    private bool ExisteAmenazaTipo() 
-    {
-        for (int i = 0;i< amenazaLista.Amenazas.Count;i++) 
-        {
-            if (amenazaLista.Amenazas[i].Nombre == "Pishing" && amenazaLista.Amenazas[i].Estado == Estado.Activa)
-            {
-                return true;
-            }
-        }
-        return false;
-    }
+    
 }

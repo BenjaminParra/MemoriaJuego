@@ -11,5 +11,10 @@ public class AmenazaPhising : AmenazaMadre
         tipoOriginal = "Robo de informacion";
         consejosOriginal = "Cuidate";
         controlesRecomendadosOriginal = "Mucho te";
+        cantidadDeAmenazas = 1;
+
+        //CrearAmenaza();
+        //inicializa amenaza AumentaCandidadAmenazas();
     }
+
 }

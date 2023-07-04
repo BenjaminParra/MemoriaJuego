@@ -9,7 +9,6 @@ public class AmenazaLista : ScriptableObject
 {
     public List<Amenaza> Amenazas;
 
-
     public void AñadirAmenaza(Amenaza amenaza) 
     {
         Amenazas.Add(amenaza);
@@ -17,6 +16,10 @@ public class AmenazaLista : ScriptableObject
 
     public void ResetearValores() 
     {
-        Amenazas = new List<Amenaza>();
+        if (Amenazas != null) 
+        {
+
+            Amenazas = new List<Amenaza>();
+        }
     }
 }

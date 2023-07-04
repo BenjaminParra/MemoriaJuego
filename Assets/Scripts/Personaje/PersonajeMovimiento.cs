@@ -71,6 +71,10 @@ public class PersonajeMovimiento : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (DialogoMedianoManager.GetInstance().dialogueIsPlaying)
+        {
+            return;
+        }
         rigidbody2D.MovePosition(rigidbody2D.position + direccionMovimiento * velocidad * Time.fixedDeltaTime);
     }
 }
