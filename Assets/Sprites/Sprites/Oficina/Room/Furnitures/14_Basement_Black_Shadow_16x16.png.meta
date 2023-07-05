@@ -167,6 +167,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: mesa_cafe_redonda
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 721
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2af5bcc25a4a84d8e6a5a9279c8333
+      internalID: 1741901072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -179,6 +200,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Arcade: -1133054371
+      mesa_cafe_redonda: 1741901072
       Silla_videojuegos: 79223360
       Televisor_videojuegos: -1256253626
   spritePackingTag: 
