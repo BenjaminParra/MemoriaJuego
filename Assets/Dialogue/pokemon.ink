@@ -1,6 +1,6 @@
 -> main
 === main ===
-Wich pokemon do you choose?
+¿Cual pokemon eliges?
     + [Charmander]
         -> chosen("Charmander")
     + [Bulbasaur]
@@ -10,6 +10,7 @@ Wich pokemon do you choose?
 
 
 === chosen(pokemon) ===
-You chose {pokemon}!
+
+¡Elegiste a {pokemon}!
 -> END
         

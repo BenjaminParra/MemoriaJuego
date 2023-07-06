@@ -155,7 +155,7 @@ TextureImporter:
         width: 16
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,6 +163,48 @@ TextureImporter:
       bones: []
       spriteID: 4eb1df8d4be99794f9be6bba3b7397f2
       internalID: 867465728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueble_blanco_esq_izq
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1200
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56fe7dcdddba4c4e99cc4adba729411
+      internalID: -1269886041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blanco_punta
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1216
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5aca1adb5b8e7345bceb3f0c476f1b4
+      internalID: -1096462591
       vertices: []
       indices: 
       edges: []
@@ -178,6 +220,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      mueble_blanco_esq_izq_inf: 1141380229
+      mueble_blanco_esq_izq: -1269886041
+      blanco_punta: -1096462591
+      mueble_blanco_izq: -1883155310
       fondo_negropuerta_doble: 167534652
       puerta_cafe_oscuro: 867465728
       fondo_negropuerta_sola: 2121262440

@@ -786,7 +786,7 @@ TextureImporter:
         height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 5, y: 8, z: 5, w: 6}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -827,7 +827,7 @@ TextureImporter:
         width: 15
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -835,6 +835,90 @@ TextureImporter:
       bones: []
       spriteID: 4d280e9a009d7dc48b4be4ab0fe5b739
       internalID: 1998362924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueble_cafe_esq
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9561367333761114cb0af4d18159e2d2
+      internalID: -361425918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modern_Office_Black_Shadow_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 256
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b129d839f8ae6e543ae96e357a28d928
+      internalID: 284019248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computadores_izq
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 252
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ccb7cd35af19f479fcae6f05efd3af
+      internalID: 1245601818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pcs_blanco
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 659
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b285a8b34998244b1de597e30ef136
+      internalID: 1579099365
       vertices: []
       indices: 
       edges: []
@@ -864,15 +948,18 @@ TextureImporter:
       Diploma_3: -1953182271
       mesa_grande: -323151745
       Separador_oficinas: -142123862
+      Modern_Office_Black_Shadow_3: 284019248
       Modern_Office_Black_Shadow_1: -272226523
       Set_2_Computador: -358058656
       Mesa_Centro_Cafeteria: -893326479
+      pcs_blanco: 1579099365
       Bidon_Agua: 112165473
       silla_negra_izq: -498211243
       Pizarra_2: 1322143853
       mesa_negra: -1721737355
       pantallas_negras_de_lado: 1998362924
       "retrato_ni\xF1o": 158290424
+      mueble_cafe_esq: -361425918
       planta_verde_1: -826855387
       Sillon_Negro_L: 1675550312
       escritorio_recepcion: -1250082437
@@ -880,6 +967,7 @@ TextureImporter:
       Mesa_L_pt2: -1396648564
       Diploma_2: -1329934486
       Sillon_doble_negro: -16982489
+      computadores_izq: 1245601818
       Modern_Office_Black_Shadow_0: -690044157
       silla_negra_der: -1071195895
       Cafetera: -355364209

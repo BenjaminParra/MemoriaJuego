@@ -4,13 +4,15 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class DialogoMedianoManager : MonoBehaviour
 {
     [Header("Panel Dialogo Mediano")]
     [SerializeField] private GameObject dialogoMedianoPanel;
+    [SerializeField] private Image npcCara;
     [SerializeField] private TextMeshProUGUI dialogoMedianoTexto;
-
+    [SerializeField] private TextMeshProUGUI dialogoMedianoNombreTexto;
 
     [Header("Respuestas")]
 
@@ -59,10 +61,12 @@ public class DialogoMedianoManager : MonoBehaviour
         }
     }
 
-    public void EntrarModoDialogoMediano(TextAsset inkJSON) 
+    public void EntrarModoDialogoMediano(TextAsset inkJSON, string nombre, Sprite npcRetrato)
     {
         currentStory = new Story(inkJSON.text);
+        dialogoMedianoNombreTexto.text = nombre;
         dialogueIsPlaying = true;
+        npcCara.sprite = npcRetrato;
         dialogoMedianoPanel.SetActive(true);
         ContinuarStory();
     }
