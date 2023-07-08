@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 90055bde1e60fca4c8a60104a905b8ef
+guid: d68a4ba50c2d853488ff45cea9be0192
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 3
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,139 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Televisor_videojuegos
+      name: z5vSBC_0
       rect:
         serializedVersion: 2
-        x: 99
-        y: 7
-        width: 58
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fd096aa8c88c104aa731378ccc270a2
-      internalID: -1256253626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Silla_videojuegos
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 155
-        width: 22
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47ffbf4a74a2544429aa4247197dfe34
-      internalID: 79223360
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arcade
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 97
-        width: 18
-        height: 35
-      alignment: 9
-      pivot: {x: 0.36, y: 0.177}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b03a563610c27d4596eb967223446c7
-      internalID: -1133054371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mesa_cafe_redonda
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 721
-        width: 24
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be2af5bcc25a4a84d8e6a5a9279c8333
-      internalID: 1741901072
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ventanal_dpto
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 16
-        width: 32
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ded431041eed8d04193da487d0778d87
-      internalID: -1807996024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: televisor_lado
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 208
-        width: 6
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29c3138c0c6761b41b7f60599078a903
-      internalID: -75545986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: luz_tv_lado
-      rect:
-        serializedVersion: 2
-        x: 232
-        y: 224
-        width: 8
-        height: 24
+        x: 3
+        y: 147
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,8 +119,260 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e9b798cbaa64bd47ac2d0acfc6aa6c0
-      internalID: 2126696464
+      spriteID: d20e62bc5df176c4688cf078ae06ab24
+      internalID: 311450376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z5vSBC_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 147
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c39534dcfe5fe42903fc13065e7526
+      internalID: 1166069462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z5vSBC_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 147
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b01c33b2043e104ea79e5f514fb5751
+      internalID: -1519253683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z5vSBC_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 147
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76e4e6bb63484e4fb617c0b9a734ecd
+      internalID: 1690001430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z5vSBC_4
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 147
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a864539617388b54083b28b6b45b41be
+      internalID: 1852155424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z5vSBC_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 75
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a48857a2accf524b9be4cf7109b77fa
+      internalID: 1311051674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z5vSBC_6
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 75
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03e46150bbfbb54fb6998b6ac47846d
+      internalID: 1598990317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z5vSBC_7
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 75
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9ce6eed4372964199a0b6e13fe5ffd
+      internalID: -200004969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z5vSBC_8
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 75
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a6915270c98b9468d17fe0f5230acf
+      internalID: 417057411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z5vSBC_9
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 75
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3deaf8634125f48ba0a080fb20ba23
+      internalID: -1138252311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z5vSBC_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d749f568120f88447a1068e742a3d910
+      internalID: 205187991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z5vSBC_11
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 3
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc008dc917ac334c8e78a2653fa3d1d
+      internalID: 1139112830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z5vSBC_12
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 3
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d150f2ef7d5fe4d89c19c73c283aad
+      internalID: -212515531
       vertices: []
       indices: 
       edges: []
@@ -262,13 +388,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      televisor_lado: -75545986
-      Arcade: -1133054371
-      mesa_cafe_redonda: 1741901072
-      Silla_videojuegos: 79223360
-      ventanal_dpto: -1807996024
-      luz_tv_lado: 2126696464
-      Televisor_videojuegos: -1256253626
+      z5vSBC_3: 1690001430
+      z5vSBC_4: 1852155424
+      z5vSBC_2: -1519253683
+      z5vSBC_1: 1166069462
+      z5vSBC_9: -1138252311
+      z5vSBC_0: 311450376
+      z5vSBC_5: 1311051674
+      z5vSBC_8: 417057411
+      z5vSBC_10: 205187991
+      z5vSBC_7: -200004969
+      z5vSBC_11: 1139112830
+      z5vSBC_12: -212515531
+      z5vSBC_6: 1598990317
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

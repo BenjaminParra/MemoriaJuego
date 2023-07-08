@@ -923,6 +923,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Mesa_reuniones
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e800355235210847805f27d5a34dcff
+      internalID: -1261178384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -941,7 +962,7 @@ TextureImporter:
       Modern_Office_Black_Shadow_2: 1930263687
       silla_negra_espalda: -566483959
       Set_1_Computador: 689777405
-      Set_3_Computador: 1882997294
+      Poster_Marilin: 1025502650
       Set_4_Computador: -64202239
       planta_verde_2: -351476707
       Pizarra_1: -141040687
@@ -953,6 +974,7 @@ TextureImporter:
       Set_2_Computador: -358058656
       Mesa_Centro_Cafeteria: -893326479
       pcs_blanco: 1579099365
+      Mesa_reuniones: -1261178384
       Bidon_Agua: 112165473
       silla_negra_izq: -498211243
       Pizarra_2: 1322143853
@@ -972,7 +994,7 @@ TextureImporter:
       silla_negra_der: -1071195895
       Cafetera: -355364209
       silla_negra_frente: 1959765985
-      Poster_Marilin: 1025502650
+      Set_3_Computador: 1882997294
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

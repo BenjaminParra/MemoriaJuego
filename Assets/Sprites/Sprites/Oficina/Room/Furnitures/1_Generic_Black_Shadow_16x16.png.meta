@@ -197,7 +197,7 @@ TextureImporter:
         width: 13
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,6 +205,27 @@ TextureImporter:
       bones: []
       spriteID: b5aca1adb5b8e7345bceb3f0c476f1b4
       internalID: -1096462591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ventanales
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 720
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dfd72516399dda4f908f3c55fbe7cd7
+      internalID: -1802892131
       vertices: []
       indices: 
       edges: []
@@ -224,6 +245,7 @@ TextureImporter:
       mueble_blanco_esq_izq: -1269886041
       blanco_punta: -1096462591
       mueble_blanco_izq: -1883155310
+      ventanales: -1802892131
       fondo_negropuerta_doble: 167534652
       puerta_cafe_oscuro: 867465728
       fondo_negropuerta_sola: 2121262440
