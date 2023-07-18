@@ -237,4 +237,15 @@ public class DialogoMedianoManager : MonoBehaviour
             currentStory.ChooseChoiceIndex(indexRespuesta);
         }
     }
+
+    public Ink.Runtime.Object GetVariableState(string variableName) 
+    {
+        Ink.Runtime.Object variableValue = null;
+        dialogueVariables.variables.TryGetValue(variableName, out variableValue);
+        if (variableValue == null)
+        {
+            Debug.LogWarning("Ink Variable fue encontrada nula:" + variableName);
+        }
+        return variableValue;
+    }
 }

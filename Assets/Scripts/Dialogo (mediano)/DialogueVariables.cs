@@ -6,7 +6,7 @@ using System.IO;
 public class DialogueVariables
 {
 
-    private Dictionary<string, Ink.Runtime.Object> variables;
+    public Dictionary<string, Ink.Runtime.Object> variables { get; private set; }
 
     //Como el archivo globals es un include no se compila por si solo, por ende se utiliza esta funcion para que se compile 
     public DialogueVariables(string direccionArchivoGlobals) 
