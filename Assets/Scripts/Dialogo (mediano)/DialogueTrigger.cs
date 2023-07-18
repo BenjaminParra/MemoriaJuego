@@ -31,8 +31,8 @@ public class DialogueTrigger : MonoBehaviour
             npcButtonInteractuar.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E)) 
             {
-                DialogoMedianoManager.GetInstance().EntrarModoDialogoMediano(inkJSON, nombre, npcCara);
-
+                //DialogoMedianoManager.GetInstance().EntrarModoDialogoMediano(inkJSON, nombre, npcCara);
+                DialogoMedianoManager.GetInstance().EntrarModoDialogoMediano(inkJSON);
             }
         }
         else 
