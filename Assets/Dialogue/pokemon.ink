@@ -19,3 +19,5 @@ INCLUDE Globals.ink
 === already_chose ===
 You already choose {pokemon_name}
 -> END
+
+

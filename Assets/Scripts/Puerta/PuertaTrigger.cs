@@ -19,6 +19,8 @@ public class PuertaTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             puerta.CerrarPuerta();
+
+
         }
     }
 

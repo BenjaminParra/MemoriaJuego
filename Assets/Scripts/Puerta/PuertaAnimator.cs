@@ -21,6 +21,8 @@ public class PuertaAnimator : MonoBehaviour
     public void CerrarPuerta() 
     {
         animator.SetBool("Abierta", false);
+        
+        
         polygonCollider2D.enabled = true;
     }
 }
