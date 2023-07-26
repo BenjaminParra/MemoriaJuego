@@ -3,12 +3,13 @@ INCLUDE Globals.ink
 {pasaste == false: -> main| -> ganaste }
 
 === main ===
- Bienvenido ¿estás listo para la prueba tecnica? #speaker:Jefe #portrait:jefe_neutral #layout:izq
+ Bienvenido ¿estás listo para la prueba tecnica? #speaker:Juan Iturbe #portrait:prueba_neutral #layout:izq
+ Es la unica forma de ingresa al trabajo
     +[si]
         Muy bien 
         -> pregunta1
     +[no]
-        Lo siento vuelve cuando quiera #portrait:jefe_triste
+        Lo siento vuelve cuando quiera #portrait:prueba_triste
 
 -> END        
         
@@ -40,10 +41,10 @@ INCLUDE Globals.ink
 
 
 === error ===
-Te equivocaste, mucho exito en la siguiente vez #portrait:jefe_triste
+Te equivocaste, mucho exito en la siguiente vez #portrait:prueba_triste
 -> END
 
 === ganaste === 
-Lo has logrado, ahora puedes ingresar! #speaker:Jefe #portrait:jefe_feliz
+Lo has logrado, ahora puedes ingresar! #speaker:Juan Iturbe #portrait:prueba_feliz
 ~pasaste = true
 ->END
