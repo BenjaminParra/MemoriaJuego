@@ -155,7 +155,7 @@ TextureImporter:
         width: 5
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,6 +163,27 @@ TextureImporter:
       bones: []
       spriteID: 8f696e18158d2c04691594f44dabd811
       internalID: -210796397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Activos_boton
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 656
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14fd216bf219e9643a0fe9151d7e1ab2
+      internalID: -457065644
       vertices: []
       indices: 
       edges: []
@@ -178,6 +199,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Activos_boton: -457065644
       fondo_retrato: 1337064710
       Fondo_dialogo: -1430143170
       continuar: -210796397

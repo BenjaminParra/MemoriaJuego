@@ -197,7 +197,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,6 +205,48 @@ TextureImporter:
       bones: []
       spriteID: 6fa65d35ec25859438fb0f55843f0111
       internalID: 2059924255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo1_oscuro
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 284
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfef68b876cc854fb08d0fe4e588d99
+      internalID: 1627792462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo_activos_texto
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 509
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 1, y: 1, z: 1, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49eac71583e9f3246b1bb1acbf322c59
+      internalID: -1848596215
       vertices: []
       indices: 
       edges: []
@@ -220,10 +262,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      fondo1_oscuro: 1627792462
       fondo_titulo: -290214255
       Opciones: -1975694904
       cerrar: 2059924255
       Fondo_1: 206351630
+      fondo_activos_texto: -1848596215
       fondo_subtitulo: 637990624
   spritePackingTag: 
   pSDRemoveMatte: 0

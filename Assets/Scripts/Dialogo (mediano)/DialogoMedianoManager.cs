@@ -86,6 +86,7 @@ public class DialogoMedianoManager : MonoBehaviour
 
     public void EntrarModoDialogoMediano(TextAsset inkJSON)
     {
+        UIManager.Instance.AbrirCerrarPanelBotonesCiber(false);
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialogoMedianoPanel.SetActive(true);
@@ -107,6 +108,9 @@ public class DialogoMedianoManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialogoMedianoPanel.SetActive(false);
         dialogoMedianoTexto.text = "";
+        UIManager.Instance.AbrirCerrarPanelBotonesCiber(true);
+
+
     }
 
     private void ContinuarStory() 

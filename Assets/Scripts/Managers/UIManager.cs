@@ -17,9 +17,13 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject panelCorreo;
     [SerializeField] private GameObject panelCraftingInfo;
     [SerializeField] private GameObject panelCorreoInfo;
+    [SerializeField] private GameObject panelActivos;
+    [SerializeField] private GameObject panelActivoInfo;
     [SerializeField] private GameObject panelInventario;
     [SerializeField] private GameObject panelInspectorQuests;
     [SerializeField] private GameObject panelPersonajeQuests;
+
+    [SerializeField] private GameObject panelBotonesCiber;
 
     [Header("Barra")]
     [SerializeField] private Image vidaPlayer;
@@ -169,6 +173,16 @@ public class UIManager : Singleton<UIManager>
     {
         panelCorreoInfo.SetActive(estado);
     }
+
+    public void AbrirCerraPanelActivoInfo(bool estado)
+    {
+        panelActivoInfo.SetActive(estado);
+    }
+
+    public void AbrirCerrarPanelBotonesCiber(bool estado) 
+    {
+        panelBotonesCiber.SetActive(estado);
+    }
     public void AbrirCerrarPanelInspectorQuests()
     {
         panelInspectorQuests.SetActive(!panelInspectorQuests.activeSelf);
@@ -194,6 +208,16 @@ public class UIManager : Singleton<UIManager>
         panelCorreo.SetActive(true);
     }
 
+    public void AbrirPanelActivos()
+    {
+        panelActivos.SetActive(true);
+    }
+
+    public void CerrarPanelActivos()
+    {
+        panelActivos.SetActive(false);
+        AbrirCerraPanelActivoInfo(false);
+    }
     public void CerrarPanelCorreo()
     {
         panelCorreo.SetActive(false);
