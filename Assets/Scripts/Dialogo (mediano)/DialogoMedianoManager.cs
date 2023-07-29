@@ -5,15 +5,18 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using Ink.UnityIntegration;
+//using Ink.UnityIntegration;
 
 public class DialogoMedianoManager : MonoBehaviour
 {
     [Header("Condig")]
     [SerializeField] private float velocidadTexto = 0.04f;
+    /*
     [Header("Archivo Globals Ink")]
-    [SerializeField] private InkFile archivoGlobalsInk;
+    [SerializeField] private InkFile archivoGlobalsInk;*/
 
+    [Header("Load globals JSON")]
+    [SerializeField] private TextAsset loadGlobalsJSON;
     [Header("Panel Dialogo Mediano")]
     [SerializeField] private GameObject dialogoMedianoPanel;
     [SerializeField] private Image npcCara;
@@ -50,7 +53,8 @@ public class DialogoMedianoManager : MonoBehaviour
         }
         instance = this;
 
-        dialogueVariables = new DialogueVariables(archivoGlobalsInk.filePath);
+
+        dialogueVariables = new DialogueVariables(loadGlobalsJSON);
     }
 
     public static DialogoMedianoManager GetInstance() 

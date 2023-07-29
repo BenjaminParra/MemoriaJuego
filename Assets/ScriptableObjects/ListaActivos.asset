@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Activos:
   - nombre: Servidores
-    descripcion: Este servidor contien datos de la empresa
+    descripcion: Este servidor contiene datos de la empresa
     ubicacion: Sala Servidores
     nivelSeguridad: 3
     acceso: 1

@@ -9,6 +9,7 @@ public class DialogueVariables
     public Dictionary<string, Ink.Runtime.Object> variables { get; private set; }
 
     //Como el archivo globals es un include no se compila por si solo, por ende se utiliza esta funcion para que se compile 
+    /*
     public DialogueVariables(string direccionArchivoGlobals) 
     {
         string inkFileContents = File.ReadAllText(direccionArchivoGlobals);
@@ -23,9 +24,23 @@ public class DialogueVariables
         {
             Ink.Runtime.Object value = globalVariablesStory.variablesState.GetVariableWithName(nombre);
             variables.Add(nombre, value);
-            Debug.Log("Se inicializó la variable global dialogue: "+ nombre + " = " + value);
+           // Debug.Log("Se inicializó la variable global dialogue: "+ nombre + " = " + value);
         }
 
+    }*/
+    public DialogueVariables(TextAsset loadGlobalsJSON)
+    {
+        // create the story
+        Story globalVariablesStory = new Story(loadGlobalsJSON.text);
+
+        // initialize the dictionary
+        variables = new Dictionary<string, Ink.Runtime.Object>();
+        foreach (string name in globalVariablesStory.variablesState)
+        {
+            Ink.Runtime.Object value = globalVariablesStory.variablesState.GetVariableWithName(name);
+            variables.Add(name, value);
+            Debug.Log("Initialized global dialogue variable: " + name + " = " + value);
+        }
     }
 
     public void StartListening(Story story) 

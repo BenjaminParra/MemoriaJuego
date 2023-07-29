@@ -3,48 +3,50 @@ INCLUDE Globals.ink
 {pasaste == false: -> main| -> ganaste }
 
 === main ===
- Bienvenido ¿estás listo para la prueba tecnica? #speaker:Juan Iturbe #portrait:prueba_neutral #layout:izq
- Es la unica forma de ingresa al trabajo
-    +[si]
+ Bienvenido, para ver si eres apto para este trabajo deberás superar una prueba técnica#speaker:Mario Ruiz #portrait:prueba_neutral #layout:izq
+ 
+ ¿Estás listo ? 
+ 
+    +[Si]
         Muy bien 
         -> pregunta1
-    +[no]
-        Lo siento vuelve cuando quiera #portrait:prueba_triste
+    +[No]
+        Lo siento vuelve cuando quieras #portrait:prueba_triste
 
 -> END        
         
 
 
 === pregunta1 ===
-¿Que pokemon es fantasma?
-    +[Gengar]
+La definición de "Red utilizada para comunicación a corta distancia entre dispositivos" corresponde a:
+    +[LAN]
         Muy bien!
         ->pregunta2
-    +[Machop]
+    +[WAN]
         ->error
-    +[Seal]
+    +[PAN]
         ->error
 
 ->END
 
 
 === pregunta2 ===
-¿Que pokemon es el compañero fiel de ash?
-    +[Raichu]
+¿Qué tecnologías se pueden utilizar en una WAN?
+    +[ATM]
         ->error
-    +[Pichu]
+    +[Frame relay]
         ->error
-    +[Pikachu]
+    +[Todas las anteriores]
         Correcto
         -> ganaste
 -> END
 
 
 === error ===
-Te equivocaste, mucho exito en la siguiente vez #portrait:prueba_triste
+Te equivocaste, mucho éxito en la próxima vez #portrait:prueba_triste
 -> END
 
 === ganaste === 
-Lo has logrado, ahora puedes ingresar! #speaker:Juan Iturbe #portrait:prueba_feliz
+Lo has logrado, ahora puedes ingresar #speaker:Mario Ruiz #portrait:prueba_feliz
 ~pasaste = true
 ->END
