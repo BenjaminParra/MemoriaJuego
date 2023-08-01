@@ -12,6 +12,11 @@ INCLUDE Globals.ink
         -> pregunta1
     +[No]
         Lo siento vuelve cuando quieras #portrait:prueba_triste
+        ->DONE
+    +[No lo sé]
+        Procura estar seguro y no me hagas perder el tiempo #portrait:prueba_triste   
+        
+    
 
 -> END        
         

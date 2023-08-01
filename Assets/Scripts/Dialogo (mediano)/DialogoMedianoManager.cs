@@ -240,10 +240,13 @@ public class DialogoMedianoManager : MonoBehaviour
     }
     public void SeleccionaOpcion(int indexRespuesta) 
     {
+        /*
         if (puedeContinuarSiguienteLinea)
         {
             currentStory.ChooseChoiceIndex(indexRespuesta);
-        }
+        }*/
+        currentStory.ChooseChoiceIndex(indexRespuesta);
+        ContinuarStory();
     }
 
     public Ink.Runtime.Object GetVariableState(string variableName) 
