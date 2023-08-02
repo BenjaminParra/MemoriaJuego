@@ -1,6 +1,6 @@
 INCLUDE Globals.ink
 
-{bienvenida_completada == false: -> main| -> completada }
+{bienvenida_completada != 0: -> main| -> completada }
 
 === main ===
  Bienvenido, tu debes ser el nuevo encargado de ciberseguridad#speaker: Recepcionista #portrait:recepcionista_neutral #layout:izq
@@ -53,6 +53,6 @@ Te equivocaste, mucho éxito en la próxima vez #portrait:prueba_triste
 -> END
 
 === completada === 
-Veo que conociste toda la empresa, ahora ve a tu lugar de trabajo #speaker:Mario Ruiz #portrait:prueba_feliz
+Veo que conociste toda la empresa, ahora ve a tu lugar de trabajo #speaker: Recepcionista #portrait:recepcionista_feliz #layout:izq
 ~bienvenida_completada = true
 ->END

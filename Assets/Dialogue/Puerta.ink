@@ -54,4 +54,5 @@ Te equivocaste, mucho éxito en la próxima vez #portrait:prueba_triste
 === ganaste === 
 Lo has logrado, ahora puedes ingresar #speaker:Mario Ruiz #portrait:prueba_feliz
 ~pasaste = true
+~bienvenida_completada = bienvenida_completada - 1
 ->END
