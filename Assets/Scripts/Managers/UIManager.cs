@@ -23,6 +23,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject panelInspectorQuests;
     [SerializeField] private GameObject panelPersonajeQuests;
 
+    [SerializeField] private GameObject panelApuntes;
+
     [SerializeField] private GameObject panelBotonesCiber;
 
     [Header("Barra")]
@@ -211,6 +213,20 @@ public class UIManager : Singleton<UIManager>
     public void AbrirPanelActivos()
     {
         panelActivos.SetActive(true);
+    }
+    public void AbrirPanelApuntes()
+    {
+        panelApuntes.SetActive(true);
+    }
+
+    public void CerrarPanelApuntes()
+    {
+        panelApuntes.SetActive(false);
+    }
+
+    public void AbrirCerrarPanelApuntes()
+    {
+        panelApuntes.SetActive(!panelApuntes.activeSelf);
     }
 
     public void CerrarPanelActivos()

@@ -16,7 +16,8 @@ public class Puerta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool abierta = ((Ink.Runtime.BoolValue)DialogoMedianoManager.GetInstance().GetVariableState("pasaste")).value;
+        string test = "pasaste";
+        bool abierta = ((Ink.Runtime.BoolValue)DialogoMedianoManager.GetInstance().GetVariableState(test)).value;
 
         if (abierta) 
         {

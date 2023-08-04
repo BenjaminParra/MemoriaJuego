@@ -11,7 +11,7 @@ public class PersonajeMovimiento : MonoBehaviour
     public Vector2 DireccionMovimiento => direccionMovimiento;
     //para acceder desde otra clase se ocupa esto que lo llaman propiedad
     //public float Velocidad => velocidad;
-    private Rigidbody2D rigidbody2D; // OJO que agregue un new!!!
+    private new Rigidbody2D rigidbody2D; // OJO que agregue un new!!!
     private Vector2 input;
     private Vector2 direccionMovimiento;
     private PersonajeVida personajeVida;
