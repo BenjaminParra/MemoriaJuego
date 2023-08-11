@@ -15,6 +15,7 @@ public class TiendaManager : MonoBehaviour
     {
         CargarItemsEnVenta();
     }
+
     private void CargarItemsEnVenta() 
     {
         for (int i = 0; i < itemsDisponibles.Length; i++) 

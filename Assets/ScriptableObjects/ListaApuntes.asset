@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e175d1603dd1340b2d72fd6910bd0f, type: 3}
+  m_Name: ListaApuntes
+  m_EditorClassIdentifier: 
+  Apuntes:
+  - nombreNPC: Don Genaro
+    pistaObtenida: pista_1_pnj_eleganteBigote
+    conversado: conversado_1
+    pista: pista_1
+    direccion: direccion_1
+    id: 0
+    pistaObtenidaBool: 0
+    conversadoBool: 0
+    pistaObtenidaString: "Deber\xEDa conversar con esta persona"
+    numeroDireccion: 0
+    iconoNPC: {fileID: 1756565041, guid: a352fa1acba6aaa46b1c4d082c2105d7, type: 3}

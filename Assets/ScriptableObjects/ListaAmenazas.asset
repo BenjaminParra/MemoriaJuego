@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 856d0be9aea9ff74288ba3daa2fd6c54, type: 3}
   m_Name: ListaAmenazas
   m_EditorClassIdentifier: 
-  Amenazas: []
+  Amenazas:
+  - Nombre: Nombre
+    Estado: 0
+    Tipo: dfs
+    Consejos: bla
+    ControlesRecomendados: ffdgd
+    CantidadDeAmenazas: 2

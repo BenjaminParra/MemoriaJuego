@@ -54,5 +54,5 @@ Te equivocaste, mucho éxito en la próxima vez #portrait:prueba_triste
 
 === completada === 
 Veo que conociste toda la empresa, ahora ve a tu lugar de trabajo #speaker: Recepcionista #portrait:recepcionista_feliz #layout:izq
-~bienvenida_completada = true
+
 ->END

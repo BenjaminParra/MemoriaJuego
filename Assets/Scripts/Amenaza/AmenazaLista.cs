@@ -16,10 +16,15 @@ public class AmenazaLista : ScriptableObject
 
     public void ResetearValores() 
     {
+        /*
         if (Amenazas != null) 
         {
 
             Amenazas = new List<Amenaza>();
+        }*/
+        for (int i = 0; i < Amenazas.Count; i++) 
+        {
+            Amenazas[i].Estado = Estado.Activa;
         }
     }
 }

@@ -1,5 +1,10 @@
+INCLUDE Globals.ink
 Hola! #speaker:Jefe #portrait:jefe_neutral #layout:izq
--> main
+{direccion_1:
+- 0:    ->main
+- else: que
+
+}
 
 === main ===
 ¿Como te has sentido en el trabajo?
