@@ -7,6 +7,8 @@ public class Puerta : MonoBehaviour
     // Start is called before the first frame update
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider2D;
+
+    [SerializeField] private string nombreVariableInk;
     void Start()
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -16,8 +18,7 @@ public class Puerta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        string test = "pasaste";
-        bool abierta = ((Ink.Runtime.BoolValue)DialogoMedianoManager.GetInstance().GetVariableState(test)).value;
+        bool abierta = ((Ink.Runtime.BoolValue)DialogoMedianoManager.GetInstance().GetVariableState(nombreVariableInk)).value;
 
         if (abierta) 
         {
