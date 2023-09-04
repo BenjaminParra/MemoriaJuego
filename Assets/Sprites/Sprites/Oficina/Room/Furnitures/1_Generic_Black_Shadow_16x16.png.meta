@@ -218,7 +218,7 @@ TextureImporter:
         width: 32
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,6 +226,27 @@ TextureImporter:
       bones: []
       spriteID: 9dfd72516399dda4f908f3c55fbe7cd7
       internalID: -1802892131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartel
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1195
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38bd8b37c497b64a9ef2d59005cd620
+      internalID: 916567855
       vertices: []
       indices: 
       edges: []
@@ -246,6 +267,7 @@ TextureImporter:
       blanco_punta: -1096462591
       mueble_blanco_izq: -1883155310
       ventanales: -1802892131
+      cartel: 916567855
       fondo_negropuerta_doble: 167534652
       puerta_cafe_oscuro: 867465728
       fondo_negropuerta_sola: 2121262440

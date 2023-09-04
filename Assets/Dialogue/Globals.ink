@@ -1,23 +1,69 @@
-VAR pokemon_name = ""
-VAR pasaste = false
-VAR bienvenida_completada = 1
+// Variable booleana que controla si se aprobó la prueba.
+VAR aprobo_prueba = false
+
+
+// Variable numérica que depende de la cantidad de NPCs interactuables.
+// Esta variable controla el acceso al puesto de trabajo del usuario.
+VAR contador_interacciones_restantes = 3
+
+// Variable booleana que controla el acceso al puesto de trabajo del usuario.
+VAR abrir_oficina = false
 
 /*
 -------------------------------------------------------------------
                     Variables pistas
 -------------------------------------------------------------------
 */
-// pnj_eleganteBigote
-VAR pista_1_pnj_eleganteBigote = false
-VAR conversado_1 = false
-VAR pista_1 = "Debería conversar con esta persona"
-VAR id_pista_1 = 0
-VAR direccion_1 = 0
+// pnj_donGenaro
+
+// Variable booleana que indica si se ha obtenido una pista o no.
+VAR donGenaro_obtuvo_pista = false
+
+// Variable booleana que indica si se ha iniciado una conversación con el NPC.
+VAR donGenaro_inicio_conversacion = false
+
+// Variable de tipo string que almacena la pista.
+VAR donGenaro_pista_string = "Debería conversar con esta persona"
+
+// Variable numérica que actúa como identificador de la pista.
+VAR donGenaro_id = 0
+
+// Variable numérica que se utiliza para guiar la conversación en el archivo "ink",
+// permitiendo usar una estructura "switch case" para dirigir a cada sección del diálogo.
+VAR donGenaro_direccion = 0
+
+//________________________________________________________________________________________
 
 
-// pnj_Jefe
-VAR pista_2_pnj_jefe = false
-VAR conversado_2 = false
-VAR pista_2 = "Debería conversar con esta persona"
-VAR id_pista_2 = 1
-VAR direccion_2 = 0
+//________________________________________________________________________________
+//---------------------------Contrato----------------------------------------------
+//____________________________________________________________________________________
+// contrato pista 1
+// Variable booleana que indica si se ha obtenido una pista o no.
+VAR contrato_obtuvo_pista_1 = false
+
+// Variable de tipo string que almacena la pista.
+VAR contrato_pista_1_string = "No veo nada raro"
+
+
+// contrato pista 2
+// Variable booleana que indica si se ha obtenido una pista o no.
+VAR contrato_obtuvo_pista_2 = false
+// Variable de tipo string que almacena la pista.
+VAR contrato_pista_2_string = "No veo nada raro"
+
+// contrato pista 3
+// Variable booleana que indica si se ha obtenido una pista o no.
+VAR contrato_obtuvo_pista_3 = false
+
+// Variable de tipo string que almacena la pista.
+VAR contrato_pista_3_string = "No veo nada raro"
+
+// Variable numérica que se utiliza para guiar la conversación en el archivo "ink",
+// permitiendo usar una estructura "switch case" para dirigir a cada sección del diálogo.
+VAR contrato_direccion = 0
+
+
+
+// pista_servidores
+VAR pista_servidores = false

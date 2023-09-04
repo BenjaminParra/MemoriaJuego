@@ -197,7 +197,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,6 +205,27 @@ TextureImporter:
       bones: []
       spriteID: 0fe794efce39998469fce66a30561e7d
       internalID: -996588431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo_icono
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 324
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c59ffaeb9ee1d74599897a07c1797f7
+      internalID: -1348577031
       vertices: []
       indices: 
       edges: []
@@ -222,6 +243,7 @@ TextureImporter:
     nameFileIdTable:
       Activos_boton: -457065644
       fondo_retrato: 1337064710
+      fondo_icono: -1348577031
       Fondo_dialogo: -1430143170
       continuar: -210796397
       apuntes: -996588431

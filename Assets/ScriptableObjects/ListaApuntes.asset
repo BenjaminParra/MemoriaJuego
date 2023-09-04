@@ -14,13 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Apuntes:
   - nombreNPC: Don Genaro
-    pistaObtenida: pista_1_pnj_eleganteBigote
-    conversado: conversado_1
-    pista: pista_1
-    direccion: direccion_1
+    pistaObtenida: donGenaro_obtuvo_pista
+    conversado: donGenaro_inicio_conversacion
+    pista: donGenaro_pista_string
+    direccion: donGenaro_direccion
     id: 0
     pistaObtenidaBool: 0
     conversadoBool: 0
     pistaObtenidaString: "Deber\xEDa conversar con esta persona"
     numeroDireccion: 0
     iconoNPC: {fileID: 1756565041, guid: a352fa1acba6aaa46b1c4d082c2105d7, type: 3}
+  - nombreNPC: Maria
+    pistaObtenida: personal_aseo_1_obtuvo_pista
+    conversado: personal_aseo_1_inicio_conversacion
+    pista: personal_aseo_1_pista_string
+    direccion: personal_aseo_1_direccion
+    id: 1
+    pistaObtenidaBool: 0
+    conversadoBool: 0
+    pistaObtenidaString: "No logr\xE9 obtener nada interesante"
+    numeroDireccion: 0
+    iconoNPC: {fileID: 81317559, guid: a0800f5255db09d4ba5475105ccbdb95, type: 3}
+  - nombreNPC: Alonso
+    pistaObtenida: alonso_sombrero_obtuvo_pista
+    conversado: alonso_sombrero_inicio_conversacion
+    pista: alonso_sombrero_pista_string
+    direccion: alonso_sombrero_direccion
+    id: 2
+    pistaObtenidaBool: 0
+    conversadoBool: 0
+    pistaObtenidaString: "No logr\xE9 obtener nada interesante"
+    numeroDireccion: 0
+    iconoNPC: {fileID: -2135291784, guid: 97eaac55b03cb3b46b6bc0a8a40d98db, type: 3}

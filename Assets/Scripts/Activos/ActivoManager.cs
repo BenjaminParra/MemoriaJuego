@@ -10,7 +10,7 @@ public class ActivoManager : Singleton<ActivoManager>
     [SerializeField] private ActivoTarjeta activoTarjetaPrefab;
     [SerializeField] private Transform activoContenedor;
 
-    
+
     [Header("nombreActivo")]
     [SerializeField] private TextMeshProUGUI nombreTMP;
 
@@ -38,15 +38,15 @@ public class ActivoManager : Singleton<ActivoManager>
     [Header("Activos")]
     [SerializeField] private ActivosLista activos;
 
-    public ActivoBase ActivadoSeleccionado { get;  set; }
-    
+    public ActivoBase ActivadoSeleccionado { get; set; }
+
     // Start is called before the first frame update
     void Start()
     {
-        CargarActivos();
+        //CargarActivos();
     }
 
-    public void CargarActivos() 
+    public void CargarActivos()
     {
         for (int i = 0; i < activos.Activos.Length; i++)
         {
@@ -59,20 +59,21 @@ public class ActivoManager : Singleton<ActivoManager>
         }
     }
 
-    public void MostrarActivo(ActivoBase activo) 
+    public void MostrarActivo(ActivoBase activo)
     {
         ActivadoSeleccionado = activo;
-       nombreTMP.text = activo.nombre;
+        nombreTMP.text = activo.nombre;
         iconoActivo.sprite = activo.iconoActivo;
         ubicacionActivo.text = $"Ubicacion: {activo.ubicacion}";
         descripcionActivo.text = activo.descripcion;
 
         seguridadActivo.text = $"Nivel de Seguridad: {activo.nivelSeguridad.ToString()}";
         accesoActivo.text = $"Acceso: {activo.acceso.ToString()}";
-      
+
         cuerpoPista1.text = activo.pistas[0];
         cuerpoPista2.text = activo.pistas[1];
         cuerpoPista3.text = activo.pistas[2];
 
     }
 }
+

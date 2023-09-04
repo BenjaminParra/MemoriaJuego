@@ -1,58 +1,55 @@
 INCLUDE Globals.ink
 
-{direccion_1:
-- 0:    ->main
-- 1:    ->finBueno
-- 2:    -> finMalo
-- else: que
-
+{donGenaro_direccion:
+    - 0: ->main
+    - 1: ->finBueno
+    - 2: ->finMalo
+    - else:que
 }
 
-
 === main ===
-~conversado_1 = true
-Hola tú eres el nuevo #speaker:Don Genaro #portrait:pnj_eleganteBigote_neutral #layout:izq
-
--¿Eres el de ciberseguridad? 
-    +[Sí, espero que estés listo para los cambios]
-        ¡¿Cambios?! ¡No me gustan los cambios! #portrait:pnj_eleganteBigote_triste #layout:izq
-        ~pista_1 = "No logré obtener nada interesante, pero parece asustado"
-        ~direccion_1 = 2
-        ~bienvenida_completada = bienvenida_completada - 1
+~donGenaro_inicio_conversacion = true
+¡Hola! Tú eres el nuevo, ¿verdad?#speaker: Don Genaro #portrait: pnj_eleganteBigote_neutral #layout: izq
+-¿Eres el encargado de ciberseguridad?
+    +[Comunicar cambios]
+    Sí, espero que estés listo para los cambios.#speaker: Personaje Principal #portrait: personaje_principal_neutral #layout: der
+    ¡¿Cambios?! ¡No me gustan los cambios!#speaker: Don Genaro #portrait: pnj_eleganteBigote_triste #layout: izq
+        ~donGenaro_pista_string = "No pude obtener algo interesante, pero parece asustado."
+        ~donGenaro_direccion = 2
+        ~contador_interacciones_restantes = contador_interacciones_restantes - 1
         ->DONE
-    +[Sí, estoy conociendo a los colaboradores]
-    Te ves agradable, entiendo que existe la posibilidad de cambios 
-    -> interaccion2    
-    
- 
+    +[Conociendo oficina]
+    Sí, estoy conociendo a los colaboradores.#speaker: Personaje Principal #portrait: personaje_principal_neutral #layout: der
+    Te ves agradable, entiendo que existe la posibilidad de cambios.#speaker: Don Genaro #portrait: pnj_eleganteBigote_triste #layout: izq
+    ->interaccion2
+
 ->END
+
 === interaccion2 ===
-Me dan miedo los cambios... #portrait:pnj_eleganteBigote_triste
-    +[Tranquilo, no afectaran de manera negativa, son mas los beneficios]
-        -> finBueno
-    +[Si, ¡habrán cambios drasticos!]
-        No eres tan agradable como parecías... #portrait:pnj_eleganteBigote_triste
-        ~bienvenida_completada = bienvenida_completada - 1
+Me dan miedo los cambios...#speaker: Don Genaro #portrait: pnj_eleganteBigote_triste #layout: izq
+    + [Explicar beneficios]
+    Tranquilo, no afectarán de manera negativa, hay más beneficios.#speaker: Personaje Principal #portrait: personaje_principal_neutral #layout: der
+        ->finBueno
+    + [Cambios drásticos]
+    Sí, habrá cambios drásticos.#speaker: Personaje Principal #portrait: personaje_principal_neutral #layout: der
+        No eres tan agradable como parecías...#speaker: Don Genaro #portrait: pnj_eleganteBigote_triste #layout: izq
+        ~contador_interacciones_restantes = contador_interacciones_restantes - 1
+        ~donGenaro_pista_string = "No pude obtener algo interesante, pero parece asustado."
         ->finMalo
-        ~direccion_1 = 2
-        
-~conversado_1 = true
+        ~donGenaro_direccion = 2
 ->END
 
 === finBueno ===
-Muchas gracias por la tranquilidad que me has dado, ya estaba pensando en borrar la base de datos #speaker:Don Genaro #portrait:pnj_eleganteBigote_neutral #layout:izq
-- Como no existe una clave para acceder a ella 
-
--Lo cambios me llevan a tomar medidas desesperadas
-~direccion_1 = 1
-~pista_1_pnj_eleganteBigote = true
-~pista_1 = "Don Genaro comenta que no existe un acceso restringido a las bases de datos"
-~bienvenida_completada = bienvenida_completada - 1
-
+Muchas gracias por la tranquilidad que me has dado.#speaker: Don Genaro #portrait: pnj_eleganteBigote_neutral #layout: izq
+-¿Sabías que existe un acceso liberado a la base de datos?
+~pista_servidores = true
+~donGenaro_direccion = 1
+~donGenaro_obtuvo_pista = true
+~donGenaro_pista_string = "Don Genaro comenta que no existe un acceso restringido a las bases de datos."
+~contador_interacciones_restantes = contador_interacciones_restantes - 1
 ->END
 
 === finMalo ===
-No me vuelvas a hablar por favor#speaker:Don Genaro #portrait:pnj_eleganteBigote_neutral #layout:izq
-~direccion_1 = 2
-
+No me vuelvas a hablar, por favor.#speaker: Don Genaro #portrait: pnj_eleganteBigote_neutral #layout: izq
+~donGenaro_direccion = 2
 ->END

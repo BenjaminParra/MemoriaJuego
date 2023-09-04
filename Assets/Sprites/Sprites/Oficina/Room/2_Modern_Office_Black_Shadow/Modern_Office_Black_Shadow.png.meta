@@ -932,7 +932,7 @@ TextureImporter:
         width: 16
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -940,6 +940,69 @@ TextureImporter:
       bones: []
       spriteID: 4e800355235210847805f27d5a34dcff
       internalID: -1261178384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cortrato
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 609
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bf08034b7c34d40981fd2f1f14c0cf
+      internalID: 182802848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: documentosApilados
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 592
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c9d23af6f5e3440ad5bfb232965bc6
+      internalID: 1604930862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computadores_negro
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 691
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453af828ba8494045bd9c2857c3ed9b2
+      internalID: -634716199
       vertices: []
       indices: 
       edges: []
@@ -956,43 +1019,46 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Estante_lleno: 1306210372
+      cortrato: 182802848
       Escritorio_madera: 947305381
       Mesa_L_pt1: -2003929130
+      documentosApilados: 1604930862
+      Poster_Marilin: 1025502650
+      mesa_grande: -323151745
+      Pizarra_1: -141040687
+      Separador_oficinas: -142123862
+      Mesa_reuniones: -1261178384
+      Modern_Office_Black_Shadow_1: -272226523
+      pcs_blanco: 1579099365
+      Set_2_Computador: -358058656
+      Bidon_Agua: 112165473
+      computadores_izq: 1245601818
+      Pizarra_2: 1322143853
+      mesa_negra: -1721737355
+      "retrato_ni\xF1o": 158290424
+      planta_verde_1: -826855387
+      escritorio_recepcion: -1250082437
+      Mesa_L_pt2: -1396648564
+      Diploma_2: -1329934486
+      silla_negra_der: -1071195895
+      computadores_negro: -634716199
+      Cafetera: -355364209
       Maquina_Expendedora: -1588714058
       Modern_Office_Black_Shadow_2: 1930263687
       silla_negra_espalda: -566483959
       Set_1_Computador: 689777405
-      Poster_Marilin: 1025502650
       Set_4_Computador: -64202239
       planta_verde_2: -351476707
-      Pizarra_1: -141040687
       Diploma_3: -1953182271
-      mesa_grande: -323151745
-      Separador_oficinas: -142123862
       Modern_Office_Black_Shadow_3: 284019248
-      Modern_Office_Black_Shadow_1: -272226523
-      Set_2_Computador: -358058656
       Mesa_Centro_Cafeteria: -893326479
-      pcs_blanco: 1579099365
-      Mesa_reuniones: -1261178384
-      Bidon_Agua: 112165473
-      silla_negra_izq: -498211243
-      Pizarra_2: 1322143853
-      mesa_negra: -1721737355
-      pantallas_negras_de_lado: 1998362924
-      "retrato_ni\xF1o": 158290424
       mueble_cafe_esq: -361425918
-      planta_verde_1: -826855387
+      silla_negra_izq: -498211243
+      pantallas_negras_de_lado: 1998362924
       Sillon_Negro_L: 1675550312
-      escritorio_recepcion: -1250082437
       Diploma_1: -284282811
-      Mesa_L_pt2: -1396648564
-      Diploma_2: -1329934486
-      Sillon_doble_negro: -16982489
-      computadores_izq: 1245601818
       Modern_Office_Black_Shadow_0: -690044157
-      silla_negra_der: -1071195895
-      Cafetera: -355364209
+      Sillon_doble_negro: -16982489
       silla_negra_frente: 1959765985
       Set_3_Computador: 1882997294
   spritePackingTag: 
