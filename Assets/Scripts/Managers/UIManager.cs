@@ -22,6 +22,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject panelInventario;
     [SerializeField] private GameObject panelInspectorQuests;
     [SerializeField] private GameObject panelPersonajeQuests;
+    [SerializeField] private GameObject panelComputador;
+    public GameObject PanelComputador => panelComputador;
 
     [SerializeField] private GameObject panelApuntes;
 
@@ -179,6 +181,11 @@ public class UIManager : Singleton<UIManager>
     public void AbrirCerraPanelActivoInfo(bool estado)
     {
         panelActivoInfo.SetActive(estado);
+    }
+
+    public void AbrirCerraPanelComputador(bool estado)
+    {
+        panelComputador.SetActive(estado);
     }
 
     public void AbrirCerrarPanelBotonesCiber(bool estado) 

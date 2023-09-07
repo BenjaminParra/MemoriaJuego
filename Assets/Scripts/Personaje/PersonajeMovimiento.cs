@@ -75,6 +75,10 @@ public class PersonajeMovimiento : MonoBehaviour
         {
             return;
         }
+        if (UIManager.Instance.PanelComputador.activeSelf)
+        {
+            return;
+        }
         rigidbody2D.MovePosition(rigidbody2D.position + direccionMovimiento * velocidad * Time.fixedDeltaTime);
     }
 }

@@ -1,12 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+public enum TipoDeInteraccionSlot
+{
+    Click,
+    Abrir
+}
 
 public class ComputadorSlot : MonoBehaviour
 {
+    public static Action<TipoDeInteraccionSlot, int> EventoSlotInteraccionApp;
+
     public int Index { get; set; }
     public Image icono;
 
@@ -21,5 +28,19 @@ public class ComputadorSlot : MonoBehaviour
     void Update()
     {
         
+    }
+
+
+    public void ClickSlot() 
+    {
+        EventoSlotInteraccionApp?.Invoke(TipoDeInteraccionSlot.Click, Index);
+    }
+
+    public void AbrirSlot() 
+    {
+        if (Computador.Instance.ItemsComputador[Index] != null)
+        {
+            EventoSlotInteraccionApp?.Invoke(TipoDeInteraccionSlot.Abrir, Index);
+        }
     }
 }

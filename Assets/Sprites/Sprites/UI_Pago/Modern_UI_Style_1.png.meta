@@ -218,7 +218,7 @@ TextureImporter:
         width: 7
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,6 +226,27 @@ TextureImporter:
       bones: []
       spriteID: 4c59ffaeb9ee1d74599897a07c1797f7
       internalID: -1348577031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerrar
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 640
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84ebc8efce423a47bd0640953c8a214
+      internalID: 432638064
       vertices: []
       indices: 
       edges: []
@@ -245,6 +266,7 @@ TextureImporter:
       fondo_retrato: 1337064710
       fondo_icono: -1348577031
       Fondo_dialogo: -1430143170
+      cerrar: 432638064
       continuar: -210796397
       apuntes: -996588431
   spritePackingTag: 

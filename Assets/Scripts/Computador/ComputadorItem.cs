@@ -13,4 +13,11 @@ public class ComputadorItem : ScriptableObject
 
     [Header("Informacion")]
     public bool EsInteractuable;
+
+    public virtual bool AbrirItem() 
+    { 
+        return true;
+    }
+
+    
 }
