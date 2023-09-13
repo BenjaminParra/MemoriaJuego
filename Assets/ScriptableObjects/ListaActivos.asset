@@ -19,10 +19,14 @@ MonoBehaviour:
     nivelSeguridad: 3
     acceso: 1
     id: 0
-    pistas:
-    - 
-    - 
-    - 
+    variables_pistas_string:
+    - servidores_pista_string_1
+    - servidores_pista_string_2
+    - servidores_pista_string_3
+    variables_pistas_bool:
+    - servidores_obtuvo_pista_1
+    - servidores_obtuvo_pista_2
+    - servidores_obtuvo_pista_3
     iconoActivo: {fileID: -446157214, guid: 2e8657275de05ba4cabd50bdfea0d3c6, type: 3}
   - nombre: Listado de clientes
     descripcion: Listado con datos de clientes y planes actuales
@@ -30,8 +34,12 @@ MonoBehaviour:
     nivelSeguridad: 2
     acceso: 1
     id: 1
-    pistas:
-    - 
-    - 
-    - 
+    variables_pistas_string:
+    - servidores_pista_string_1
+    - servidores_pista_string_1
+    - servidores_pista_string_1
+    variables_pistas_bool:
+    - servidores_obtuvo_pista_1
+    - servidores_obtuvo_pista_1
+    - servidores_obtuvo_pista_1
     iconoActivo: {fileID: 1604930862, guid: 2cfe1ebfa8eb6284ab4e962393fbcc29, type: 3}

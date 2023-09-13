@@ -16,4 +16,4 @@ MonoBehaviour:
   Nombre: Apuntes
   Icono: {fileID: -996588431, guid: 7ce7f8a6d0ea3ee47a3bce693c21f6ea, type: 3}
   Descripcion: "Aqu\xED he ido recopilando los datos de la empresa"
-  EsInteractuable: 0
+  EsInteractuable: 1

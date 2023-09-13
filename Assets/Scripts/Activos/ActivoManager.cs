@@ -43,7 +43,7 @@ public class ActivoManager : Singleton<ActivoManager>
     // Start is called before the first frame update
     void Start()
     {
-        //CargarActivos();
+        CargarActivos();
     }
 
     public void CargarActivos()
@@ -70,10 +70,22 @@ public class ActivoManager : Singleton<ActivoManager>
         seguridadActivo.text = $"Nivel de Seguridad: {activo.nivelSeguridad.ToString()}";
         accesoActivo.text = $"Acceso: {activo.acceso.ToString()}";
 
-        cuerpoPista1.text = activo.pistas[0];
-        cuerpoPista2.text = activo.pistas[1];
-        cuerpoPista3.text = activo.pistas[2];
+        cuerpoPista1.text = EscribirPista(activo,0);
+        cuerpoPista2.text = EscribirPista(activo, 1);
+        cuerpoPista3.text = EscribirPista(activo, 2);
 
+    }
+
+    public string EscribirPista(ActivoBase activo, int id) 
+    {
+        string variable_string = "No tengo más información.";
+        bool variable_bool = ((Ink.Runtime.BoolValue)DialogoMedianoManager.GetInstance().GetVariableState(activo.variables_pistas_bool[id])).value;
+        if (variable_bool) 
+        {
+            variable_string = ((Ink.Runtime.StringValue)DialogoMedianoManager.GetInstance().GetVariableState(activo.variables_pistas_string[id])).value;
+            return variable_string;
+        }
+        return variable_string;
     }
 }
 

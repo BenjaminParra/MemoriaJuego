@@ -99,7 +99,7 @@ public class DialogoMedianoManager : MonoBehaviour
 
         //reset
         dialogoMedianoNombreTexto.text = "personajeDefault";
-        portraitAnimator.Play("default");
+        portraitAnimator.Play("Default");
         layoutAnimator.Play("izq");
         ContinuarStory();
     }
@@ -231,6 +231,7 @@ public class DialogoMedianoManager : MonoBehaviour
         {
             respuestas[i].gameObject.SetActive(false);
         }
+        //StartCoroutine(SeleccionaPrimeraOpcion());
     }
     private IEnumerator SeleccionaPrimeraOpcion() 
     {

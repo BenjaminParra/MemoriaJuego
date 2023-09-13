@@ -24,7 +24,8 @@ public class ActivoBase
     public NivelSeguridad nivelSeguridad;
     public Acceso acceso;
     public int id;
-    public string[] pistas;
+    public string[] variables_pistas_string;
+    public string[] variables_pistas_bool;
 
     [Header("Icono")]
     public Sprite iconoActivo;

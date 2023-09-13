@@ -2,3 +2,4 @@ INCLUDE globals.ink
 INCLUDE variables_jefe.ink
 INCLUDE variables_personal_aseo_1.ink
 INCLUDE variables_alonso_sombrero.ink
+INCLUDE variables_servidores.ink
