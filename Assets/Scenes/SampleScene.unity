@@ -15623,7 +15623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &455045890
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22724,8 +22724,11 @@ MonoBehaviour:
   descripcionActivo: {fileID: 1579146447}
   seguridadActivo: {fileID: 1442311906}
   accesoActivo: {fileID: 392833359}
+  contenedorPista1: {fileID: 2125880232}
   cuerpoPista1: {fileID: 1422481795}
+  contenedorPista2: {fileID: 1097775199}
   cuerpoPista2: {fileID: 1040852686}
+  contenedorPista3: {fileID: 1408279061}
   cuerpoPista3: {fileID: 36897938}
   activos: {fileID: 11400000, guid: 7853c27847c50584abdefc9b28561fbf, type: 2}
 --- !u!4 &787776952 stripped

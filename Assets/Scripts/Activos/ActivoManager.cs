@@ -24,14 +24,17 @@ public class ActivoManager : Singleton<ActivoManager>
 
     [Header("Panel Pistas 1")]
     //[SerializeField] private TextMeshProUGUI identificadorPista1;
+    [SerializeField] private GameObject contenedorPista1;
     [SerializeField] private TextMeshProUGUI cuerpoPista1;
 
     [Header("Panel Pistas 2")]
     //[SerializeField] private TextMeshProUGUI identificadorPista2;
+    [SerializeField] private GameObject contenedorPista2;
     [SerializeField] private TextMeshProUGUI cuerpoPista2;
 
     [Header("Panel Pistas 3")]
     //[SerializeField] private TextMeshProUGUI identificadorPista3;
+    [SerializeField] private GameObject contenedorPista3;
     [SerializeField] private TextMeshProUGUI cuerpoPista3;
 
 
@@ -86,6 +89,29 @@ public class ActivoManager : Singleton<ActivoManager>
             return variable_string;
         }
         return variable_string;
+    }
+
+    public void CerrarContenedorPistas() 
+    {
+        contenedorPista1.SetActive(false);
+        contenedorPista2.SetActive(false);
+        contenedorPista3.SetActive(false);
+    }
+
+    public void ActivaContenedorPista(int id) 
+    {
+        if (id == 0)
+        {
+            contenedorPista1.SetActive(true);
+        }
+        else if (id == 1)
+        {
+            contenedorPista2.SetActive(true);
+        }
+        else if (id == 2)
+        {
+            contenedorPista3.SetActive(true);
+        }
     }
 }
 
