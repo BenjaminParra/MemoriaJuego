@@ -12,3 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fb2b6c13dd8b524f8c509c570ff39e3, type: 3}
   m_Name: AssetSnipeItLista
   m_EditorClassIdentifier: 
+  Assets:
+  - Nombre: Computador Lenovo
+    NumeroSerie: c25206
+    Modelo: Lenovo Slim X
+    Ubicacion: "\xC1rea Inform\xE1ticos"
+    Icono: {fileID: 1882997294, guid: 2cfe1ebfa8eb6284ab4e962393fbcc29, type: 3}

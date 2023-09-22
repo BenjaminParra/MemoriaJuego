@@ -7,7 +7,7 @@ public class AppSnipeIt : ComputadorItem
 {
     public override bool AbrirItem()
     {
-        UIManager.Instance.AbrirCerrarPanelCmd();
+        UIManager.Instance.AbrirCerrarPanelSnipeIt();
         return true;
     }
 }

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 628e54dd8cf63254e9f5f9e513d121c5, type: 3}
   m_Name: AppSnipeIt
   m_EditorClassIdentifier: 
-  ID: 
-  Nombre: 
-  Icono: {fileID: 0}
-  Descripcion: 
-  EsInteractuable: 0
+  ID: SnipeIt
+  Nombre: Snipe it
+  Icono: {fileID: 2119183642, guid: 55fb4f686e10332499336c83d1797a2c, type: 3}
+  Descripcion: "Aplicaci\xF3n para el control y manejo de activos de la empresa"
+  EsInteractuable: 1

@@ -33,5 +33,11 @@ public class AssetsSnipeItManager : Singleton<AssetsSnipeItManager>
     public void AbrirCerrarPanelAssets() 
     {
         panelAssets.SetActive(!panelAssets.activeSelf);
+        LicenciaSnipeItManager.Instance.AbrirCerrarPanelLicencias(false);
+    }
+
+    public void AbrirCerrarPanelAssets(bool valor)
+    {
+        panelAssets.SetActive(valor);
     }
 }
