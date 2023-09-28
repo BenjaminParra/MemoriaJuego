@@ -9,6 +9,8 @@ VAR contador_interacciones_restantes = 3
 // Variable booleana que controla el acceso al puesto de trabajo del usuario.
 VAR abrir_oficina = false
 
+VAR abrir_acceso = false
+
 /*
 -------------------------------------------------------------------
                     Variables pistas
@@ -63,7 +65,12 @@ VAR contrato_pista_3_string = "No veo nada raro"
 // permitiendo usar una estructura "switch case" para dirigir a cada sección del diálogo.
 VAR contrato_direccion = 0
 
-
-
+//_____________________________________________________________
+// --------------- Variables para el informe -----
+// _________________________________________________
+VAR verdadero = true
 // pista_servidores
-VAR pista_servidores = false
+VAR pista_servidores =false
+
+// pista_listadoClientes
+VAR pista_listadoClientes = false

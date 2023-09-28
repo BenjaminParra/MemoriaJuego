@@ -260,4 +260,16 @@ public class DialogoMedianoManager : MonoBehaviour
         }
         return variableValue;
     }
+
+    
+    public void ModificarVariable(string nombreVariable) 
+    {
+        /*
+        currentStory = new Story(loadGlobalsJSON.text);
+        currentStory.variablesState[nombreVariable] = nuevoValor;
+        dialogueVariables = new DialogueVariables(loadGlobalsJSON);
+        Debug.Log("La variable "+nombreVariable + " es: "+currentStory.variablesState[nombreVariable]);*/
+        dialogueVariables.CambiaVariable(nombreVariable, loadGlobalsJSON);
+    }
+
 }

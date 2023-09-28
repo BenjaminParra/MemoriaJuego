@@ -156,6 +156,7 @@ Y, ¿Qué te pareció?
 Perfecto, no sé qué debas hacer ni en qué trabajas,
 pero ve a hacer tus cosas por ahí. 
 Nos vemos.
+~abrir_acceso = true
 ~jefe_direccion = 3
 -> END
 

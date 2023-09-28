@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum NivelSeguridad
 {
@@ -26,6 +28,7 @@ public class ActivoBase
     public int id;
     public string[] variables_pistas_string;
     public string[] variables_pistas_bool;
+
 
     [Header("Icono")]
     public Sprite iconoActivo;

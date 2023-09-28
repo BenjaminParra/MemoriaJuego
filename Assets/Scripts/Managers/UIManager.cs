@@ -25,6 +25,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject panelComputador;
     [SerializeField] private GameObject panelCmd;
     [SerializeField] private GameObject panelSnipeIt;
+    [SerializeField] private GameObject panelActivoInforme;
+    [SerializeField] private GameObject panelActivoInformeConfirmacion;
     public GameObject PanelComputador => panelComputador;
 
     [SerializeField] private GameObject panelApuntes;
@@ -82,10 +84,10 @@ public class UIManager : Singleton<UIManager>
     {
         ActualizarUIPersonaje();
         ActualizarPanelStats();
-        
+
     }
 
-    private void ActualizarUIPersonaje() 
+    private void ActualizarUIPersonaje()
     {
         //Modificamos barra
         vidaPlayer.fillAmount = Mathf.Lerp(vidaPlayer.fillAmount, vidaActual / vidaMax, 10f * Time.deltaTime);
@@ -94,7 +96,7 @@ public class UIManager : Singleton<UIManager>
         vidaTMP.text = $"{vidaActual}/{vidaMax}";
         manaTMP.text = $"{manaActual}/{manaMax}";
         //Con esto verificamos si es el nivel maximo
-        if ( nivelActual == nivelMax)
+        if (nivelActual == nivelMax)
         {
             expTMP.text = $" Nivel máximo";
             nivelTMP.text = $"Nivel máximo";
@@ -108,7 +110,7 @@ public class UIManager : Singleton<UIManager>
 
     }
 
-    private void ActualizarPanelStats() 
+    private void ActualizarPanelStats()
     {
         if (panelStats.activeSelf == false)
         {
@@ -148,16 +150,16 @@ public class UIManager : Singleton<UIManager>
         }
 
     }
-    public void ActualizarVidaPersonaje(float pVidaActual, float pVidaMax) 
+    public void ActualizarVidaPersonaje(float pVidaActual, float pVidaMax)
     {
-        vidaActual= pVidaActual;
-        vidaMax= pVidaMax;  
+        vidaActual = pVidaActual;
+        vidaMax = pVidaMax;
     }
     public void ActualizarManaPersonaje(float pManaActual, float pManaMax)
     {
         manaActual = pManaActual;
         manaMax = pManaMax;
-    } 
+    }
     public void ActualizarExpPersonaje(float pManaActual, float pExpRequerida, int pNivelActual, int pNivelMax)
     {
         expActual = pManaActual;
@@ -175,11 +177,11 @@ public class UIManager : Singleton<UIManager>
         panelInventario.SetActive(!panelInventario.activeSelf);
     }
 
-    public void AbrirCerrarPanelCmd() 
+    public void AbrirCerrarPanelCmd()
     {
         panelCmd.SetActive(!panelCmd.activeSelf);
     }
-    public void AbrirCerraPanelCorreoInfo(bool estado) 
+    public void AbrirCerraPanelCorreoInfo(bool estado)
     {
         panelCorreoInfo.SetActive(estado);
     }
@@ -195,8 +197,13 @@ public class UIManager : Singleton<UIManager>
     }
 
     public void AbrirCerrarPanelSnipeIt()
-    { 
+    {
         panelSnipeIt.SetActive(!panelSnipeIt.activeSelf);
+    }
+
+    public void AbrirCerrarPanelConfirmacionActivoInforme() 
+    {
+        panelActivoInformeConfirmacion.SetActive(!panelActivoInformeConfirmacion.activeSelf);
     }
 
     public void AbrirCerrarPanelBotonesCiber(bool estado) 
@@ -211,6 +218,11 @@ public class UIManager : Singleton<UIManager>
     public void AbrirCerrarPanelTienda() 
     {
         panelTienda.SetActive(!panelTienda.activeSelf);
+    }
+
+    public void AbrirCerrarPanelInformeActivo()
+    {
+        panelActivoInforme.SetActive(!panelActivoInforme.activeSelf);
     }
 
     public void AbrirCerrarPanelPersonajeQuests() 

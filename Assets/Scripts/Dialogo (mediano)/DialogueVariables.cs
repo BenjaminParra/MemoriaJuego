@@ -41,6 +41,7 @@ public class DialogueVariables
             variables.Add(name, value);
             //Debug.Log("Initialized global dialogue variable: " + name + " = " + value);
         }
+        
     }
 
     public void StartListening(Story story) 
@@ -74,5 +75,17 @@ public class DialogueVariables
         }
 
     }
+
+
+    //Funcion que cambia el valor de una variable de false a verdadero
+    public void CambiaVariable(string nombreVariable, TextAsset loadGlobalsJSON) 
+    {
+        Story globalVariablesStory = new Story(loadGlobalsJSON.text);
+        variables[nombreVariable] = globalVariablesStory.variablesState.GetVariableWithName("verdadero");
+
+    }
+
+
+   
 
 }

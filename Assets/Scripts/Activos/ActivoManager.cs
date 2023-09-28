@@ -11,6 +11,13 @@ public class ActivoManager : Singleton<ActivoManager>
     [SerializeField] private Transform activoContenedor;
 
 
+    [Header("Datos inkJsonFile test")]
+
+    [SerializeField] private string nombreVariable;
+    [SerializeField] private string nuevaVariable;
+    [SerializeField] private TextAsset variables;
+
+
     [Header("nombreActivo")]
     [SerializeField] private TextMeshProUGUI nombreTMP;
 
@@ -47,6 +54,12 @@ public class ActivoManager : Singleton<ActivoManager>
     void Start()
     {
         CargarActivos();
+
+    }
+
+    public void ApretarBoton() 
+    {
+        DialogoMedianoManager.GetInstance().ModificarVariable (nombreVariable);
     }
 
     public void CargarActivos()
