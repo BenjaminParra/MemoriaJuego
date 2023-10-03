@@ -995,7 +995,7 @@ TextureImporter:
         width: 48
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1003,6 +1003,27 @@ TextureImporter:
       bones: []
       spriteID: 453af828ba8494045bd9c2857c3ed9b2
       internalID: -634716199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinero
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 79
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d142bac5795e4ce44b631f8d15a44927
+      internalID: 78890987
       vertices: []
       indices: 
       edges: []
@@ -1047,6 +1068,7 @@ TextureImporter:
       Modern_Office_Black_Shadow_2: 1930263687
       silla_negra_espalda: -566483959
       Set_1_Computador: 689777405
+      dinero: 78890987
       Set_4_Computador: -64202239
       planta_verde_2: -351476707
       Diploma_3: -1953182271

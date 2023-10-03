@@ -6,6 +6,5 @@ INCLUDE variables_servidores.ink
 
 Que poco cuidadosos...#speaker:Personaje Principal #portrait:personaje_principal_neutral #layout:der
 ~servidores_obtuvo_pista_1 = true
-~pista_servidores = true
 
 ->DONE

@@ -74,3 +74,13 @@ VAR pista_servidores =false
 
 // pista_listadoClientes
 VAR pista_listadoClientes = false
+
+
+//_____________________________________________________________
+// --------------- Variables para la asignacion de presupuesto -----
+// _________________________________________________
+
+VAR dinero_asignado = 0
+VAR presupuesto_asignado = true
+
+
