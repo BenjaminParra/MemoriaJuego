@@ -239,7 +239,7 @@ TextureImporter:
         width: 22
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 1, y: 1, z: 1, w: 1}
       outline: []
       physicsShape: []
@@ -247,6 +247,90 @@ TextureImporter:
       bones: []
       spriteID: 49eac71583e9f3246b1bb1acbf322c59
       internalID: -1848596215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cruz_roja
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 179
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97ee0176e20f5a438d42f2ea77aaa6d
+      internalID: -1790827728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji_feliz
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 323
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4477352fdaa197e4097c817f75f6cd1a
+      internalID: 1799201478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji_triste
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 323
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd07751e2500e54a840846142608926
+      internalID: 1510624121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rayo
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 369
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bed0da36e6b474a931cf02ee819b54
+      internalID: -2029404106
       vertices: []
       indices: 
       edges: []
@@ -262,12 +346,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      rayo: -2029404106
       fondo1_oscuro: 1627792462
       fondo_titulo: -290214255
       Opciones: -1975694904
       cerrar: 2059924255
       Fondo_1: 206351630
+      cruz_roja: -1790827728
+      emoji_triste: 1510624121
       fondo_activos_texto: -1848596215
+      emoji_feliz: 1799201478
       fondo_subtitulo: 637990624
   spritePackingTag: 
   pSDRemoveMatte: 0

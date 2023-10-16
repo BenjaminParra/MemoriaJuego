@@ -45,4 +45,37 @@ MonoBehaviour:
     conversadoBool: 0
     pistaObtenidaString: "No logr\xE9 obtener nada interesante"
     numeroDireccion: 0
-    iconoNPC: {fileID: -2135291784, guid: 97eaac55b03cb3b46b6bc0a8a40d98db, type: 3}
+    iconoNPC: {fileID: -1176956637, guid: 962145180e48a1c478d26c26a4ba8807, type: 3}
+  - nombreNPC: "Cartel Ba\xF1o"
+    pistaObtenida: servidores_obtuvo_pista_3
+    conversado: servidores_inicio_conversacion_3
+    pista: servidores_pista_string_3
+    direccion: servidores_direccion_3
+    id: 3
+    pistaObtenidaBool: 0
+    conversadoBool: 0
+    pistaObtenidaString: "Se encuentra al lado de los ba\xF1os"
+    numeroDireccion: 0
+    iconoNPC: {fileID: 916567855, guid: eacda0561011ec14d83d451ca55c7d5c, type: 3}
+  - nombreNPC: Cartel Puerta Servidores
+    pistaObtenida: servidores_obtuvo_pista_2
+    conversado: servidores_inicio_conversacion_2
+    pista: servidores_pista_string_2
+    direccion: servidores_direccion_2
+    id: 4
+    pistaObtenidaBool: 0
+    conversadoBool: 0
+    pistaObtenidaString: No cuenta con acceso restringido
+    numeroDireccion: 0
+    iconoNPC: {fileID: 916567855, guid: eacda0561011ec14d83d451ca55c7d5c, type: 3}
+  - nombreNPC: Servidores
+    pistaObtenida: servidores_obtuvo_pista_1
+    conversado: servidores_inicio_conversacion_1
+    pista: servidores_pista_string_1
+    direccion: servidores_direccion_1
+    id: 5
+    pistaObtenidaBool: 0
+    conversadoBool: 0
+    pistaObtenidaString: "Contiene informaci\xF3n de la empresa"
+    numeroDireccion: 0
+    iconoNPC: {fileID: 916567855, guid: eacda0561011ec14d83d451ca55c7d5c, type: 3}

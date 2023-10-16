@@ -6,5 +6,7 @@ INCLUDE variables_servidores.ink
 
 Que poco cuidadosos...#speaker:Personaje Principal #portrait:personaje_principal_neutral #layout:der
 ~servidores_obtuvo_pista_1 = true
-
+~servidores_inicio_conversacion_1 = true
+~servidores_direccion_1 = 1
+~servidores_pista_string_1 = "Los servidores cuentan con informacion de la empresa"
 ->DONE

@@ -80,7 +80,7 @@ VAR pista_listadoClientes = false
 // --------------- Variables para la asignacion de presupuesto -----
 // _________________________________________________
 
-VAR dinero_asignado = 0
+VAR dinero_asignado = 100
 VAR presupuesto_asignado = true
 
 

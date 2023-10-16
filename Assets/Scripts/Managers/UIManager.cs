@@ -27,6 +27,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject panelSnipeIt;
     [SerializeField] private GameObject panelActivoInforme;
     [SerializeField] private GameObject panelActivoInformeConfirmacion;
+    [SerializeField] private GameObject panelWallet;
     public GameObject PanelComputador => panelComputador;
 
     [SerializeField] private GameObject panelApuntes;
@@ -43,8 +44,12 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI manaTMP;
     [SerializeField] private TextMeshProUGUI expTMP;
     [SerializeField] private TextMeshProUGUI nivelTMP;
-    [SerializeField] private TextMeshProUGUI monedasTMP;
+    
 
+    [Header("Ui_Personaje")]
+    [SerializeField] private TextMeshProUGUI monedasTMP;
+    [SerializeField] private TextMeshProUGUI bonificacionTMP;
+    [SerializeField] private TextMeshProUGUI totalTMP;
 
     [Header("Stats")]
     [SerializeField] private TextMeshProUGUI statDañoTMP;
@@ -172,6 +177,12 @@ public class UIManager : Singleton<UIManager>
     public void AbrirCerrarPanelStats() {
         //Este metodo recibe un booleano como parametro, es por esto que se le pasa la negacion de la consulta si es que está activo o no
         panelStats.SetActive(!panelStats.activeSelf);
+    }
+
+    public void AbrirCerrarPanelWallet() 
+    {
+        WalletManager.Instance.ActualizaNumeros();
+        panelWallet.SetActive(!panelWallet.activeSelf);
     }
     public void AbrirCerrarPanelInventario() {
         panelInventario.SetActive(!panelInventario.activeSelf);

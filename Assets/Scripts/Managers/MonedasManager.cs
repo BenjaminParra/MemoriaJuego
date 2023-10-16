@@ -12,7 +12,10 @@ public class MonedasManager : Singleton<MonedasManager>
     [SerializeField] private string nombreVariableInkCantidadPresupuesto;
     public int MonedasTotales { get; set; }
 
+
     private bool fueAsignado;
+
+    private bool actualizoBonificacion;
 
     private string KEY_MONEDAS = "MIJUEGO_MONEDAS";
 
@@ -31,6 +34,7 @@ public class MonedasManager : Singleton<MonedasManager>
         }
         
     }
+
 
     private void CargarMonedas() 
     {

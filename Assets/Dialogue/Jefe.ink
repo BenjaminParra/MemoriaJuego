@@ -1,5 +1,5 @@
 INCLUDE Globals.ink
-INCLUDE variables_jefe.ink
+INCLUDE preguntas_activos.ink
 #speaker:Jefe #portrait:jefe_neutral #layout:izq
 #speaker:Jefe #portrait:jefe_neutral #layout:izq
 {jefe_direccion:
@@ -7,7 +7,8 @@ INCLUDE variables_jefe.ink
     - 1:    ->segundaInteraccion // no ha visto el contrato
     - 2:    ->terceraInteraccion // el jugador vio el contrato
     - 3:    ->finPrimerDialogo // cuando el jugador ya conversó con el jefe
-    - 4:    ->preguntaActivos 
+    - 4:    ->main 
+    - 5: -> preguntaActivos
     - else: que
 }
 
@@ -185,12 +186,10 @@ ZZZ... ¿Qué? ¿Yo durmiendo? Estaba meditando.
 === activos === 
 Mmm... ahora que lo dices, nunca lo había pensado. Creo que los más importantes son: Información de los clientes y código fuente. #speaker:Jefe #portrait:jefe_neutral #layout:izq
 ¿Se me olvidará algo?
-+[Servidores]
-    {pista_servidores == true: 
-    ->servidores
-    -else:
-    Creo que no tienes ninguna pista para decirme esto.
-    }
+De ser así, enviame un informe de tu listado de activos.
+Este informe lo podrás crear en tu estación de trabajo.
+El encargado anterior nunca pudo hacer uso de sus herramientas.
+Creo que no pasaba ciertos desafíos.
 ->DONE
 
 === servidores ===

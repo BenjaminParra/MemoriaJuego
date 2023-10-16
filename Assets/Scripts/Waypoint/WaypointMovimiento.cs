@@ -12,6 +12,7 @@ public class WaypointMovimiento : MonoBehaviour
     
     [SerializeField] private float velocidad;
 
+    private bool jugadorEnRango;
     public Vector3 PuntoPorMoverse => waypoint.ObtenerPosicionMovimiento(puntoActualIndex);
 
     protected Waypoint waypoint;
@@ -25,11 +26,16 @@ public class WaypointMovimiento : MonoBehaviour
         waypoint = GetComponent<Waypoint>();
         animator = GetComponent<Animator>();
         puntoActualIndex = 0;
+        jugadorEnRango = false;
         
     }
 
     private void Update()
     {
+        if (jugadorEnRango ) 
+        {
+            return;
+        }
         MoverPersonaje();
         RotarPersonaje();
         RotarVertical();
@@ -37,6 +43,7 @@ public class WaypointMovimiento : MonoBehaviour
         {
             ActualizarIndexMovimiento();
         }
+
     }
     private void MoverPersonaje() 
     {
@@ -68,6 +75,24 @@ public class WaypointMovimiento : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            jugadorEnRango = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            jugadorEnRango = false;
+        }
+    }
+
+
 
     protected virtual void  RotarPersonaje() 
     {
