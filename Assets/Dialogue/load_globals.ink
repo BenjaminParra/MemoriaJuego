@@ -6,3 +6,5 @@ INCLUDE variables_servidores.ink
 INCLUDE variables_documentacionProyectos.ink
 INCLUDE variables_infoFinanciera.ink
 INCLUDE variables_servicioWeb.ink
+INCLUDE variables_contador.ink
+INCLUDE variables_mujer_contabilidad.ink

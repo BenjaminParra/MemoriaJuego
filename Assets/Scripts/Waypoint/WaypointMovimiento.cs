@@ -14,7 +14,7 @@ public class WaypointMovimiento : MonoBehaviour
 
     private bool jugadorEnRango;
     public Vector3 PuntoPorMoverse => waypoint.ObtenerPosicionMovimiento(puntoActualIndex);
-
+    private readonly int jugadorRango = Animator.StringToHash("JugadorEnRango");
     protected Waypoint waypoint;
 
     protected Animator animator;
@@ -34,8 +34,11 @@ public class WaypointMovimiento : MonoBehaviour
     {
         if (jugadorEnRango ) 
         {
+            
             return;
+
         }
+
         MoverPersonaje();
         RotarPersonaje();
         RotarVertical();
@@ -81,6 +84,7 @@ public class WaypointMovimiento : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             jugadorEnRango = true;
+            animator.SetBool(jugadorRango, true);
         }
     }
 
@@ -89,6 +93,7 @@ public class WaypointMovimiento : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             jugadorEnRango = false;
+            animator.SetBool(jugadorRango, false);
         }
     }
 

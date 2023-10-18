@@ -1028,6 +1028,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: libros_apilados
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 594
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66924d9ae2d83064e9285810f45483b8
+      internalID: 1188334665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1044,7 +1065,8 @@ TextureImporter:
       Escritorio_madera: 947305381
       Mesa_L_pt1: -2003929130
       documentosApilados: 1604930862
-      Poster_Marilin: 1025502650
+      Set_3_Computador: 1882997294
+      libros_apilados: 1188334665
       mesa_grande: -323151745
       Pizarra_1: -141040687
       Separador_oficinas: -142123862
@@ -1082,7 +1104,7 @@ TextureImporter:
       Modern_Office_Black_Shadow_0: -690044157
       Sillon_doble_negro: -16982489
       silla_negra_frente: 1959765985
-      Set_3_Computador: 1882997294
+      Poster_Marilin: 1025502650
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

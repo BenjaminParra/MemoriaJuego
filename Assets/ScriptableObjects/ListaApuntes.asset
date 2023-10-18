@@ -79,3 +79,25 @@ MonoBehaviour:
     pistaObtenidaString: "Contiene informaci\xF3n de la empresa"
     numeroDireccion: 0
     iconoNPC: {fileID: 916567855, guid: eacda0561011ec14d83d451ca55c7d5c, type: 3}
+  - nombreNPC: Christian
+    pistaObtenida: contador_obtuvo_pista
+    conversado: contador_inicio_conversacion
+    pista: contador_pista_string
+    direccion: contador_direccion
+    id: 6
+    pistaObtenidaBool: 1
+    conversadoBool: 1
+    pistaObtenidaString: "Se ve\xEDa demasiado ocupado y deseperado"
+    numeroDireccion: 2
+    iconoNPC: {fileID: -2135291784, guid: 97eaac55b03cb3b46b6bc0a8a40d98db, type: 3}
+  - nombreNPC: Trinidad
+    pistaObtenida: mujer_contabilidad_obtuvo_pista
+    conversado: mujer_contabilidad_inicio_conversacion
+    pista: mujer_contabilidad_pista_string
+    direccion: mujer_contabilidad_direccion
+    id: 7
+    pistaObtenidaBool: 1
+    conversadoBool: 1
+    pistaObtenidaString: "Se ve\xEDa demasiado ocupado y deseperado"
+    numeroDireccion: 2
+    iconoNPC: {fileID: -315467792, guid: be2f4352d8a900146a2ad381d5bc06fc, type: 3}
