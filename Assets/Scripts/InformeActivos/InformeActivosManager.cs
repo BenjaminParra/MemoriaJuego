@@ -21,23 +21,46 @@ public class InformeActivosManager : MonoBehaviour
     [SerializeField] private string listadoClientesInforme; //nombre de la variable del ink file 
     [SerializeField] private TextMeshProUGUI listadoClientesCantidadPistas;
 
+    [Header("Documentacion de Proyectos")]
+    [SerializeField] private Toggle toggleDocumentacionProyectos;
+    [SerializeField] private string documentacionProyectosInforme; //nombre de la variable del ink file 
+    [SerializeField] private TextMeshProUGUI documentacionProyectosCantidadPistas;
+
+    [Header("Información financiera")]
+    [SerializeField] private Toggle toggleInformacionFinanciera;
+    [SerializeField] private string informacionFinancieraInforme; //nombre de la variable del ink file 
+    [SerializeField] private TextMeshProUGUI informacionFinancieraCantidadPistas;
+
+    [Header("Servicio Web")]
+    [SerializeField] private Toggle toggleServicioWeb;
+    [SerializeField] private string servicioWebInforme; //nombre de la variable del ink file 
+    [SerializeField] private TextMeshProUGUI servicioWebCantidadPistas;
+
     [Header("Ink Json File")]
     [SerializeField] private TextAsset variablesInkJsonFile;
 
     [Header("botonEnviar")]
     [SerializeField] private Button boton;
 
+    private bool informeEnviado = false;
+
     private DialogueVariables dialogueVariables;
     // Start is called before the first frame update
     void Start()
     {
-        
+        boton.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         ActualizaUIActivos();
+        if (informeEnviado == false) 
+        {
+            HabilitaBotonEnviar();
+            DeshabilitaBotonEnviar();
+        }
+
     }
 
 
@@ -54,10 +77,42 @@ public class InformeActivosManager : MonoBehaviour
             DialogoMedianoManager.GetInstance().ModificarVariable(listadoClientesInforme);
         }
 
-        UIManager.Instance.AbrirCerrarPanelConfirmacionActivoInforme();
+        if (toggleServicioWeb.isOn) 
+        {
+            DialogoMedianoManager.GetInstance().ModificarVariable(servicioWebInforme);
+        }
 
+        if (toggleDocumentacionProyectos.isOn)
+        {
+            DialogoMedianoManager.GetInstance().ModificarVariable(documentacionProyectosInforme);
+
+        }
+
+        if (toggleInformacionFinanciera.isOn) 
+        {
+            DialogoMedianoManager.GetInstance().ModificarVariable(informacionFinancieraInforme);
+        }
+
+        
+        UIManager.Instance.AbrirCerrarPanelConfirmacionActivoInforme();
+        informeEnviado = true;
         toggleListadoClientes.enabled = false; toggleServidores.enabled = false;
         boton.enabled = false;
+    }
+
+    private void HabilitaBotonEnviar() 
+    {
+        if (toggleDocumentacionProyectos.isOn || toggleInformacionFinanciera.isOn || toggleListadoClientes.isOn || toggleServicioWeb.isOn || toggleServidores.isOn) 
+        {
+            boton.enabled = true;
+        }
+    }
+    private void DeshabilitaBotonEnviar() 
+    {
+        if (!toggleDocumentacionProyectos.isOn && !toggleInformacionFinanciera.isOn && !toggleListadoClientes.isOn && !toggleServicioWeb.isOn && !toggleServidores.isOn)
+        {
+            boton.enabled = false;
+        }
     }
 
     private void ActualizaUIActivos() 
@@ -65,6 +120,12 @@ public class InformeActivosManager : MonoBehaviour
         servidoresCantidadPistas.text = $"{CuentaPistasEncontradas(activos.Activos[0])}/{CuentaPistasTotal(activos.Activos[0])}";
             
         listadoClientesCantidadPistas.text = $"{CuentaPistasEncontradas(activos.Activos[1])}/{CuentaPistasTotal(activos.Activos[1])}";
+
+        documentacionProyectosCantidadPistas.text = $"{CuentaPistasEncontradas(activos.Activos[2])}/{CuentaPistasTotal(activos.Activos[2])}";
+
+        informacionFinancieraCantidadPistas.text = $"{CuentaPistasEncontradas(activos.Activos[3])}/{CuentaPistasTotal(activos.Activos[3])}";
+
+        servicioWebCantidadPistas.text = $"{CuentaPistasEncontradas(activos.Activos[4])}/{CuentaPistasTotal(activos.Activos[4])}";
     }
 
     private int CuentaPistasEncontradas(ActivoBase activo) 

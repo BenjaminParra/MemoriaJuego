@@ -35,13 +35,13 @@ MonoBehaviour:
     acceso: 1
     id: 1
     variables_pistas_string:
-    - servidores_pista_string_1
-    - servidores_pista_string_1
-    - servidores_pista_string_1
+    - listadoClientes_pista_string_1
+    - listadoClientes_pista_string_2
+    - listadoClientes_pista_string_3
     variables_pistas_bool:
-    - servidores_obtuvo_pista_1
-    - servidores_obtuvo_pista_1
-    - servidores_obtuvo_pista_1
+    - listadoClientes_obtuvo_pista_1
+    - listadoClientes_obtuvo_pista_2
+    - listadoClientes_obtuvo_pista_3
     iconoActivo: {fileID: 1604930862, guid: 2cfe1ebfa8eb6284ab4e962393fbcc29, type: 3}
   - nombre: "Documentaci\xF3n de proyectos"
     descripcion: "Conjunto de registros y manuales que Proporcionan informaci\xF3n
@@ -66,13 +66,13 @@ MonoBehaviour:
     acceso: 0
     id: 3
     variables_pistas_string:
-    - documentacion_pista_string_1
-    - documentacion_pista_string_2
-    - documentacion_pista_string_3
+    - infoFinanciera_pista_string_1
+    - infoFinanciera_pista_string_2
+    - infoFinanciera_pista_string_3
     variables_pistas_bool:
-    - documentacion_obtuvo_pista_1
-    - documentacion_obtuvo_pista_2
-    - documentacion_obtuvo_pista_3
+    - infoFinanciera_obtuvo_pista_1
+    - infoFinanciera_obtuvo_pista_2
+    - infoFinanciera_obtuvo_pista_3
     iconoActivo: {fileID: -122832670, guid: d7bad38702c189c4bb06d2c0b60a7b01, type: 3}
   - nombre: Servicios de alojamiento web
     descripcion: Alojamiento web para los productos desarrollados para los clientes.

@@ -6,5 +6,11 @@ INCLUDE variables_servidores.ink
 INCLUDE variables_documentacionProyectos.ink
 INCLUDE variables_infoFinanciera.ink
 INCLUDE variables_servicioWeb.ink
+INCLUDE variables_listadoClientes.ink
 INCLUDE variables_contador.ink
 INCLUDE variables_mujer_contabilidad.ink
+INCLUDE variables_pnj_sofia.ink
+INCLUDE variables_periodista.ink
+INCLUDE variables_leonardo.ink
+INCLUDE variables_hector.ink
+INCLUDE variables_boris_barba.ink

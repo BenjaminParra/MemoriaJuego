@@ -1,5 +1,6 @@
 INCLUDE variables_alonso_sombrero.ink
 INCLUDE Globals.ink
+INCLUDE variables_documentacionProyectos.ink
 
 { alonso_sombrero_direccion:
     - 0: ->main
@@ -42,6 +43,9 @@ de repente la competencia también presenta exactamente la misma innovación.
 ~alonso_sombrero_pista_string = "Alonso nos comenta que existe una extraña coincidencia en cada proyecto publicado. ¿Cómo obtiene la competencia esa información?"
 ~alonso_sombrero_inicio_conversacion = true
 ~alonso_sombrero_direccion = 2
+~documentacion_obtuvo_pista_1 = true
+~documentacion_pista_string_1 = "Existe una filtración de la información de la documentación de proyectos"
+~cantidad_argumentos_documentacionProyectos = cantidad_argumentos_documentacionProyectos + 1
 ~contador_interacciones_restantes = contador_interacciones_restantes - 1
 ->postConversacionBueno
 ->DONE

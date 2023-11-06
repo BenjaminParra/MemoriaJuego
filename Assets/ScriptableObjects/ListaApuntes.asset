@@ -85,10 +85,10 @@ MonoBehaviour:
     pista: contador_pista_string
     direccion: contador_direccion
     id: 6
-    pistaObtenidaBool: 1
-    conversadoBool: 1
-    pistaObtenidaString: "Se ve\xEDa demasiado ocupado y deseperado"
-    numeroDireccion: 2
+    pistaObtenidaBool: 0
+    conversadoBool: 0
+    pistaObtenidaString: "No logr\xE9 obtener nada interesante"
+    numeroDireccion: 0
     iconoNPC: {fileID: -2135291784, guid: 97eaac55b03cb3b46b6bc0a8a40d98db, type: 3}
   - nombreNPC: Trinidad
     pistaObtenida: mujer_contabilidad_obtuvo_pista
@@ -96,8 +96,52 @@ MonoBehaviour:
     pista: mujer_contabilidad_pista_string
     direccion: mujer_contabilidad_direccion
     id: 7
-    pistaObtenidaBool: 1
-    conversadoBool: 1
-    pistaObtenidaString: "Se ve\xEDa demasiado ocupado y deseperado"
-    numeroDireccion: 2
+    pistaObtenidaBool: 0
+    conversadoBool: 0
+    pistaObtenidaString: "No logr\xE9 obtener nada interesante"
+    numeroDireccion: 0
     iconoNPC: {fileID: -315467792, guid: be2f4352d8a900146a2ad381d5bc06fc, type: 3}
+  - nombreNPC: Sofia
+    pistaObtenida: sofia_obtuvo_pista
+    conversado: sofia_inicio_conversacion
+    pista: sofia_pista_string
+    direccion: sofia_direccion
+    id: 8
+    pistaObtenidaBool: 0
+    conversadoBool: 0
+    pistaObtenidaString: "No logr\xE9 obtener nada interesante"
+    numeroDireccion: 0
+    iconoNPC: {fileID: 1990151097, guid: 2040301af6b20b24ba5f14f518c39259, type: 3}
+  - nombreNPC: Periodista
+    pistaObtenida: periodista_obtuvo_pista
+    conversado: periodista_inicio_conversacion
+    pista: periodista_pista_string
+    direccion: periodista_direccion
+    id: 9
+    pistaObtenidaBool: 0
+    conversadoBool: 0
+    pistaObtenidaString: "No logr\xE9 obtener nada interesante"
+    numeroDireccion: 0
+    iconoNPC: {fileID: 1456264676, guid: f9e37cf7f4ae95745b84dbf545ee833d, type: 3}
+  - nombreNPC: Hector
+    pistaObtenida: hector_obtuvo_pista
+    conversado: hector_inicio_conversacion
+    pista: hector_pista_string
+    direccion: hector_direccion
+    id: 10
+    pistaObtenidaBool: 0
+    conversadoBool: 0
+    pistaObtenidaString: "No logr\xE9 obtener nada interesante"
+    numeroDireccion: 0
+    iconoNPC: {fileID: -944675122, guid: 4de428927e09d3449bff47f5c054fe8d, type: 3}
+  - nombreNPC: Leonardo
+    pistaObtenida: leonardo_obtuvo_pista
+    conversado: leonardo_inicio_conversacion
+    pista: leonardo_pista_string
+    direccion: leonardo_direccion
+    id: 11
+    pistaObtenidaBool: 0
+    conversadoBool: 0
+    pistaObtenidaString: "No logr\xE9 obtener nada interesante"
+    numeroDireccion: 0
+    iconoNPC: {fileID: -167612283, guid: 6519b53a1cc37294b9c6f4ad12f22b58, type: 3}

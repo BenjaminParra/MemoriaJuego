@@ -13,7 +13,7 @@ VAR jefe_id = 1
 
 // Variable numérica que se utiliza para guiar la conversación en el archivo "ink",
 // permitiendo usar una estructura "switch case" para dirigir a cada sección del diálogo.
-VAR jefe_direccion = 4
+VAR jefe_direccion = 6
 
 // Variable numérica que permite al jugador saber qué preguntas puede realizar.
 VAR preguntas_ID = 0

@@ -239,7 +239,7 @@ TextureImporter:
         width: 8
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -247,6 +247,27 @@ TextureImporter:
       bones: []
       spriteID: 3e9b798cbaa64bd47ac2d0acfc6aa6c0
       internalID: 2126696464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escalera
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 140
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb13da763bbb0b44583293dca3b832f4
+      internalID: -2051485308
       vertices: []
       indices: 
       edges: []
@@ -268,6 +289,7 @@ TextureImporter:
       Silla_videojuegos: 79223360
       ventanal_dpto: -1807996024
       luz_tv_lado: 2126696464
+      escalera: -2051485308
       Televisor_videojuegos: -1256253626
   spritePackingTag: 
   pSDRemoveMatte: 0

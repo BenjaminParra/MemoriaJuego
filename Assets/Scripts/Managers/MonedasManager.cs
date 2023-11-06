@@ -28,10 +28,13 @@ public class MonedasManager : Singleton<MonedasManager>
 
     private void Update()
     {
+        
         if (!fueAsignado) 
         {
             AsignarPresupuesto();
         }
+
+
         
     }
 

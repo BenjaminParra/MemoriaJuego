@@ -17,3 +17,4 @@ VAR servidores_pista_string_3 = "Se encuentra al lado de los baños"
 VAR servidores_inicio_conversacion_3 = false
 VAR servidores_direccion_3 = 0
 //----------------------------------------------------
+ 

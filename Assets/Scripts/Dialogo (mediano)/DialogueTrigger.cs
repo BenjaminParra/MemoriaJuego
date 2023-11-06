@@ -9,11 +9,7 @@ public class DialogueTrigger : MonoBehaviour
     [Header("icono E")]
     [SerializeField] private GameObject npcButtonInteractuar;
 
-    [Header("icono cara")]
-    [SerializeField] private Sprite npcCara;
-
-    [Header("nombre")]
-    [SerializeField] private string nombre;
+   
 
     [Header("ink JSON")]
     [SerializeField] private TextAsset inkJSON;

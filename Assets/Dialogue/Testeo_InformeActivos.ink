@@ -8,4 +8,11 @@ INCLUDE Globals.ink
   - else:
     No has reportado el listado de clientes como activo
 }
+{pista_servidores:
+    Esto es testeo
+- else:
+    wena culiao
+
+}
 ->DONE
+

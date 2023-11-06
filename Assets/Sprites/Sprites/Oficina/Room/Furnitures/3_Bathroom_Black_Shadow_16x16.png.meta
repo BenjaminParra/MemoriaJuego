@@ -218,7 +218,7 @@ TextureImporter:
         width: 31
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,6 +226,48 @@ TextureImporter:
       bones: []
       spriteID: 7e684d4a01bbd414a887860dfcb71319
       internalID: -950441554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3_Bathroom_Black_Shadow_16x16_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 583
+        width: 60
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21d32ff02c065645887dd7d417b9dfa
+      internalID: -728126866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3_Bathroom_Black_Shadow_16x16_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 608
+        width: 60
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88fc03eb76631b4bb14c5a88e91d705
+      internalID: 173420910
       vertices: []
       indices: 
       edges: []
@@ -245,8 +287,10 @@ TextureImporter:
       espejo_lavamano: -1751532622
       "ventilador_ba\xF1o": -651382126
       "Estantes_ba\xF1o": -542363131
+      3_Bathroom_Black_Shadow_16x16_1: 173420910
       "lavamano_peque\xF1o": -950441554
       "cubiculos_ba\xF1o": -1112450760
+      3_Bathroom_Black_Shadow_16x16_0: -728126866
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

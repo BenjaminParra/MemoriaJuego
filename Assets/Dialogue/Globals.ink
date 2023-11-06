@@ -78,12 +78,30 @@ VAR pista_servidores =false
 // pista_listadoClientes
 VAR pista_listadoClientes = false
 
+VAR pista_documentacionProyectos = false
+
+VAR pista_servicioWeb = false 
+
+VAR pista_infoFinanciera = false
+
 
 //_____________________________________________________________
 // --------------- Variables para la asignacion de presupuesto -----
 // _________________________________________________
 
-VAR dinero_asignado = 100
-VAR presupuesto_asignado = true
+VAR dinero_asignado = 500
+VAR presupuesto_asignado = false
 
+//_____________________________________________________________________________
+//----------------- Variables para conocer cantidas de argumentos por activos
+//________________________________________________________________________________
+VAR cantidad_argumentos_servidores = 0
+
+VAR cantidad_argumentos_servicioWeb = 0
+
+VAR cantidad_argumentos_infoFinanciera = 0
+
+VAR cantidad_argumentos_documentacionProyectos = 0
+
+VAR cantidad_argumentos_listadoClientes = 0
 

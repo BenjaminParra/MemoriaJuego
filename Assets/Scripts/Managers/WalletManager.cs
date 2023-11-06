@@ -25,7 +25,7 @@ public class WalletManager : Singleton<WalletManager>
     public void ActualizaNumeros() 
     {
         monedasTMP.text = MonedasManager.Instance.MonedasTotales.ToString();
-        bonificacionTMP.text = ((Ink.Runtime.FloatValue)DialogoMedianoManager.GetInstance().GetVariableState(bonificacionVariableInk)).value.ToString();
+        bonificacionTMP.text = $"X {((Ink.Runtime.FloatValue)DialogoMedianoManager.GetInstance().GetVariableState(bonificacionVariableInk)).value.ToString()}";
         totalTMP.text = $"Total: {(MonedasManager.Instance.MonedasTotales * ((Ink.Runtime.FloatValue)DialogoMedianoManager.GetInstance().GetVariableState(bonificacionVariableInk)).value)}"; 
 
     }

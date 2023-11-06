@@ -302,7 +302,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -310,6 +310,27 @@ TextureImporter:
       bones: []
       spriteID: 819f14787d0f444418ac3d531388136f
       internalID: 2021589643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo_cafe_oscurito
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 412
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 3, y: 3, z: 3, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf52488d8a4df594eb087a2c524b7c94
+      internalID: 70319924
       vertices: []
       indices: 
       edges: []
@@ -334,6 +355,7 @@ TextureImporter:
       continuar: -210796397
       boton_seleccionado: -1833509964
       iconoInforme: 2021589643
+      fondo_cafe_oscurito: 70319924
       apuntes: -996588431
   spritePackingTag: 
   pSDRemoveMatte: 0

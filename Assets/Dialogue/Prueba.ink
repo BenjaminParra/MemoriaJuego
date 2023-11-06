@@ -1,23 +1,17 @@
-VAR pokemoncito = ""
+VAR pais = ""
 -> main
 === main ===
-Wich pokemon do you choose?
-    + [Charmander]
-     ~ pokemoncito = "charmander"
-        Elegiste a {pokemoncito}, excelente tipo fuego
+¿A qué país vas a ir?
+    + [Brasil]
+     ~ pais = "Brasil"
+        {pais}, el país del fútbol
         -> END
-       // -> chosen("Charmander")
-    + [Bulbasaur]
-    ~ pokemoncito = "Bulbasaur"
-    Elegiste a {pokemoncito}, excelente tipo planta
-        //-> chosen("Bulbasaur")
+    + [Argentina]
+    ~ pais = "Argentina"
+        {pais}, hay que aprovechar el cambio monetario
         -> END
-    + [Squirtle]
-    ~ pokemoncito = "Squirtle"
-    Elegiste a {pokemoncito}, excelente tipo agua
-        //-> chosen("Squirtle")
+    + [Perú]
+    ~ pais = "Perú"
+        {pais}, deberías visitar Machu Picchu
 
-/*
-//=== chosen(pokemon) ===
-You chose {pokemon}!*/
 -> END
