@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7214c7251c32ef748938080c26b7973b, type: 3}
+  m_Name: Salvaguardas_1_1
+  m_EditorClassIdentifier: 
+  IdControl: 01
+  NombreControl: Inventario y control de los activos empresariales.
+  IdSalvaguardas: 1.1
+  NombreSalvaguardas: Establecer y mantener un detallado inventario de activos empresariales.
+  TipoActivo: 2
+  FuncionSeguridad: 1
+  Descripcion: "Establecer y mantener un inventario preciso, detallado y actualizado
+    de todos los activos de la empresa, incluyendo dispositivos de usuarios finales,
+    dispositivos de red, IoT no inform\xE1ticos y servidores, registrando informaci\xF3n
+    como direcci\xF3n de red, direcci\xF3n de la m\xE1quina, propietario de datos,
+    departamento, aprobaci\xF3n para conexi\xF3n a la red; utilizando herramientas
+    MDM para dispositivos m\xF3viles cuando sea necesario. Incluyendo activos conectados
+    a diversas infraestructuras y realizando revisiones y actualizaciones al menos
+    cada dos a\xF1os."

@@ -26,8 +26,10 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject panelCmd;
     [SerializeField] private GameObject panelSnipeIt;
     [SerializeField] private GameObject panelActivoInforme;
+    [SerializeField] private GameObject panelActivoInformePistas;
     [SerializeField] private GameObject panelActivoInformeConfirmacion;
     [SerializeField] private GameObject panelWallet;
+    [SerializeField] private GameObject panelTiendaControles;
     public GameObject PanelComputador => panelComputador;
 
     [SerializeField] private GameObject panelApuntes;
@@ -214,7 +216,20 @@ public class UIManager : Singleton<UIManager>
 
     public void AbrirCerrarPanelConfirmacionActivoInforme() 
     {
+        
         panelActivoInformeConfirmacion.SetActive(!panelActivoInformeConfirmacion.activeSelf);
+    }
+
+    public void AbrirPanelConfirmacionActivoInforme() 
+    {
+        InformeActivosManager.Instance.HabilitaDeshabilitadaToggles(false);
+        panelActivoInformeConfirmacion.SetActive(true);
+    }
+
+    public void CerrarPanelConfirmacionActivoInforme()
+    {
+        InformeActivosManager.Instance.HabilitaDeshabilitadaToggles(true);
+        panelActivoInformeConfirmacion.SetActive(false);
     }
 
     public void AbrirCerrarPanelBotonesCiber(bool estado) 
@@ -239,6 +254,10 @@ public class UIManager : Singleton<UIManager>
     public void AbrirCerrarPanelPersonajeQuests() 
     { 
         panelPersonajeQuests.SetActive(!panelPersonajeQuests.activeSelf);
+    }
+    public void AbrirPanelArgumentosActivoInforme() 
+    {
+        panelActivoInformePistas.SetActive(true);
     }
 
     public void AbrirPanelCrafting() 
@@ -268,6 +287,11 @@ public class UIManager : Singleton<UIManager>
     public void AbrirCerrarPanelApuntes()
     {
         panelApuntes.SetActive(!panelApuntes.activeSelf);
+    }
+
+    public void AbrirCerrarPanelTiendaControles() 
+    {
+        panelTiendaControles.SetActive(!panelTiendaControles.activeSelf);
     }
 
     public void CerrarPanelActivos()

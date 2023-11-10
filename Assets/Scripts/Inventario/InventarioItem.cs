@@ -10,7 +10,7 @@ public enum TipoItems
     Ingredientes,
     Tesoros
 }
-public class InventarioItem : ScriptableObject
+public class InventarioItem: ScriptableObject
 {
     [Header("Parametros")]
     public string ID;
