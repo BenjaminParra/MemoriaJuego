@@ -31,4 +31,14 @@ public class InventarioControl : ScriptableObject
     public TipoActivo TipoActivo;
     public FuncionSeguridad FuncionSeguridad;
     [TextArea] public string Descripcion;
+
+    [Header("Descripcion Proceso")]
+    [TextArea] public string DescripcionProceso;
+    //aqui pueden ir variables relacionadas con el archivo ink
+
+    [Header("Descripcion Persona")]
+    [TextArea] public string DescripcionPersona;
+
+    [Header("Descripcion Tecnologia")]
+    [TextArea] public string DescripcionTecnologia;
 }

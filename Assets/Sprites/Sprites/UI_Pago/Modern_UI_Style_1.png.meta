@@ -323,7 +323,7 @@ TextureImporter:
         width: 24
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 3, y: 3, z: 3, w: 4}
       outline: []
       physicsShape: []
@@ -331,6 +331,111 @@ TextureImporter:
       bones: []
       spriteID: bf52488d8a4df594eb087a2c524b7c94
       internalID: 70319924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icono_x
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 322
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa9975867afba5489ba966d5799af57
+      internalID: -1455375158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconoCorrecto
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 306
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6aaec00f1c143a459e7c44744a470dc
+      internalID: 1941792548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icono_proceso
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 488
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae81167f83445724487a5713fe8cd029
+      internalID: -780326031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icono_persona
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 547
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34990e873f36a2747adb620c5c1d5811
+      internalID: -812884478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "icono_tecnolog\xECa"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 486
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7fe5e9e06ff7d49a79b86c475cb5c4
+      internalID: -197891010
       vertices: []
       indices: 
       edges: []
@@ -350,13 +455,18 @@ TextureImporter:
       fondo_retrato: 1337064710
       fondo_icono: -1348577031
       boton_sinSeleccionar: -2079526827
+      icono_x: -1455375158
+      icono_persona: -812884478
       Fondo_dialogo: -1430143170
       cerrar: 432638064
       continuar: -210796397
       boton_seleccionado: -1833509964
+      iconoCorrecto: 1941792548
       iconoInforme: 2021589643
       fondo_cafe_oscurito: 70319924
+      icono_proceso: -780326031
       apuntes: -996588431
+      "icono_tecnolog\xECa": -197891010
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
