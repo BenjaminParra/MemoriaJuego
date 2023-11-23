@@ -267,7 +267,7 @@ public class UIManager : Singleton<UIManager>
 
     public void AbrirPanelCorreo()
     {
-        panelCorreo.SetActive(true);
+        panelCorreo.SetActive(!panelCorreo.activeSelf);
     }
 
     public void AbrirPanelActivos()

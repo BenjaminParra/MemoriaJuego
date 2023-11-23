@@ -10,12 +10,23 @@ public enum TipoCorreo
     Limpio,
     Malicioso
 }
+
+public enum EstadoCorreo
+{
+    Enviado,
+    Respuesta,
+    Recibido
+}
 [Serializable]
 
 public class Correo
 {
     public string Nombre;
     public TipoCorreo TipoCorreo;
+    public EstadoCorreo EstadoCorreo;
+    public bool Visibilidad;
+    //con esta variable controlamos que solo se suba una vez
+    public bool Publicado;
 
     [Header("Remitente - Asunto")]
 
@@ -30,5 +41,6 @@ public class Correo
 
     [HideInInspector] public int identificador;
 
+    
 
 }

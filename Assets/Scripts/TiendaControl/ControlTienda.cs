@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ControlTienda : MonoBehaviour
 {
@@ -17,9 +18,26 @@ public class ControlTienda : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI descripcionControl;
 
-    [SerializeField] private TextMeshProUGUI controlCosto;
-    [SerializeField] private TextMeshProUGUI cantidadPorComprar;
+   // [SerializeField] private TextMeshProUGUI controlCosto;
+    //[SerializeField] private TextMeshProUGUI cantidadPorComprar;
 
+
+    [Header("UI proceso")]
+    [SerializeField] private Image iconoCorrectoProceso;
+    [SerializeField] private Image iconoIncorrectoProceso;
+    [SerializeField] private TextMeshProUGUI descripcionProceso;
+
+    [Header("UI persona")]
+    [SerializeField] private Image iconoCorrectoPersona;
+    [SerializeField] private Image iconoIncorrectoPersona;
+    [SerializeField] private TextMeshProUGUI descripcionPersona;
+
+    [Header("UI tecnologia")]
+    [SerializeField] private Image iconoCorrectoTecnologia;
+    [SerializeField] private Image iconoIncorrectoTecnologia;
+    [SerializeField] private TextMeshProUGUI descripcionTecnologia;
+
+    
     public ControlVenta ControlCargado { get; set; }
 
     private int cantidad;
@@ -27,8 +45,24 @@ public class ControlTienda : MonoBehaviour
     private int costoActual;
     private void Update()
     {
-        cantidadPorComprar.text = cantidad.ToString();
-        controlCosto.text = costoActual.ToString();
+       // cantidadPorComprar.text = cantidad.ToString();
+        //controlCosto.text = costoActual.ToString();
+
+        if (ControlCargado.Control.ValorVariableInkPersona)
+        {
+            iconoCorrectoPersona.enabled = true;
+            iconoIncorrectoPersona.enabled = false;
+        }
+        if (ControlCargado.Control.ValorVariableInkProceso)
+        {
+            iconoCorrectoProceso.enabled = true;
+            iconoIncorrectoProceso.enabled = false;
+        }
+        if (ControlCargado.Control.ValorVariableInkTecnologia)
+        {
+            iconoCorrectoTecnologia.enabled = true;
+            iconoIncorrectoTecnologia.enabled = false;
+        }
     }
 
     public void ConfigurarControlEnVenta(ControlVenta controlVenta) 
@@ -42,13 +76,25 @@ public class ControlTienda : MonoBehaviour
 
         tipoActivo.text = controlVenta.Control.TipoActivo.ToString();
         funcionSeguridad.text = controlVenta.Control.FuncionSeguridad.ToString();
+        controlVenta.Control.inicioControl = false;
+        iconoIncorrectoPersona.enabled = true;
+        iconoIncorrectoProceso.enabled = true;
+        iconoIncorrectoTecnologia.enabled = true;
+        iconoCorrectoPersona.enabled = false;
+        iconoCorrectoProceso.enabled = false;
+        iconoIncorrectoTecnologia.enabled = false;
 
+        descripcionPersona.text = controlVenta.Control.DescripcionPersona.ToString();
+        descripcionProceso.text = controlVenta.Control.DescripcionProceso.ToString();
+        descripcionTecnologia.text = controlVenta.Control.DescripcionTecnologia.ToString();
         descripcionControl.text = controlVenta.Control.Descripcion;
 
-        controlCosto.text = controlVenta.Costo.ToString();
+        //controlCosto.text = controlVenta.Costo.ToString();
         cantidad = 1;
         costoInicial = controlVenta.Costo;
         costoActual = controlVenta.Costo;
+
+
     }
 
     public void SumarControlPorComprar() 

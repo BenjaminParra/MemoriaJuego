@@ -32,13 +32,24 @@ public class InventarioControl : ScriptableObject
     public FuncionSeguridad FuncionSeguridad;
     [TextArea] public string Descripcion;
 
+    [Header("Variables archivo ink")]
+    [SerializeField] private string nombreVariableInicioControl;
+    //permite reconocer si el control se ha iniciado o no
+    public bool inicioControl;
+
     [Header("Descripcion Proceso")]
     [TextArea] public string DescripcionProceso;
     //aqui pueden ir variables relacionadas con el archivo ink
+    public string NombreVariableInkProceso;
+    public bool ValorVariableInkProceso;
 
     [Header("Descripcion Persona")]
     [TextArea] public string DescripcionPersona;
+    public string NombreVariableInkPersona;
+    public bool ValorVariableInkPersona;
 
     [Header("Descripcion Tecnologia")]
     [TextArea] public string DescripcionTecnologia;
+    public string NombreVariableInkTecnologia;
+    public bool ValorVariableInkTecnologia;
 }

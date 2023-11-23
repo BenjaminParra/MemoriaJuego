@@ -23,3 +23,12 @@ MonoBehaviour:
     fabricante, fecha de instalaci\xF3n inicial y prop\xF3sito. Incluir, cuando sea
     necesario, direcci\xF3n URL, tiendas de aplicaciones, versiones, mecanismo de
     implementaci\xF3n y fecha de retirada."
+  DescripcionProceso: 
+  NombreVariableInkProceso: 
+  ValorVariableInkProceso: 1
+  DescripcionPersona: 
+  NombreVariableInkPersona: 
+  ValorVariableInkPersona: 0
+  DescripcionTecnologia: 
+  NombreVariableInkTecnologia: 
+  ValorVariableInkTecnologia: 1

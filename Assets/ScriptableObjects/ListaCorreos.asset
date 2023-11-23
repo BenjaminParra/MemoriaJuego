@@ -13,27 +13,26 @@ MonoBehaviour:
   m_Name: ListaCorreos
   m_EditorClassIdentifier: 
   Correos:
-  - Nombre: Correo Pishing
-    TipoCorreo: 1
-    NombreRemitente: Benjamin Parra
-    CorreoRemitente: <benjamin.parra.l@gmail.com>
-    IconoRemitente: {fileID: 21300000, guid: 4dfe4034ba5b4e547a01c51edbcd442a, type: 3}
-    AsuntoCorreo: Acceso Banco
-    CuerpoCorreo: 'Estimado:
-
-      Me comunico con usted indicando que se encuentra
-      un problema con el acceso a su banco.
-
-      Es por esto que le solicito que
-      ingrese a este link www.lkjsdas.cl
-
-
-      Ruego  a uste que sea rapido es
-      urjente'
+  - Nombre: "Correo Reuni\xF3n"
+    TipoCorreo: 0
+    EstadoCorreo: 0
+    Visibilidad: 1
+    Publicado: 1
+    NombreRemitente: Personaje Principal
+    CorreoRemitente: <personaje.principal@empresa.com>
+    IconoRemitente: {fileID: 1238505501, guid: 113ae9290cbd6b4419c48194f459faf6, type: 3}
+    AsuntoCorreo: "Correo Reuni\xF3n"
+    CuerpoCorreo: "Estimado:\nMe comunico con usted, solicitando una reuni\xF3n \xBFpuedo
+      pasar a tu oficina?"
+    identificador: 0
   - Nombre: "Correo Saludo Cumplea\xF1os"
     TipoCorreo: 0
+    EstadoCorreo: 1
+    Visibilidad: 1
+    Publicado: 1
     NombreRemitente: Juan Iturbe
     CorreoRemitente: <juan.iturbe@gmail.com>
     IconoRemitente: {fileID: 21300000, guid: 6ab26a4b4e8a3ed4cbae9458ab00ce86, type: 3}
     AsuntoCorreo: Saludo
     CuerpoCorreo: "Estimado:\nEste correo es para desearle un muy feliz cumplea\xF1os!"
+    identificador: 1

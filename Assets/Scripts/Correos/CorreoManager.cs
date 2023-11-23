@@ -14,6 +14,7 @@ public class CorreoManager : Singleton<CorreoManager>
 
     [Header("Correo Info")]
     [SerializeField] private TextMeshProUGUI asuntoTMP;
+    [SerializeField] private TextMeshProUGUI estadoCorreo;
 
     [Header("Remitente Info")]
     [SerializeField] private Image iconoRemitente;
@@ -46,15 +47,21 @@ public class CorreoManager : Singleton<CorreoManager>
     {
         CargarCorreos();
     }
+
+    private void Update()
+    {
+        CargarCorreos();
+    }
     private void CargarCorreos() 
     {
         for (int i = 0;i < correos.Correos.Length;i++) 
         {
-            if (correos.Correos[i] != null)
+            if (correos.Correos[i] != null && correos.Correos[i].Visibilidad && correos.Correos[i].Publicado == false)
             {
                 CorreoTarjeta correo = Instantiate(correoTarjetaPrefab, correoContenedor);
                 correo.ConfigurarCorreoTarjeta(correos.Correos[i]);
                 correos.Correos[i].identificador = i;
+                correos.Correos[i].Publicado = true;
             }
             
         }
@@ -64,11 +71,15 @@ public class CorreoManager : Singleton<CorreoManager>
     {
         CorreoSeleccionado = correo;
         asuntoTMP.text = correo.AsuntoCorreo;
-
+        estadoCorreo.text = correo.EstadoCorreo.ToString();
         iconoRemitente.sprite = correo.IconoRemitente;
         nombreRemitente.text = correo.NombreRemitente;
         correoRemitente.text = correo.CorreoRemitente;
 
+        if (correo.EstadoCorreo == EstadoCorreo.Enviado)
+        {
+            panelBotonesReport.SetActive(!panelBotonesReport.activeSelf);
+        }
         //Verifico si el enemigo asociado a dicha amenaza esta activo
         if (enemigos[CorreoSeleccionado.identificador].activeSelf)
         {
@@ -80,6 +91,8 @@ public class CorreoManager : Singleton<CorreoManager>
             panelBotonesReport.SetActive(true);
         }
         cuerpoCorreo.text = correo.CuerpoCorreo;
+
+        
 
     }
 

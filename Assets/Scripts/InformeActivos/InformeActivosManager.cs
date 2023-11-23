@@ -62,7 +62,7 @@ public class InformeActivosManager : Singleton<InformeActivosManager>
 
     private bool informeEnviado = false;
 
-    private bool panelConfirmacionAbierto = false;
+    //private bool panelConfirmacionAbierto = false;
 
     public ActivoBase ActivadoSeleccionado { get; set; }
 

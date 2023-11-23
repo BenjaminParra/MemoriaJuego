@@ -1785,7 +1785,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2166905176746294269}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1873,8 +1873,15 @@ MonoBehaviour:
   tipoActivo: {fileID: 914724303079987099}
   funcionSeguridad: {fileID: 914724302625026338}
   descripcionControl: {fileID: 914724303052876110}
-  controlCosto: {fileID: 2166905177766492529}
-  cantidadPorComprar: {fileID: 2166905178057985539}
+  iconoCorrectoProceso: {fileID: 4419966228771608345}
+  iconoIncorrectoProceso: {fileID: 4419966228325895779}
+  descripcionProceso: {fileID: 6083552122475387622}
+  iconoCorrectoPersona: {fileID: 4419966227750863033}
+  iconoIncorrectoPersona: {fileID: 4419966227114530051}
+  descripcionPersona: {fileID: 6083552121738372164}
+  iconoCorrectoTecnologia: {fileID: 4419966227662484003}
+  iconoIncorrectoTecnologia: {fileID: 4419966227970896094}
+  descripcionTecnologia: {fileID: 4419966228068508981}
 --- !u!1 &2166905177144659795
 GameObject:
   m_ObjectHideFlags: 0
@@ -2927,7 +2934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4419966227114530050
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3283,7 +3290,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4419966227970896089
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3445,7 +3452,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 16
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: -3
@@ -3497,7 +3504,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4419966228325895778
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3816,8 +3823,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -500.34, y: 84}
-  m_SizeDelta: {x: 110.38, y: 37.56}
+  m_AnchoredPosition: {x: -489.7, y: 84}
+  m_SizeDelta: {x: 131.67, y: 37.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6083552121480435337
 CanvasRenderer:
@@ -3847,9 +3854,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Persona
-
-    :'
+  m_text: 'Persona:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4156,7 +4161,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 16
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: -3
@@ -4537,7 +4542,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 16
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: -3
@@ -4607,8 +4612,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -500.34, y: 84}
-  m_SizeDelta: {x: 110.38, y: 37.56}
+  m_AnchoredPosition: {x: -487.79, y: 84}
+  m_SizeDelta: {x: 135.47, y: 37.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6083552122899176763
 CanvasRenderer:
