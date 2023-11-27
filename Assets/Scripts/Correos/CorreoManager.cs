@@ -37,7 +37,12 @@ public class CorreoManager : Singleton<CorreoManager>
     [Header("Panel Botones")]
     [SerializeField] private GameObject panelBotonesReport;
 
+
+    [Header("Botones Bandejas")]
+    [SerializeField] private GameObject botonBandejaSalida;
+    [SerializeField] private GameObject botonBandejaEntrada;
     [SerializeField] private AmenazaLista amenazaLista;
+
 
 
     [SerializeField] private GameObject amenazaPishing;
@@ -50,7 +55,7 @@ public class CorreoManager : Singleton<CorreoManager>
 
     private void Update()
     {
-        CargarCorreos();
+        //CargarCorreos();
     }
     private void CargarCorreos() 
     {
@@ -67,6 +72,7 @@ public class CorreoManager : Singleton<CorreoManager>
         }
     }
 
+
     public void MostrarCorreo(Correo correo) 
     {
         CorreoSeleccionado = correo;
@@ -76,11 +82,20 @@ public class CorreoManager : Singleton<CorreoManager>
         nombreRemitente.text = correo.NombreRemitente;
         correoRemitente.text = correo.CorreoRemitente;
 
-        if (correo.EstadoCorreo == EstadoCorreo.Enviado)
+        if (correo.EstadoCorreo == EstadoCorreo.PorEnviar)
         {
-            panelBotonesReport.SetActive(!panelBotonesReport.activeSelf);
+            if (!panelBotonesReport.activeSelf)
+            {
+                panelBotonesReport.SetActive(true);
+            }
         }
+        else
+        {
+            panelBotonesReport.SetActive(false);
+        }
+
         //Verifico si el enemigo asociado a dicha amenaza esta activo
+        /*
         if (enemigos[CorreoSeleccionado.identificador].activeSelf)
         {
             panelBotonesReport.SetActive(false);
@@ -89,7 +104,7 @@ public class CorreoManager : Singleton<CorreoManager>
         {
 
             panelBotonesReport.SetActive(true);
-        }
+        }*/
         cuerpoCorreo.text = correo.CuerpoCorreo;
 
         

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b221f5f4fad55249ab4d676b0566601, type: 3}
   m_Name: AppTiendaControl
   m_EditorClassIdentifier: 
-  ID: TiendaControles
-  Nombre: Tienda de Controles CIS
-  Icono: {fileID: 21300000, guid: ff1eed9af34d55743b6aa915c521e8cb, type: 3}
-  Descripcion: "En esta Aplicaci\xF3n podr\xE9 comprar los cis control"
+  ID: ControlesCis
+  Nombre: Archivo Controles CIS
+  Icono: {fileID: 21300000, guid: 60c5f26ead5530f4783151512084f017, type: 3}
+  Descripcion: Archivo pdf de los controles cis
   EsInteractuable: 1

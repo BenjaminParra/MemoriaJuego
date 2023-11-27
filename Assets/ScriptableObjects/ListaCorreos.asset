@@ -15,9 +15,9 @@ MonoBehaviour:
   Correos:
   - Nombre: "Correo Reuni\xF3n"
     TipoCorreo: 0
-    EstadoCorreo: 0
-    Visibilidad: 1
-    Publicado: 1
+    EstadoCorreo: 1
+    Visibilidad: 0
+    Publicado: 0
     NombreRemitente: Personaje Principal
     CorreoRemitente: <personaje.principal@empresa.com>
     IconoRemitente: {fileID: 1238505501, guid: 113ae9290cbd6b4419c48194f459faf6, type: 3}
@@ -27,12 +27,12 @@ MonoBehaviour:
     identificador: 0
   - Nombre: "Correo Saludo Cumplea\xF1os"
     TipoCorreo: 0
-    EstadoCorreo: 1
-    Visibilidad: 1
-    Publicado: 1
-    NombreRemitente: Juan Iturbe
-    CorreoRemitente: <juan.iturbe@gmail.com>
-    IconoRemitente: {fileID: 21300000, guid: 6ab26a4b4e8a3ed4cbae9458ab00ce86, type: 3}
+    EstadoCorreo: 2
+    Visibilidad: 0
+    Publicado: 0
+    NombreRemitente: Christian Morales
+    CorreoRemitente: <christian.morales@gmail.com>
+    IconoRemitente: {fileID: -2135291784, guid: 97eaac55b03cb3b46b6bc0a8a40d98db, type: 3}
     AsuntoCorreo: Saludo
     CuerpoCorreo: "Estimado:\nEste correo es para desearle un muy feliz cumplea\xF1os!"
     identificador: 1

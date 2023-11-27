@@ -14,6 +14,7 @@ public enum TipoCorreo
 public enum EstadoCorreo
 {
     Enviado,
+    PorEnviar,
     Respuesta,
     Recibido
 }
