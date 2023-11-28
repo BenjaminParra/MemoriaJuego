@@ -10,7 +10,8 @@ public class CorreoManager : Singleton<CorreoManager>
 {
     [Header("Config")]
     [SerializeField] private CorreoTarjeta correoTarjetaPrefab;
-    [SerializeField] private Transform correoContenedor;
+    [SerializeField] private Transform correoContenedorSalida;
+    [SerializeField] private Transform correoContenedorEntrada;
 
     [Header("Correo Info")]
     [SerializeField] private TextMeshProUGUI asuntoTMP;
@@ -37,6 +38,10 @@ public class CorreoManager : Singleton<CorreoManager>
     [Header("Panel Botones")]
     [SerializeField] private GameObject panelBotonesReport;
 
+    [Header("Panel BandejaSalida")]
+
+    [SerializeField] private GameObject panelInfo;
+
 
     [Header("Botones Bandejas")]
     [SerializeField] private GameObject botonBandejaSalida;
@@ -61,9 +66,16 @@ public class CorreoManager : Singleton<CorreoManager>
     {
         for (int i = 0;i < correos.Correos.Length;i++) 
         {
-            if (correos.Correos[i] != null && correos.Correos[i].Visibilidad && correos.Correos[i].Publicado == false)
+            if (correos.Correos[i] != null && correos.Correos[i].Visibilidad && correos.Correos[i].Publicado == false && correos.Correos[i].EstadoCorreo == EstadoCorreo.PorEnviar)
             {
-                CorreoTarjeta correo = Instantiate(correoTarjetaPrefab, correoContenedor);
+                CorreoTarjeta correo = Instantiate(correoTarjetaPrefab, correoContenedorSalida);
+                correo.ConfigurarCorreoTarjeta(correos.Correos[i]);
+                correos.Correos[i].identificador = i;
+                correos.Correos[i].Publicado = true;
+            }
+            if (correos.Correos[i] != null && correos.Correos[i].Visibilidad && correos.Correos[i].Publicado == false && correos.Correos[i].EstadoCorreo != EstadoCorreo.PorEnviar)
+            {
+                CorreoTarjeta correo = Instantiate(correoTarjetaPrefab, correoContenedorEntrada);
                 correo.ConfigurarCorreoTarjeta(correos.Correos[i]);
                 correos.Correos[i].identificador = i;
                 correos.Correos[i].Publicado = true;
@@ -111,6 +123,16 @@ public class CorreoManager : Singleton<CorreoManager>
 
     }
 
+    public void CambiaEstado() 
+    {
+        CorreoSeleccionado.EstadoCorreo = EstadoCorreo.Enviado;
+        MostrarCorreo(CorreoSeleccionado);
+        panelBotonesReport.SetActive(false);
+        panelInfo.SetActive(false);
+        panelInfo.SetActive(true) ;
+        
+    }
+
     public void ActivarEnemigo() 
     {
         if (CorreoSeleccionado.TipoCorreo == TipoCorreo.Malicioso)
@@ -120,7 +142,7 @@ public class CorreoManager : Singleton<CorreoManager>
             amenaza.CrearAmenaza(amenazaPishing.GetComponent<AmenazaMadre>());
             amenazaLista.AñadirAmenaza(amenaza);
             amenaza.ModificarCantidad(-Math.Abs(1));
-            panelBotonesReport.SetActive(false);
+            
         }
         else 
         {

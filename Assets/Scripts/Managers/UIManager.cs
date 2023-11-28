@@ -30,6 +30,10 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject panelActivoInformeConfirmacion;
     [SerializeField] private GameObject panelWallet;
     [SerializeField] private GameObject panelTiendaControles;
+
+    [Header("Paneles asociados al correo")]
+    [SerializeField] private GameObject panelBandejaSalida;
+    [SerializeField] private GameObject panelBandejaEntrada;
     public GameObject PanelComputador => panelComputador;
 
     [SerializeField] private GameObject panelApuntes;
@@ -46,7 +50,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI manaTMP;
     [SerializeField] private TextMeshProUGUI expTMP;
     [SerializeField] private TextMeshProUGUI nivelTMP;
-    
+
 
     [Header("Ui_Personaje")]
     [SerializeField] private TextMeshProUGUI monedasTMP;
@@ -70,6 +74,7 @@ public class UIManager : Singleton<UIManager>
 
     [Header("test")]
     [SerializeField] private AmenazaLista amenazaLista;
+    [SerializeField] private CorreoLista correoLista;
 
     private float vidaActual;
     private float vidaMax;
@@ -84,6 +89,7 @@ public class UIManager : Singleton<UIManager>
     {
         //de esta manera se resetea siempre al iniciar
         amenazaLista.ResetearValores();
+        correoLista.ResetearValores();
     }
 
     // Update is called once per frame
@@ -181,7 +187,7 @@ public class UIManager : Singleton<UIManager>
         panelStats.SetActive(!panelStats.activeSelf);
     }
 
-    public void AbrirCerrarPanelWallet() 
+    public void AbrirCerrarPanelWallet()
     {
         WalletManager.Instance.ActualizaNumeros();
         panelWallet.SetActive(!panelWallet.activeSelf);
@@ -209,6 +215,17 @@ public class UIManager : Singleton<UIManager>
         panelComputador.SetActive(estado);
     }
 
+    public void AbrirPanelBandejaSalida()
+    {
+        panelBandejaEntrada.SetActive(false);
+        panelBandejaSalida.SetActive(true);
+    }
+
+    public void AbrirPanelBandejaEntrada()
+    {
+        panelBandejaEntrada.SetActive(true);
+        panelBandejaSalida.SetActive(false);
+    }
     public void AbrirCerrarPanelSnipeIt()
     {
         panelSnipeIt.SetActive(!panelSnipeIt.activeSelf);
