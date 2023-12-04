@@ -61,7 +61,7 @@ public class LevelManager : MonoBehaviour
         {
             escPulsada = false;
         }
-        
+        RenaudarConTecla();
     }
 
     public void Renaudar() 
@@ -74,6 +74,25 @@ public class LevelManager : MonoBehaviour
                 Time.timeScale = 1;
                 estado = EstadosJuego.Juego;
                 escPulsada = false;
+                
+
+            }
+        }
+    }
+    public void RenaudarConTecla() 
+    {
+        if (estado == EstadosJuego.Pausa)
+        {
+            if (!escPulsada)
+            {
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    panelPausa.SetActive(false);
+                    Time.timeScale = 1;
+                    estado = EstadosJuego.Juego;
+                    escPulsada = false;
+                }
+
             }
         }
     }

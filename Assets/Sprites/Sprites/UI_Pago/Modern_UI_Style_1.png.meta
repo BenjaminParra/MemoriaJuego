@@ -386,7 +386,7 @@ TextureImporter:
         width: 15
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -407,7 +407,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -428,7 +428,7 @@ TextureImporter:
         width: 17
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -436,6 +436,48 @@ TextureImporter:
       bones: []
       spriteID: de7fe5e9e06ff7d49a79b86c475cb5c4
       internalID: -197891010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo_tiempo
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 289
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29128ac2a3105ca4bbc9495b1e309136
+      internalID: 1390992590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tarea
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 487
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949aa536dd6c49b4ea6935e97556a650
+      internalID: 392822393
       vertices: []
       indices: 
       edges: []
@@ -460,12 +502,14 @@ TextureImporter:
       Fondo_dialogo: -1430143170
       cerrar: 432638064
       continuar: -210796397
+      Tarea: 392822393
       boton_seleccionado: -1833509964
       iconoCorrecto: 1941792548
       iconoInforme: 2021589643
       fondo_cafe_oscurito: 70319924
       icono_proceso: -780326031
       apuntes: -996588431
+      Fondo_tiempo: 1390992590
       "icono_tecnolog\xECa": -197891010
   spritePackingTag: 
   pSDRemoveMatte: 0

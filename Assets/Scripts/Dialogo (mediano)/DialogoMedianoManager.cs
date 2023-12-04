@@ -272,4 +272,9 @@ public class DialogoMedianoManager : MonoBehaviour
         dialogueVariables.CambiaVariable(nombreVariable, loadGlobalsJSON);
     }
 
+    public void ModificarVariablePostCorreo(string nombreVariable) 
+    {
+        dialogueVariables.CambiaVariablePostCorreo(nombreVariable, loadGlobalsJSON);
+    }
+
 }

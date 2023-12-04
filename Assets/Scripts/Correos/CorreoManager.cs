@@ -84,6 +84,13 @@ public class CorreoManager : Singleton<CorreoManager>
         }
     }
 
+    public void CargarCorreoConID(int id) 
+    {
+        CorreoTarjeta correo = Instantiate(correoTarjetaPrefab, correoContenedorEntrada);
+        correo.ConfigurarCorreoTarjeta(correos.Correos[id]);
+        TareaManager.Instance.CargarTareaConID(CorreoSeleccionado.IdTarea);
+    }
+
 
     public void MostrarCorreo(Correo correo) 
     {
@@ -132,7 +139,15 @@ public class CorreoManager : Singleton<CorreoManager>
         panelInfo.SetActive(true) ;
         
     }
-
+    //Se deja como variable 11 para el dialogo especifico para reuniones post correo
+    public void ActivaDialogoPostCorreo() 
+    {
+        DialogoMedianoManager.GetInstance().ModificarVariablePostCorreo(CorreoSeleccionado.NombreVariableInkRemitente);
+        //TareaManager.Instance.CargarTareaConID(CorreoSeleccionado.IdTarea);
+        CambiaEstado();
+        CargarCorreoConID(CorreoSeleccionado.IDCorreoRespuesta);
+        
+    }
     public void ActivarEnemigo() 
     {
         if (CorreoSeleccionado.TipoCorreo == TipoCorreo.Malicioso)

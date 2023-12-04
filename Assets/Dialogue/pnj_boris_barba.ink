@@ -7,9 +7,12 @@ INCLUDE variables_servidores.ink
     - 1: -> previaPreguntas
     - 2: ->postConversacionBueno
     - 3: ->postConversacionMalo
+    - 11: -> saludo
 }
 
-
+=== saludo ===
+Soy Boris, esta es la reunión #speaker: Boris #portrait: pnj_boris_neutral #layout: izq
+->DONE
 === primeraParte ===
 //pnj_boris_feliz
 ~boris_inicio_conversacion = true

@@ -26,15 +26,17 @@ MonoBehaviour:
     MDM para dispositivos m\xF3viles cuando sea necesario. Incluyendo activos conectados
     a diversas infraestructuras y realizando revisiones y actualizaciones al menos
     cada dos a\xF1os."
+  nombreVariableInicioControl: control_1_1_iniciado
+  inicioControl: 0
   DescripcionProceso: Desarrolla un plan para realizar revisiones y actualizaciones
     del inventario.
-  NombreVariableInkProceso: 
+  NombreVariableInkProceso: control_1_1_proceso_finalizado
   ValorVariableInkProceso: 1
   DescripcionPersona: Asignar y educar personal encargado del inventario. Conversa
     con el ingeniero en sistemas.
-  NombreVariableInkPersona: 
+  NombreVariableInkPersona: control_1_1_persona_finalizado
   ValorVariableInkPersona: 1
   DescripcionTecnologia: Adquirir software que permita el escaneo de red para descubrir
     y registrar automaticamente los dispositivos conectados a la red.
-  NombreVariableInkTecnologia: 
+  NombreVariableInkTecnologia: control_1_1_tecnologia_finalizado
   ValorVariableInkTecnologia: 1

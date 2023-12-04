@@ -82,7 +82,7 @@ public class ControlTienda : MonoBehaviour
         iconoIncorrectoTecnologia.enabled = true;
         iconoCorrectoPersona.enabled = false;
         iconoCorrectoProceso.enabled = false;
-        iconoIncorrectoTecnologia.enabled = false;
+        iconoCorrectoTecnologia.enabled = false;
 
         descripcionPersona.text = controlVenta.Control.DescripcionPersona.ToString();
         descripcionProceso.text = controlVenta.Control.DescripcionProceso.ToString();

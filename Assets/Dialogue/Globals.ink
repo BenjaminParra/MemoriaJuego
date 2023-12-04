@@ -72,6 +72,7 @@ VAR contrato_direccion = 0
 // --------------- Variables para el informe -----
 // _________________________________________________
 VAR verdadero = true
+VAR once = 11
 // pista_servidores
 VAR pista_servidores =false
 

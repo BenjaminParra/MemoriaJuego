@@ -17,22 +17,47 @@ MonoBehaviour:
     TipoCorreo: 0
     EstadoCorreo: 0
     Visibilidad: 1
-    Publicado: 1
-    NombreRemitente: Personaje Principal
-    CorreoRemitente: <personaje.principal@empresa.com>
-    IconoRemitente: {fileID: 1238505501, guid: 113ae9290cbd6b4419c48194f459faf6, type: 3}
+    Publicado: 0
+    IdTarea: 0
+    IDCorreoRespuesta: 2
+    NombreVariableInkRemitente: boris_direccion
+    VariableCambiada: 0
+    NombreRemitente: Boris Scott
+    CorreoRemitente: <boris_scott@empresa.com>
+    IconoRemitente: {fileID: -1496754446, guid: 24b2acca6130c2442a768166169bb716, type: 3}
     AsuntoCorreo: "Correo Reuni\xF3n"
     CuerpoCorreo: "Estimado:\nMe comunico con usted, solicitando una reuni\xF3n \xBFpuedo
       pasar a tu oficina?"
     identificador: 0
   - Nombre: "Correo Saludo Cumplea\xF1os"
     TipoCorreo: 0
-    EstadoCorreo: 0
+    EstadoCorreo: 2
     Visibilidad: 1
-    Publicado: 1
+    Publicado: 0
+    IdTarea: 1
+    IDCorreoRespuesta: 0
+    NombreVariableInkRemitente: 
+    VariableCambiada: 0
     NombreRemitente: Christian Morales
     CorreoRemitente: <christian.morales@gmail.com>
     IconoRemitente: {fileID: -2135291784, guid: 97eaac55b03cb3b46b6bc0a8a40d98db, type: 3}
     AsuntoCorreo: Saludo
     CuerpoCorreo: "Estimado:\nEste correo es para desearle un muy feliz cumplea\xF1os!"
     identificador: 1
+  - Nombre: Respuesta Boris
+    TipoCorreo: 0
+    EstadoCorreo: 3
+    Visibilidad: 0
+    Publicado: 0
+    IdTarea: 25
+    IDCorreoRespuesta: 0
+    NombreVariableInkRemitente: 
+    VariableCambiada: 0
+    NombreRemitente: Boris Scott
+    CorreoRemitente: <boris_scott@empresa.com>
+    IconoRemitente: {fileID: -1496754446, guid: 24b2acca6130c2442a768166169bb716, type: 3}
+    AsuntoCorreo: Respuesta
+    CuerpoCorreo: 'Estimado:
+
+      Nos vemos en 15 minutos'
+    identificador: 2

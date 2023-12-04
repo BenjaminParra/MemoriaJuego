@@ -29,6 +29,13 @@ public class Correo
     //con esta variable controlamos que solo se suba una vez
     public bool Publicado;
 
+    public int IdTarea;
+    public int IDCorreoRespuesta;
+
+    [Header("Variables ink para el remitente")]
+    public string NombreVariableInkRemitente;
+    public bool VariableCambiada;
+
     [Header("Remitente - Asunto")]
 
     public string NombreRemitente;

@@ -85,6 +85,12 @@ public class DialogueVariables
 
     }
 
+    public void CambiaVariablePostCorreo(string nombreVariable, TextAsset loadGlobalsJSON) 
+    {
+        Story globalVariablesStory = new Story(loadGlobalsJSON.text);
+        variables[nombreVariable] = globalVariablesStory.variablesState.GetVariableWithName("once");
+    }
+
 
    
 

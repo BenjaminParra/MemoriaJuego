@@ -19,6 +19,10 @@ public class CorreoLista : ScriptableObject
             {
                 Correos[i].EstadoCorreo = EstadoCorreo.PorEnviar;
             }
+            if (Correos[i].EstadoCorreo == EstadoCorreo.Recibido)
+            {
+                Correos[i].Visibilidad = false;
+            }
             
         }
     }
