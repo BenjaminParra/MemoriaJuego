@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ad9bdb8c8454042af69dd092a709fe, type: 3}
+  m_Name: SniperItTecnologia
+  m_EditorClassIdentifier: 
+  Nombre: Snipe it
+  Icono: {fileID: 2119183642, guid: 55fb4f686e10332499336c83d1797a2c, type: 3}
+  SalvaguardasAsociado: 01 Salvaguardas 1.1 Establecer y mantener un detallado inventario
+    de activos empresariales.
+  TiempoNecesarioEstudio: 4
+  Soporte: 2
+  Actualizaciones: 1
+  DescripcionTecnologia: "Snipe-IT es una plataforma de c\xF3digo abierto para la
+    gesti\xF3n eficiente de activos, destacando por su seguimiento detallado, notificaciones
+    y flexibilidad en informes. Ideal para optimizar la administraci\xF3n de equipos
+    y licencias en entornos empresariales"
+  NombreVariableInkTecnologia: control_1_1_tecnologia_finalizado
+  ValorVariableInkTecnologia: 0
