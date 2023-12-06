@@ -16,4 +16,7 @@ MonoBehaviour:
   Nombre: Activos
   Icono: {fileID: -457065644, guid: 7ce7f8a6d0ea3ee47a3bce693c21f6ea, type: 3}
   Descripcion: Activos que he ido descubriendo en la empresa
+  Visible: 1
+  Publicado: 0
+  EsTecnologia: 0
   EsInteractuable: 0

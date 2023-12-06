@@ -103366,7 +103366,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1660794487
 RectTransform:
   m_ObjectHideFlags: 0
@@ -104794,15 +104794,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1be07af67f3f97489365a0954d288a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numeroDeSlots: 8
-  itemsComputador:
+  numeroDeSlots: 24
+  itemsComputador: []
+  appsDeterminadas:
   - {fileID: 11400000, guid: 7c20c9ecb4dcd4b4aaeea3176aef9ac0, type: 2}
+  - {fileID: 11400000, guid: c929e853639b21249ab94a7e96ff90d1, type: 2}
+  - {fileID: 11400000, guid: 9a116ff4367ba224fbf182d94455bc16, type: 2}
   - {fileID: 11400000, guid: 8b391557dea12bd42ab50fbe2bf3b0a6, type: 2}
   - {fileID: 11400000, guid: a6bf459e80c5fe44db51ba18f8c6a62f, type: 2}
-  - {fileID: 11400000, guid: 9a116ff4367ba224fbf182d94455bc16, type: 2}
-  - {fileID: 11400000, guid: c929e853639b21249ab94a7e96ff90d1, type: 2}
-  - {fileID: 11400000, guid: 2922c59d86aa06c4a900fbe73619bcf7, type: 2}
-  - {fileID: 11400000, guid: 454d9859f126ceb4b9edb5bf26c0e5ba, type: 2}
   - {fileID: 11400000, guid: 1e80c51d6b93bbc4190885c7ff805759, type: 2}
 --- !u!1 &1701096892
 GameObject:

@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TecnologiaTienda : MonoBehaviour
+public class TecnologiaTienda : Singleton<TecnologiaTienda>
 {
     [Header("UI_Config")]
     [SerializeField] private Image iconoTecnologia;
@@ -31,6 +31,10 @@ public class TecnologiaTienda : MonoBehaviour
         actualizaciones.text = EntregaTextoActualizaciones(tecnologiaVenta);
         iconoTecnologia.sprite = tecnologiaVenta.Tecnologia.Icono;
 
+    }
+    public void CargarTecnologia()
+    {
+        Computador.Instance.AñadirItemEnSlotDisponible(TecnologiaCargada.Tecnologia.ComputadorItem);
     }
 
     public string EntregaTextoSoporte(TecnologiaVenta tecnologiaVenta) 

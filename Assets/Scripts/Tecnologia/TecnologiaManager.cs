@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TecnologiaManager : MonoBehaviour
+public class TecnologiaManager : Singleton<TecnologiaManager>
 {
     [Header("Config")]
     [SerializeField] private TecnologiaTienda tecnologiaTiendaPrefab;
@@ -24,4 +24,8 @@ public class TecnologiaManager : MonoBehaviour
             tecnologiaTienda.ConfigurarTecnologiaEnVenta(tecnologiasDisponibles[i]);
         }
     }
+
+    
+
+
 }

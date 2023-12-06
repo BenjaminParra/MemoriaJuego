@@ -16,4 +16,7 @@ MonoBehaviour:
   Nombre: Archivo Controles CIS
   Icono: {fileID: 21300000, guid: 60c5f26ead5530f4783151512084f017, type: 3}
   Descripcion: Archivo pdf de los controles cis
+  Visible: 1
+  Publicado: 0
+  EsTecnologia: 0
   EsInteractuable: 1

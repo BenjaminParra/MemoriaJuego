@@ -653,9 +653,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ItemTienda, Assembly-CSharp
-        m_MethodName: ComprarItem
+      - m_Target: {fileID: 1032263698551195036}
+        m_TargetAssemblyTypeName: TecnologiaTienda, Assembly-CSharp
+        m_MethodName: CargarTecnologia
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

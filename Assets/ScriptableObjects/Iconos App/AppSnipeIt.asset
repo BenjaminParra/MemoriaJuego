@@ -16,4 +16,7 @@ MonoBehaviour:
   Nombre: Snipe it
   Icono: {fileID: 2119183642, guid: 55fb4f686e10332499336c83d1797a2c, type: 3}
   Descripcion: "Aplicaci\xF3n para el control y manejo de activos de la empresa"
+  Visible: 1
+  Publicado: 0
+  EsTecnologia: 0
   EsInteractuable: 1

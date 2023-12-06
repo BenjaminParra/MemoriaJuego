@@ -24,6 +24,9 @@ public class InventarioTecnologia : ScriptableObject
     public int TiempoNecesarioEstudio;
     public Soporte Soporte;
     public Actualizaciones Actualizaciones;
+    public int IdTecnologiaComputador;
+
+    public ComputadorItem ComputadorItem;
 
     [Header("Descripcion Tecnologia")]
     [TextArea] public string DescripcionTecnologia;

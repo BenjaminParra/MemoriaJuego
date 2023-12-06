@@ -16,4 +16,7 @@ MonoBehaviour:
   Nombre: Mozilla Firefox
   Icono: {fileID: 21300000, guid: ea3032f90b43c7546abc4472ff77f510, type: 3}
   Descripcion: Navegador Mozilla Firefox
+  Visible: 1
+  Publicado: 0
+  EsTecnologia: 0
   EsInteractuable: 0

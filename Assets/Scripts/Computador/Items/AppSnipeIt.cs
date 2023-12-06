@@ -10,4 +10,5 @@ public class AppSnipeIt : ComputadorItem
         UIManager.Instance.AbrirCerrarPanelSnipeIt();
         return true;
     }
+
 }

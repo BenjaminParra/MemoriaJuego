@@ -8,7 +8,7 @@ public class ComputadorTrigger : MonoBehaviour
     [SerializeField] private GameObject npcButtonInteractuar;
 
     private bool jugadorEnRango;
-
+    private bool cargadosPrederminados = false;
     private void Awake()
     {
         jugadorEnRango = false;
@@ -22,6 +22,12 @@ public class ComputadorTrigger : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 UIManager.Instance.AbrirCerraPanelComputador(true);
+                if (cargadosPrederminados == false)
+                {
+                    ComputadorUI.Instance.CargarItemCreados();
+                    cargadosPrederminados = true;
+                }
+                
             }
         }
         else

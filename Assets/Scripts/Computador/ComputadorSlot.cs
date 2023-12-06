@@ -15,12 +15,13 @@ public class ComputadorSlot : MonoBehaviour
     public static Action<TipoDeInteraccionSlot, int> EventoSlotInteraccionApp;
 
     public int Index { get; set; }
-    public Image icono;
+    //public Image icono;
+    [SerializeField] private Image icono;
 
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        icono = GetComponent<Image>();
+        //icono = GetComponent<Image>();
         
     }
 
@@ -30,6 +31,15 @@ public class ComputadorSlot : MonoBehaviour
         
     }
 
+    public void ActualizaSlot(ComputadorItem item) 
+    {
+        icono.sprite = item.Icono;
+    }
+
+    public void ActivarSlot(bool estado) 
+    {
+        icono.gameObject.SetActive(estado);
+    }
 
     public void ClickSlot() 
     {

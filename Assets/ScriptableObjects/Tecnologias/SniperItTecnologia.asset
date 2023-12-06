@@ -19,6 +19,8 @@ MonoBehaviour:
   TiempoNecesarioEstudio: 4
   Soporte: 2
   Actualizaciones: 1
+  IdTecnologiaComputador: 0
+  ComputadorItem: {fileID: 11400000, guid: 2922c59d86aa06c4a900fbe73619bcf7, type: 2}
   DescripcionTecnologia: "Snipe-IT es una plataforma de c\xF3digo abierto para la
     gesti\xF3n eficiente de activos, destacando por su seguimiento detallado, notificaciones
     y flexibilidad en informes. Ideal para optimizar la administraci\xF3n de equipos

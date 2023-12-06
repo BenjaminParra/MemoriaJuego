@@ -17,4 +17,7 @@ MonoBehaviour:
   Icono: {fileID: 2021589643, guid: 7ce7f8a6d0ea3ee47a3bce693c21f6ea, type: 3}
   Descripcion: "Aqu\xED podr\xE9 generar el informe de activos para que lo reciba
     el jefe"
+  Visible: 1
+  Publicado: 0
+  EsTecnologia: 0
   EsInteractuable: 1

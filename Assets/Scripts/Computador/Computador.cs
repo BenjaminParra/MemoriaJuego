@@ -13,11 +13,15 @@ public class Computador : Singleton<Computador>
     [Header("Iconos")]
     [SerializeField] private ComputadorItem[] itemsComputador;
 
+    [Header("Prederteminados")]
+    [SerializeField] private ComputadorItem[] appsDeterminadas;
+
     public ComputadorItem[] ItemsComputador => itemsComputador;
+    public ComputadorItem[] AppsDeterminadas => appsDeterminadas;
 
     private void Start()
     {
-        //itemsComputador = new ComputadorItem[numeroDeSlots];
+        itemsComputador = new ComputadorItem[numeroDeSlots];
     }
 
     private void AbrirSlot(int index) 
@@ -30,6 +34,19 @@ public class Computador : Singleton<Computador>
         if (itemsComputador[index].AbrirItem()) 
         {
             return;
+        }
+    }
+
+    public void AñadirItemEnSlotDisponible(ComputadorItem item) 
+    {
+        for (int i = 0; i < itemsComputador.Length; i++)
+        {
+            if (itemsComputador[i] == null)
+            {
+                itemsComputador[i] = item.CopiarItem();
+                ComputadorUI.Instance.DibujarItemEnInventario(item, i);
+                return;
+            }
         }
     }
 

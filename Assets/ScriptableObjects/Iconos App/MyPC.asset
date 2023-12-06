@@ -16,4 +16,7 @@ MonoBehaviour:
   Nombre: MyPC
   Icono: {fileID: 21300000, guid: 800ccfaced09bbf4eaf240c44cd71b01, type: 3}
   Descripcion: "Mi pc, deber\xEDa ponerle clave al acceso"
+  Visible: 1
+  Publicado: 0
+  EsTecnologia: 0
   EsInteractuable: 0

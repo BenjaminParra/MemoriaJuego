@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ComputadorUI : MonoBehaviour
+public class ComputadorUI : Singleton<ComputadorUI>
 {
     [Header("Panel Computador Descripcion")]
 
@@ -35,16 +35,24 @@ public class ComputadorUI : MonoBehaviour
     {
         for (int i = 0; i < Computador.Instance.NumeroDeSlots; i++)
         {
-            
-            if (Computador.Instance.ItemsComputador[i] != null)
-            {
-                ComputadorSlot nuevoIcono = Instantiate(iconoPrefab, contenedor);
-                nuevoIcono.Index = i;
-                nuevoIcono.icono.sprite = Computador.Instance.ItemsComputador[i].Icono;
-                iconosDisponibles.Add(nuevoIcono);
-            }
-            
-            
+            ComputadorSlot nuevoIcono = Instantiate(iconoPrefab, contenedor);
+            nuevoIcono.Index = i;
+            //nuevoIcono.icono.sprite = Computador.Instance.ItemsComputador[i].Icono;
+            iconosDisponibles.Add(nuevoIcono);
+            //if (Computador.Instance.ItemsComputador[i] != null /*&& Computador.Instance.ItemsComputador[i].Visible*/)
+            //{
+
+            //}
+
+
+        }
+    }
+
+    public void CargarItemCreados() 
+    {
+        for(int i = 0;i < Computador.Instance.AppsDeterminadas.Length;i++) 
+        {
+            Computador.Instance.AñadirItemEnSlotDisponible(Computador.Instance.AppsDeterminadas[i]);
         }
     }
 
@@ -75,6 +83,22 @@ public class ComputadorUI : MonoBehaviour
             SlotSeleccionado = slot;
         }
     }
+
+    public void DibujarItemEnInventario(ComputadorItem itemPorAñadir, int itemIndex) 
+    {
+        ComputadorSlot slot = iconosDisponibles[itemIndex];
+        if (itemPorAñadir != null) 
+        {
+            //slot.icono.enabled = true;
+            slot.ActivarSlot(true);
+            slot.ActualizaSlot(itemPorAñadir);
+        }
+        else
+        {
+            slot.ActivarSlot(false);
+        }
+    }
+
     public void AbrirApp() 
     {
         if (SlotSeleccionado != null)
