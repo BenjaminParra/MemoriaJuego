@@ -32,8 +32,6 @@ public class CorreoManager : Singleton<CorreoManager>
     [Header("Correos")]
     [SerializeField] private CorreoLista correos;
 
-    [Header("Enemigos")]
-    [SerializeField] private GameObject[] enemigos;
 
     [Header("Panel Botones")]
     [SerializeField] private GameObject panelBotonesReport;
@@ -46,11 +44,8 @@ public class CorreoManager : Singleton<CorreoManager>
     [Header("Botones Bandejas")]
     [SerializeField] private GameObject botonBandejaSalida;
     [SerializeField] private GameObject botonBandejaEntrada;
-    [SerializeField] private AmenazaLista amenazaLista;
 
 
-
-    [SerializeField] private GameObject amenazaPishing;
 
     public Correo CorreoSeleccionado { get; set; }
     private void Start()
@@ -84,11 +79,18 @@ public class CorreoManager : Singleton<CorreoManager>
         }
     }
 
+    //esto es para cargar respuestas a los correos enviados, activa el contador de las tareas
     public void CargarCorreoConID(int id) 
     {
         CorreoTarjeta correo = Instantiate(correoTarjetaPrefab, correoContenedorEntrada);
         correo.ConfigurarCorreoTarjeta(correos.Correos[id]);
         TareaManager.Instance.CargarTareaConID(CorreoSeleccionado.IdTarea);
+    }
+
+    public void CargarCorreoBandejaSalida(int id) 
+    {
+        CorreoTarjeta correo = Instantiate(correoTarjetaPrefab, correoContenedorSalida);
+        correo.ConfigurarCorreoTarjeta(correos.Correos[id]);
     }
 
 
@@ -148,43 +150,7 @@ public class CorreoManager : Singleton<CorreoManager>
         CargarCorreoConID(CorreoSeleccionado.IDCorreoRespuesta);
         
     }
-    public void ActivarEnemigo() 
-    {
-        if (CorreoSeleccionado.TipoCorreo == TipoCorreo.Malicioso)
-        {
-            enemigos[CorreoSeleccionado.identificador].SetActive(true);
-            Amenaza amenaza = new Amenaza();
-            amenaza.CrearAmenaza(amenazaPishing.GetComponent<AmenazaMadre>());
-            amenazaLista.AñadirAmenaza(amenaza);
-            amenaza.ModificarCantidad(-Math.Abs(1));
-            
-        }
-        else 
-        {
-            panelBotonesReport.SetActive(false);
-            return;
-        }
-        
-    }
-
-    public void ReportarEnemigo()
-    {
-        if (CorreoSeleccionado.TipoCorreo == TipoCorreo.Malicioso)
-        {
-
-           
-            Amenaza amenaza = new Amenaza();
-            amenaza.CrearAmenaza(amenazaPishing.GetComponent<AmenazaPhising>());
-            amenazaLista.AñadirAmenaza(amenaza);
-            amenaza.ModificarCantidad(2);
-            panelBotonesReport.SetActive(false);
-        }
-        else 
-        {
-            panelBotonesReport.SetActive(false);
-            return;
-        }
-    }
+    
 
     
 }

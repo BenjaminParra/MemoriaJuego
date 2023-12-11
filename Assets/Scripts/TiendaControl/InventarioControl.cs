@@ -33,9 +33,10 @@ public class InventarioControl : ScriptableObject
     [TextArea] public string Descripcion;
 
     [Header("Variables archivo ink")]
-    [SerializeField] private string nombreVariableInicioControl;
+    [SerializeField] public string nombreVariableInicioControl;
     //permite reconocer si el control se ha iniciado o no
     public bool inicioControl;
+    public bool finControl;
 
     [Header("Descripcion Proceso")]
     [TextArea] public string DescripcionProceso;
@@ -47,6 +48,7 @@ public class InventarioControl : ScriptableObject
     [TextArea] public string DescripcionPersona;
     public string NombreVariableInkPersona;
     public bool ValorVariableInkPersona;
+    public int IdCorreo;
 
     [Header("Descripcion Tecnologia")]
     [TextArea] public string DescripcionTecnologia;

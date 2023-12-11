@@ -531,6 +531,7 @@ MonoBehaviour:
   tiempoAsociadoAprendizaje: {fileID: 2085433199716995373}
   soporte: {fileID: 2085433200716011500}
   actualizaciones: {fileID: 2085433198947861136}
+  botonCompra: {fileID: 1032263698735518678}
 --- !u!1 &1032263698735518676
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,15 +13,23 @@ public class CorreoLista : ScriptableObject
     {
         for (int i = 0; i < Correos.Length; i++)
         {
-            Correos[i].Visibilidad = true;
+            
             Correos[i].Publicado = false;
             if (Correos[i].EstadoCorreo == EstadoCorreo.Enviado)
             {
                 Correos[i].EstadoCorreo = EstadoCorreo.PorEnviar;
             }
-            if (Correos[i].EstadoCorreo == EstadoCorreo.Recibido)
+            if (Correos[i].EstadoCorreo == EstadoCorreo.Respuesta)
             {
                 Correos[i].Visibilidad = false;
+            }
+            if (Correos[i].EstadoCorreo == EstadoCorreo.PorEnviar)
+            {
+                Correos[i].Visibilidad = false;
+            }
+            else 
+            {
+                Correos[i].Visibilidad = true;
             }
             
         }

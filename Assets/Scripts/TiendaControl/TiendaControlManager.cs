@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Xml.Serialization;
 using UnityEngine;
 
-public class TiendaControlManager : MonoBehaviour
+public class TiendaControlManager : Singleton<TiendaControlManager>
 {
     [Header("Config")]
     [SerializeField] private ControlTienda controlTiendaPrefab;
@@ -29,5 +29,7 @@ public class TiendaControlManager : MonoBehaviour
         }
     }
 
+
+    
     
 }

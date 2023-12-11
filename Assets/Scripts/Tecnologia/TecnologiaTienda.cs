@@ -16,6 +16,8 @@ public class TecnologiaTienda : Singleton<TecnologiaTienda>
     [SerializeField] private TextMeshProUGUI soporte;
     [SerializeField] private TextMeshProUGUI actualizaciones;
 
+    [SerializeField] private Button botonCompra;
+
 
     public TecnologiaVenta TecnologiaCargada { get; set; }
 
@@ -35,6 +37,8 @@ public class TecnologiaTienda : Singleton<TecnologiaTienda>
     public void CargarTecnologia()
     {
         Computador.Instance.AñadirItemEnSlotDisponible(TecnologiaCargada.Tecnologia.ComputadorItem);
+        botonCompra.interactable = false;
+        MonedasManager.Instance.RemoverMonedas(TecnologiaCargada.Costo);
     }
 
     public string EntregaTextoSoporte(TecnologiaVenta tecnologiaVenta) 

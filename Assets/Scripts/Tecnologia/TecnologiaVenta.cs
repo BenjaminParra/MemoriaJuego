@@ -9,4 +9,5 @@ public class TecnologiaVenta
     public string Nombre;
     public InventarioTecnologia Tecnologia;
     public int Costo;
+    public string VaribleInkControlAsociado;
 }

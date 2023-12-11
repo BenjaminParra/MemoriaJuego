@@ -37,7 +37,10 @@ public class ControlTienda : MonoBehaviour
     [SerializeField] private Image iconoIncorrectoTecnologia;
     [SerializeField] private TextMeshProUGUI descripcionTecnologia;
 
-    
+
+    [SerializeField] private Button botonInicio;
+
+
     public ControlVenta ControlCargado { get; set; }
 
     private int cantidad;
@@ -47,7 +50,7 @@ public class ControlTienda : MonoBehaviour
     {
        // cantidadPorComprar.text = cantidad.ToString();
         //controlCosto.text = costoActual.ToString();
-
+        
         if (ControlCargado.Control.ValorVariableInkPersona)
         {
             iconoCorrectoPersona.enabled = true;
@@ -63,6 +66,10 @@ public class ControlTienda : MonoBehaviour
             iconoCorrectoTecnologia.enabled = true;
             iconoIncorrectoTecnologia.enabled = false;
         }
+
+        CambiaEstadoProceso(ControlCargado.Control.NombreVariableInkPersona);
+        CambiaEstadoProceso(ControlCargado.Control.NombreVariableInkProceso);
+        CambiaEstadoProceso(ControlCargado.Control.NombreVariableInkTecnologia);
     }
 
     public void ConfigurarControlEnVenta(ControlVenta controlVenta) 
@@ -115,5 +122,32 @@ public class ControlTienda : MonoBehaviour
         }
         cantidad -= 1;
         costoActual = costoInicial * cantidad;
+    }
+
+    public void IniciarControl() 
+    {
+        DialogoMedianoManager.GetInstance().ModificarVariable(ControlCargado.Control.nombreVariableInicioControl);
+        ControlCargado.Control.inicioControl = true;
+        botonInicio.interactable = false;
+        CorreoManager.Instance.CargarCorreoBandejaSalida(ControlCargado.Control.IdCorreo);
+    }
+
+    public void CambiaEstadoProceso(string nombreVariable)
+    {
+        if (((Ink.Runtime.BoolValue)DialogoMedianoManager.GetInstance().GetVariableState(nombreVariable)).value)
+        {
+            if (nombreVariable.Equals(ControlCargado.Control.NombreVariableInkPersona))
+            {
+                ControlCargado.Control.ValorVariableInkPersona = true;
+            }
+            if (nombreVariable.Equals(ControlCargado.Control.NombreVariableInkProceso))
+            {
+                ControlCargado.Control.ValorVariableInkProceso = true;
+            }
+            if (nombreVariable.Equals(ControlCargado.Control.NombreVariableInkTecnologia))
+            {
+                ControlCargado.Control.ValorVariableInkTecnologia = true;
+            }
+        }
     }
 }

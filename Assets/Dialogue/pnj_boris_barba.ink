@@ -1,6 +1,7 @@
 INCLUDE Globals.ink
 INCLUDE variables_boris_barba.ink
 INCLUDE variables_servidores.ink
+INCLUDE variables_control_1_1.ink
 
 {boris_direccion:
     - 0: -> primeraParte
@@ -103,6 +104,7 @@ También he notado que no estamos realizando un seguimiento adecuado de las actu
 
 === postConversacionMalo === 
 Lamentable #speaker: Boris #portrait: pnj_boris_feliz #layout: izq
+~control_1_1_persona_finalizado = true
 ->DONE
 
 

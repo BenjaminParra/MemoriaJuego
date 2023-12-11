@@ -16,7 +16,7 @@ MonoBehaviour:
   - Nombre: "Correo Reuni\xF3n"
     TipoCorreo: 0
     EstadoCorreo: 0
-    Visibilidad: 1
+    Visibilidad: 0
     Publicado: 0
     IdTarea: 0
     IDCorreoRespuesta: 2
@@ -31,7 +31,7 @@ MonoBehaviour:
     identificador: 0
   - Nombre: "Correo Saludo Cumplea\xF1os"
     TipoCorreo: 0
-    EstadoCorreo: 2
+    EstadoCorreo: 3
     Visibilidad: 1
     Publicado: 0
     IdTarea: 1
@@ -46,8 +46,8 @@ MonoBehaviour:
     identificador: 1
   - Nombre: Respuesta Boris
     TipoCorreo: 0
-    EstadoCorreo: 3
-    Visibilidad: 0
+    EstadoCorreo: 2
+    Visibilidad: 1
     Publicado: 0
     IdTarea: 25
     IDCorreoRespuesta: 0

@@ -27,16 +27,18 @@ MonoBehaviour:
     a diversas infraestructuras y realizando revisiones y actualizaciones al menos
     cada dos a\xF1os."
   nombreVariableInicioControl: control_1_1_iniciado
-  inicioControl: 0
+  inicioControl: 1
+  finControl: 0
   DescripcionProceso: Desarrolla un plan para realizar revisiones y actualizaciones
     del inventario.
   NombreVariableInkProceso: control_1_1_proceso_finalizado
-  ValorVariableInkProceso: 1
+  ValorVariableInkProceso: 0
   DescripcionPersona: Asignar y educar personal encargado del inventario. Conversa
     con el ingeniero en sistemas.
   NombreVariableInkPersona: control_1_1_persona_finalizado
-  ValorVariableInkPersona: 1
+  ValorVariableInkPersona: 0
+  IdCorreo: 0
   DescripcionTecnologia: Adquirir software que permita el escaneo de red para descubrir
     y registrar automaticamente los dispositivos conectados a la red.
   NombreVariableInkTecnologia: control_1_1_tecnologia_finalizado
-  ValorVariableInkTecnologia: 1
+  ValorVariableInkTecnologia: 0
