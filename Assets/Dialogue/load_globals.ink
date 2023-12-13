@@ -14,3 +14,4 @@ INCLUDE variables_periodista.ink
 INCLUDE variables_leonardo.ink
 INCLUDE variables_hector.ink
 INCLUDE variables_boris_barba.ink
+INCLUDE variables_control_1_1.ink

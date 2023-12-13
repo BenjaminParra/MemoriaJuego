@@ -15,6 +15,9 @@ public class AssetsSnipeItManager : Singleton<AssetsSnipeItManager>
 
     [SerializeField] private GameObject panelAssets;
 
+    [Header("Panel Licencias")]
+
+    [SerializeField] private GameObject panelLicencias;
     public AssetSnipeIt AssetSnipeItSeleccionado { get; set; }
 
     private void Start()
@@ -32,8 +35,9 @@ public class AssetsSnipeItManager : Singleton<AssetsSnipeItManager>
 
     public void AbrirCerrarPanelAssets() 
     {
+        panelLicencias.SetActive(false);
         panelAssets.SetActive(!panelAssets.activeSelf);
-        LicenciaSnipeItManager.Instance.AbrirCerrarPanelLicencias(false);
+       // LicenciaSnipeItManager.Instance.AbrirCerrarPanelLicencias(false);
     }
 
     public void AbrirCerrarPanelAssets(bool valor)

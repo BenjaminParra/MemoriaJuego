@@ -25,12 +25,16 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject panelComputador;
     [SerializeField] private GameObject panelCmd;
     [SerializeField] private GameObject panelSnipeIt;
+    [SerializeField] private GameObject panelServiceNow;
     [SerializeField] private GameObject panelActivoInforme;
     [SerializeField] private GameObject panelActivoInformePistas;
     [SerializeField] private GameObject panelActivoInformeConfirmacion;
     [SerializeField] private GameObject panelWallet;
     [SerializeField] private GameObject panelTiendaControles;
     [SerializeField] private GameObject panelTareas;
+
+    [SerializeField] private GameObject panelPopUp;
+
     [Header("Paneles asociados al correo")]
     [SerializeField] private GameObject panelBandejaSalida;
     [SerializeField] private GameObject panelBandejaEntrada;
@@ -197,6 +201,17 @@ public class UIManager : Singleton<UIManager>
         panelInventario.SetActive(!panelInventario.activeSelf);
     }
 
+
+    public void AbrirPanelPopUp() 
+    {
+        panelPopUp.SetActive(false);
+        panelPopUp.SetActive(true);
+    }
+    public void CerrarPanelPopUp() 
+    {
+        panelPopUp.SetActive(false);
+    }
+
     public void AbrirCerrarPanelCmd()
     {
         panelCmd.SetActive(!panelCmd.activeSelf);
@@ -237,6 +252,11 @@ public class UIManager : Singleton<UIManager>
     public void AbrirCerrarPanelSnipeIt()
     {
         panelSnipeIt.SetActive(!panelSnipeIt.activeSelf);
+    }
+
+    public void AbrirCerrarPanelServiceNow()
+    {
+        panelServiceNow.SetActive(!panelServiceNow.activeSelf);
     }
 
     public void AbrirCerrarPanelConfirmacionActivoInforme() 
@@ -297,7 +317,7 @@ public class UIManager : Singleton<UIManager>
 
     public void AbrirPanelActivos()
     {
-        panelActivos.SetActive(true);
+        panelActivos.SetActive(!panelActivos.activeSelf);
     }
     public void AbrirPanelApuntes()
     {

@@ -27,10 +27,6 @@ public class CorreoLista : ScriptableObject
             {
                 Correos[i].Visibilidad = false;
             }
-            else 
-            {
-                Correos[i].Visibilidad = true;
-            }
             
         }
     }

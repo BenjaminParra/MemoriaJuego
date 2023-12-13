@@ -25224,7 +25224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93ecd635a0354a3428b49835bb1bed08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadTexto: 0.06
+  velocidadTexto: 0.02
   loadGlobalsJSON: {fileID: 4900000, guid: 4f7e2c363cdab144692bb5b3a97f59e5, type: 3}
   dialogoMedianoPanel: {fileID: 2132450017}
   npcCara: {fileID: 1130269570}
@@ -32444,8 +32444,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.0063}
-  m_SizeDelta: {x: 1, y: 1.0126}
+  m_AnchoredPosition: {x: 0, y: 0.0009}
+  m_SizeDelta: {x: 1, y: 1.027}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &704331083
 MonoBehaviour:
@@ -52533,6 +52533,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoTiempo: {fileID: 497612785}
+  duracionSesionJuego: 7200
+  duracionTrabajoReal: 28800
 --- !u!1 &1146482635
 GameObject:
   m_ObjectHideFlags: 0
@@ -87918,6 +87920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textoTiempo: {fileID: 1851961333}
   tiempoRestante: 60
+  tiempoInicio: 0
   inicioTemporizador: 0
 --- !u!1 &1321981794
 GameObject:

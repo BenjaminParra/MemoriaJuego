@@ -7,11 +7,14 @@ public class Countdown : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI textoTiempo;
     public float tiempoRestante;
+    public float duracionMinutos;
+    public float tiempoInicio;
     public bool inicioTemporizador;
     // Start is called before the first frame update
     void Start()
     {
-        
+        tiempoInicio = Time.realtimeSinceStartup;
+        tiempoRestante = duracionMinutos * 60f;
     }
 
     // Update is called once per frame
@@ -26,8 +29,8 @@ public class Countdown : MonoBehaviour
         {
             if (tiempoRestante > 0)
             {
-
-                tiempoRestante -= Time.deltaTime;
+                float tiempoTranscurrido = Time.realtimeSinceStartup - tiempoInicio;
+                tiempoRestante = duracionMinutos * 60f - tiempoTranscurrido;
             }
             if (tiempoRestante < 0)
             {

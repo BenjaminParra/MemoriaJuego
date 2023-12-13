@@ -36,9 +36,18 @@ public class TecnologiaTienda : Singleton<TecnologiaTienda>
     }
     public void CargarTecnologia()
     {
-        Computador.Instance.AñadirItemEnSlotDisponible(TecnologiaCargada.Tecnologia.ComputadorItem);
-        botonCompra.interactable = false;
-        MonedasManager.Instance.RemoverMonedas(TecnologiaCargada.Costo);
+        if (!TecnologiaManager.Instance.tecnologiaControl1Comprada)
+        {
+            Computador.Instance.AñadirItemEnSlotDisponible(TecnologiaCargada.Tecnologia.ComputadorItem);
+            botonCompra.interactable = false;
+            MonedasManager.Instance.RemoverMonedas(TecnologiaCargada.Costo);
+            TecnologiaManager.Instance.CambiaEstado(0);
+        }
+        else 
+        {
+            UIManager.Instance.AbrirPanelPopUp();
+        }
+        
     }
 
     public string EntregaTextoSoporte(TecnologiaVenta tecnologiaVenta) 

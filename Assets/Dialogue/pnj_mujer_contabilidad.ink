@@ -61,8 +61,8 @@ Si respondes un par de preguntas relacionadas con los activos y controles, podr�
 A la hora de implementar un estándar de seguridad de la información en una organización, ¿debo aplicarlo completamente? Si no lo hago de esta forma, ¿no podré certificar la organización en el estándar? #speaker: ??? #portrait: mujer_contabilidad_neutral #layout: izq
 +[Verdadero]
     Las organizaciones no implementarán todos los estándares mencionados anteriormente, pero estos son recursos valiosos para seleccionar las herramientas adecuadas. A medida que el programa de seguridad evoluciona, se incorporan gradualmente. Aunque cada organización es única, comparten elementos comunes como personas, procesos, datos y tecnología, y es esencial proteger cada uno de estos aspectos. #speaker: ??? #portrait: mujer_contabilidad_triste #layout: izq
-    ->DONE
     ->finMalo
+    ->DONE
 
 +[Falso]
     Es correcto, siguiente pregunta... #speaker: ??? #portrait: mujer_contabilidad_feliz #layout: izq

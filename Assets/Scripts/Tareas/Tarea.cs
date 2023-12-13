@@ -11,6 +11,6 @@ public class Tarea
     public Sprite IconoTarea;
     public string NombreTarea;
     [TextArea] public string DescripcionTarea;
-    public float TiempoRestante;
+    public float DuracionMinutos;
     public bool ActivacionTiempo;
 }

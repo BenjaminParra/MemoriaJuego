@@ -21,7 +21,7 @@ public class TareaTarjeta : MonoBehaviour
         tarea.ActivacionTiempo = true;
         Countdown countdown = GetComponent<Countdown>();
         countdown.inicioTemporizador = true;
-        countdown.tiempoRestante = tarea.TiempoRestante;
+        countdown.duracionMinutos = tarea.DuracionMinutos;
     }
     // Start is called before the first frame update
     void Start()

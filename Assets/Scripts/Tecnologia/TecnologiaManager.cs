@@ -12,6 +12,8 @@ public class TecnologiaManager : Singleton<TecnologiaManager>
     [Header("Tecnologias")]
     [SerializeField] private TecnologiaVenta[] tecnologiasDisponibles;
 
+
+    public bool tecnologiaControl1Comprada;
     private void Start()
     {
         CargarTecnologiasEnVenta();
@@ -22,6 +24,15 @@ public class TecnologiaManager : Singleton<TecnologiaManager>
         {
             TecnologiaTienda tecnologiaTienda = Instantiate(tecnologiaTiendaPrefab, panelContenedor);
             tecnologiaTienda.ConfigurarTecnologiaEnVenta(tecnologiasDisponibles[i]);
+           
+        }
+    }
+    public void CambiaEstado(int caso) 
+    {
+        switch (caso)
+        {
+            case 0:
+                tecnologiaControl1Comprada = true; break;
         }
     }
 

@@ -16,5 +16,5 @@ MonoBehaviour:
   - IconoTarea: {fileID: -1496754446, guid: 24b2acca6130c2442a768166169bb716, type: 3}
     NombreTarea: "Re\xFAnete con Boris"
     DescripcionTarea: "Tienes una reuni\xF3n con Boris en 15 minutos"
-    TiempoRestante: 900
+    DuracionMinutos: 15
     ActivacionTiempo: 1
