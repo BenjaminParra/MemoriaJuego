@@ -48,9 +48,10 @@ public class ControlTienda : MonoBehaviour
     private int costoActual;
     private void Update()
     {
-       // cantidadPorComprar.text = cantidad.ToString();
+        // cantidadPorComprar.text = cantidad.ToString();
         //controlCosto.text = costoActual.ToString();
-        
+        //Esto debe aplicarse así o sino no se actualiza
+        //bool tiempoFinalizado = ((Ink.Runtime.BoolValue)DialogoMedianoManager.GetInstance().GetVariableState(tarjetita.TareaCargada.VariableInkTiempoFinalizado)).value;
         if (ControlCargado.Control.ValorVariableInkPersona)
         {
             iconoCorrectoPersona.enabled = true;

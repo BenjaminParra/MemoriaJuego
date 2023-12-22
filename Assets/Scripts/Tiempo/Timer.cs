@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Timer : MonoBehaviour
+public class Timer :MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI textoTiempo;
 
@@ -26,5 +26,10 @@ public class Timer : MonoBehaviour
         int segundos = Mathf.FloorToInt(tiempoTranscurrido % 60f);
         //textoTiempo.text = string.Format("{0:00}:{1:00}", minutos, segundos);
         textoTiempo.text = horas.ToString("00") + ":" + minutos.ToString("00"); //+ ":" + segundos.ToString("00");
+    }
+
+    public void sumarTiempo(float tiempoAdicional) 
+    {
+        tiempoTranscurrido += tiempoAdicional * 3600f;
     }
 }

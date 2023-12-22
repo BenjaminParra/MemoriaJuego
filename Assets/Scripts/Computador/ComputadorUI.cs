@@ -19,6 +19,12 @@ public class ComputadorUI : Singleton<ComputadorUI>
     [SerializeField] private Transform contenedor;
 
 
+    [SerializeField] private GameObject ventanaInstalacion;
+    [SerializeField] private TextMeshProUGUI textoInstalacion;
+
+    [SerializeField] private Timer timerManager;
+
+
     public ComputadorSlot SlotSeleccionado { get; private set; }
     List<ComputadorSlot> iconosDisponibles = new List<ComputadorSlot>();
 
@@ -101,15 +107,43 @@ public class ComputadorUI : Singleton<ComputadorUI>
 
     public void AbrirApp() 
     {
-        if (SlotSeleccionado != null)
+        if (Computador.Instance.ItemsComputador[SlotSeleccionado.Index].EsTecnologia && !Computador.Instance.ItemsComputador[SlotSeleccionado.Index].Publicado)
+        {
+            InstalarAplicacion(Computador.Instance.ItemsComputador[SlotSeleccionado.Index].TiempoInstalacion.ToString());
+            timerManager.sumarTiempo(Computador.Instance.ItemsComputador[SlotSeleccionado.Index].TiempoInstalacion);
+            
+            Computador.Instance.ItemsComputador[SlotSeleccionado.Index].Publicado = true;
+
+        }else if (SlotSeleccionado != null && !Computador.Instance.ItemsComputador[SlotSeleccionado.Index].EsTecnologia)
         {
             SlotSeleccionado.AbrirSlot();
 
+        }else if (Computador.Instance.ItemsComputador[SlotSeleccionado.Index].EsTecnologia && Computador.Instance.ItemsComputador[SlotSeleccionado.Index].Publicado)
+        {
+            SlotSeleccionado.AbrirSlot();
         }
     }
 
-    #region Evento
-    private void SlotInteraccionRespuestaApp(TipoDeInteraccionSlot tipo, int index)
+    public void InstalarAplicacion(string hora) 
+    {
+        StartCoroutine(MostrarVentanaPorSegundos(5f, hora));
+
+    }
+
+
+    IEnumerator MostrarVentanaPorSegundos(float segundos, string hora)
+{
+    ventanaInstalacion.SetActive(true);
+        textoInstalacion.text = $"El tiempo necesario para instalación y aprendizaje es de {hora} hrs";
+    yield return new WaitForSeconds(segundos);
+    ventanaInstalacion.SetActive(false);
+    SlotSeleccionado.AbrirSlot();
+
+}
+
+
+#region Evento
+private void SlotInteraccionRespuestaApp(TipoDeInteraccionSlot tipo, int index)
     {
         if (tipo == TipoDeInteraccionSlot.Click)
         {

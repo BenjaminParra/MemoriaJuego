@@ -18,5 +18,6 @@ MonoBehaviour:
   Descripcion: "Aplicaci\xF3n para el control y manejo de activos de la empresa"
   Visible: 1
   Publicado: 0
-  EsTecnologia: 0
+  EsTecnologia: 1
+  TiempoInstalacion: 1
   EsInteractuable: 1

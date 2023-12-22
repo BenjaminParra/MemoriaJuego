@@ -100,6 +100,7 @@ Lo siento mucho, no puedo darte más información porque no confío en ti. #spea
 ~mujer_contabilidad_pista_string = "Trinidad es muy estricta con revelar información de contabilidad. ¿Habrá sucedido algo malo antes?"
 ~infoFinanciera_obtuvo_pista_2 = true
 ~infoFinanciera_pista_string_2 = "Los vi desesperados y son estrictos con conversar temas del área. ¿Habrá sucedido algo malo antes?"
+~contador_interacciones_restantes -= 1
 ->DONE
 
 === finBueno ===
@@ -113,7 +114,7 @@ Como pudiste notar, cualquier persona puede ingresar a este lugar...
 ~infoFinanciera_obtuvo_pista_2 = true
 ~infoFinanciera_pista_string_2 = "Han habido casos de extravío de documentos"
 ~cantidad_argumentos_infoFinanciera = cantidad_argumentos_infoFinanciera + 1
-
+~contador_interacciones_restantes -= 1
 ->DONE
 
 === postConversacionBueno ===

@@ -16,5 +16,12 @@ MonoBehaviour:
   - IconoTarea: {fileID: -1496754446, guid: 24b2acca6130c2442a768166169bb716, type: 3}
     NombreTarea: "Re\xFAnete con Boris"
     DescripcionTarea: "Tienes una reuni\xF3n con Boris en 15 minutos"
-    DuracionMinutos: 15
+    DuracionMinutos: 0.5
     ActivacionTiempo: 1
+    VariableInkTiempoFinalizado: tiempoFinalizado_boris
+  - IconoTarea: {fileID: 1990151097, guid: 2040301af6b20b24ba5f14f518c39259, type: 3}
+    NombreTarea: "Re\xFAnete con Sofia"
+    DescripcionTarea: "Tienes una reuni\xF3n con Sofia en 15 minutos"
+    DuracionMinutos: 1
+    ActivacionTiempo: 1
+    VariableInkTiempoFinalizado: tiempoFinalizado_sofia

@@ -18,3 +18,18 @@ MonoBehaviour:
     Modelo: Lenovo Slim X
     Ubicacion: "\xC1rea Inform\xE1ticos"
     Icono: {fileID: 1882997294, guid: 2cfe1ebfa8eb6284ab4e962393fbcc29, type: 3}
+  - Nombre: Computador Samsung
+    NumeroSerie: w12345
+    Modelo: Samsung Galaxy
+    Ubicacion: "\xC1rea Inform\xE1ticos"
+    Icono: {fileID: -358058656, guid: 2cfe1ebfa8eb6284ab4e962393fbcc29, type: 3}
+  - Nombre: Compuador Apple
+    NumeroSerie: l78945
+    Modelo: Imac
+    Ubicacion: "\xC1rea Inform\xE1ticos"
+    Icono: {fileID: 689777405, guid: 2cfe1ebfa8eb6284ab4e962393fbcc29, type: 3}
+  - Nombre: Computador Lenovo
+    NumeroSerie: p65498
+    Modelo: Lenovo Yoga C940
+    Ubicacion: "\xC1rea Inform\xE1ticos"
+    Icono: {fileID: -64202239, guid: 2cfe1ebfa8eb6284ab4e962393fbcc29, type: 3}

@@ -27,4 +27,6 @@ public class TareaManager : Singleton<TareaManager>
         TareaTarjeta tareaTarjeta = Instantiate(tareaTarjetaPrefab, panelContenedor);
         tareaTarjeta.ConfigurarTarea(tareasDisponibles.Tareas[id]);
     }
+
+
 }

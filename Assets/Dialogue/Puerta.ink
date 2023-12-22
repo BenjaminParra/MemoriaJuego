@@ -38,10 +38,31 @@ La definición de "Red utilizada para comunicación a corta distancia entre disp
         ->error
     +[Todas las anteriores]
         Correcto
-        ->ganaste
+        ->pregunta3
+->END
+
+=== pregunta3 ===
+Un control se gestiona para mitigar el riesgo inherente.
+    +[Verdadero]
+        Muy bien!
+        ->pregunta4
+    +[Falso]
+        ->error
 ->END
 
 
+=== pregunta4 ===
+¿Cual es la triada de la seguridad de la información?
+    +[Confidencialidad, Seguridad, Disponibilidad]
+        ->error
+    +[Confidencialidad, Integridad, Seguridad]
+        ->error
+    +[confidencialidad, Integridad, Disponibilidad]
+        Correcto
+        ~contador_interacciones_restantes -= 1
+        ->ganaste
+
+->END
 === error ===
 Te equivocaste, mucho éxito en la próxima vez #portrait:prueba_triste
 ->END

@@ -32,7 +32,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject panelWallet;
     [SerializeField] private GameObject panelTiendaControles;
     [SerializeField] private GameObject panelTareas;
-
+    [SerializeField] private GameObject panelEmpresa;
     [SerializeField] private GameObject panelPopUp;
 
     [Header("Paneles asociados al correo")]
@@ -78,7 +78,6 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI atributoPuntosDisponiblesTMP;
 
     [Header("test")]
-    [SerializeField] private AmenazaLista amenazaLista;
     [SerializeField] private CorreoLista correoLista;
 
     private float vidaActual;
@@ -93,7 +92,7 @@ public class UIManager : Singleton<UIManager>
     private void Start()
     {
         //de esta manera se resetea siempre al iniciar
-        amenazaLista.ResetearValores();
+        //amenazaLista.ResetearValores();
         correoLista.ResetearValores();
     }
 
@@ -199,6 +198,11 @@ public class UIManager : Singleton<UIManager>
     }
     public void AbrirCerrarPanelInventario() {
         panelInventario.SetActive(!panelInventario.activeSelf);
+    }
+
+    public void AbrirCerrarPanelEmpresa()
+    {
+        panelEmpresa.SetActive(!panelEmpresa.activeSelf);
     }
 
 

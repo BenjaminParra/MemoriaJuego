@@ -14,9 +14,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Licencias:
   - Nombre: Zoom
-    KeyProduct: FG489-15ASD-15JDF-45IKL-98FV
+    KeyProduct: FG489-15ASD-15JDF-45IKL-98FVP
     FechaExpiracion: 22-09-2024
     LicenciaAlCorreo: "jefe_za\xF1artu@gmail.com"
     LicenciaAlNombre: "Jefe Za\xF1artu"
     Proveedor: Cynersis
     Icono: {fileID: 21300000, guid: aa57995c19723a342b5f87695975573c, type: 3}
+  - Nombre: MicrosoftTeams
+    KeyProduct: ABC12-34DE5-FG678-HIJK9-LM0N1
+    FechaExpiracion: 30-06-2024
+    LicenciaAlCorreo: luis_salas@gmail.com
+    LicenciaAlNombre: Luis Salas
+    Proveedor: TechSolutions Inc
+    Icono: {fileID: 21300000, guid: 470078dbc83e36447a4e28aa519c7164, type: 3}
+  - Nombre: GitHub
+    KeyProduct: SLK87-65PLS-4321X-YZABC-DEFGH
+    FechaExpiracion: 28-02-2024
+    LicenciaAlCorreo: sofia_lopez@gmail.com
+    LicenciaAlNombre: Sofia Lopez
+    Proveedor: CollaborateTech Solutions
+    Icono: {fileID: 21300000, guid: 635d9ec02ebe21a48b1c2b63a24c7cd1, type: 3}
+  - Nombre: Jira Software
+    KeyProduct: JK156-LKP98-5631G-POIJ5-895FG
+    FechaExpiracion: 30-09-2024
+    LicenciaAlCorreo: alonso_oyarce@gmail.com
+    LicenciaAlNombre: Alonso Oyarce
+    Proveedor: AgileSystems Ltd
+    Icono: {fileID: 21300000, guid: 6da7efc2467e60f4ba1f2713382c2f98, type: 3}

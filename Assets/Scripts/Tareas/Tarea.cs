@@ -13,4 +13,5 @@ public class Tarea
     [TextArea] public string DescripcionTarea;
     public float DuracionMinutos;
     public bool ActivacionTiempo;
+    public string VariableInkTiempoFinalizado;
 }

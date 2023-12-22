@@ -8,11 +8,28 @@ INCLUDE variables_control_1_1.ink
     - 1: -> previaPreguntas
     - 2: ->postConversacionBueno
     - 3: ->postConversacionMalo
-    - 11: -> saludo
+    - 11: ->correo
 }
 
-=== saludo ===
-Soy Boris, esta es la reunión #speaker: Boris #portrait: pnj_boris_neutral #layout: izq
+=== correo ===
+{tiempoFinalizado_boris:
+    Es muy tarde, no puedo verte#speaker: Boris #portrait: pnj_boris_triste #layout: izq
+    ->DONE
+  - else:
+    Hola bienvenido ¿Que debemos hablar? #speaker: Boris #portrait: pnj_boris_neutral #layout: izq
+    Necesitaba conversar contigo debido a que necesito que me ayudes #speaker: Personaje Principal #portrait: personaje_principal_neutral #layout: der
+    Actualmente carecemos de un encargado para el establecimiento y mantenimiento del inventario de los activos de la empresa #speaker: Personaje Principal #portrait: personaje_principal_neutral #layout: der
+    Es por esto que el encargado de realizarlo serás tú. 
+    Ante cualquier duda, puedes contactarme...
+    ->postCorreo
+    ->DONE
+}
+=== postCorreo ==
+Todo va de maravilla #speaker: Boris #portrait: pnj_boris_neutral #layout: izq
+->DONE
+
+
+
 ->DONE
 === primeraParte ===
 //pnj_boris_feliz
@@ -30,11 +47,12 @@ Ni loco podría contarte nada de lo que sucede en mi área, no he conocido a un 
 Como no hemos tenido un encargado de ciberseguridad he tenido que estudiar mucho respecto a la seguridad de la información...
 
 ~boris_direccion = 1
+~contador_interacciones_restantes -= 1
 ->previaPreguntas
 ->DONE
 
 === previaPreguntas ===
-¿Crees que tienes mas conocmiento que yo? ¿Podrías superar una pequeña prueba que preparé? #speaker: Boris #portrait: pnj_boris_neutral #layout: izq
+¿Crees que tienes mas conocimiento que yo? ¿Podrías superar una pequeña prueba que preparé? #speaker: Boris #portrait: pnj_boris_neutral #layout: izq
 Estas preguntas están relacionadas con el manejo de la seguridad de la información y la seguridad física de acceso a los servidores, basadas en los principios de ISO 27001
     +[Si]
     ->pregunta1

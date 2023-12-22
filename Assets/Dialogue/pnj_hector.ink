@@ -9,6 +9,7 @@ INCLUDE variables_listadoClientes.ink
 
 === main ===
 ~hector_inicio_conversacion = true
+~contador_interacciones_restantes -= 1
 ¿Hola? Todo está bien, se te ve algo incómodo... #speaker: Personaje Principal #portrait: personaje_principal_neutral #layout: der
 Hola, ¿De verdad se me nota? #speaker: ??? #portrait: pnj_hector_triste #layout: izq
 Soy Hector, encargado del post venta y últimamente he recibido llamadas de clientes pidiendo una rebaja en nuestros servicios porque otra empresa les ofreció exactamente el mismo servicio a un precio más bajo. #speaker: Hector #portrait: pnj_hector_triste #layout: izq

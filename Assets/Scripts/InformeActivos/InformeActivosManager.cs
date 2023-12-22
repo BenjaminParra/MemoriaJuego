@@ -22,21 +22,25 @@ public class InformeActivosManager : Singleton<InformeActivosManager>
     [SerializeField] private Toggle toggleListadoClientes;
     [SerializeField] private string listadoClientesInforme; //nombre de la variable del ink file 
     [SerializeField] private TextMeshProUGUI listadoClientesCantidadPistas;
+    [SerializeField] private InformeActivoTarjeta listadoClientesTarjeta;
 
     [Header("Documentacion de Proyectos")]
     [SerializeField] private Toggle toggleDocumentacionProyectos;
     [SerializeField] private string documentacionProyectosInforme; //nombre de la variable del ink file 
     [SerializeField] private TextMeshProUGUI documentacionProyectosCantidadPistas;
+    [SerializeField] private InformeActivoTarjeta documentacionProyectosTarjeta;
 
     [Header("Información financiera")]
     [SerializeField] private Toggle toggleInformacionFinanciera;
     [SerializeField] private string informacionFinancieraInforme; //nombre de la variable del ink file 
     [SerializeField] private TextMeshProUGUI informacionFinancieraCantidadPistas;
+    [SerializeField] private InformeActivoTarjeta informacionFinancieraTarjeta;
 
     [Header("Servicio Web")]
     [SerializeField] private Toggle toggleServicioWeb;
     [SerializeField] private string servicioWebInforme; //nombre de la variable del ink file 
     [SerializeField] private TextMeshProUGUI servicioWebCantidadPistas;
+    [SerializeField] private InformeActivoTarjeta servicioWebTarjeta;
 
 
     [Header("Panel Pistas 1")]
@@ -56,6 +60,10 @@ public class InformeActivosManager : Singleton<InformeActivosManager>
 
     [Header("Ink Json File")]
     [SerializeField] private TextAsset variablesInkJsonFile;
+
+
+    [Header("Ink Jefe")]
+    [SerializeField] private string variableJefe;
 
     [Header("botonEnviar")]
     [SerializeField] private Button boton;
@@ -129,7 +137,7 @@ public class InformeActivosManager : Singleton<InformeActivosManager>
             toggleDocumentacionProyectos.enabled = false; toggleInformacionFinanciera.enabled = false;
             UIManager.Instance.AbrirCerrarPanelConfirmacionActivoInforme();
             informeEnviado = true;
-            
+            DialogoMedianoManager.GetInstance().ModificarVariablePostCorreo(variableJefe);
             toggleServicioWeb.enabled = false;
             boton.enabled = false;
         }
@@ -198,6 +206,10 @@ public class InformeActivosManager : Singleton<InformeActivosManager>
     public void CargarActivos() 
     {
         servidoresTarjeta.ConfigurarActivoTarjeta(activos.Activos[0]);
+        listadoClientesTarjeta.ConfigurarActivoTarjeta(activos.Activos[1]);
+        documentacionProyectosTarjeta.ConfigurarActivoTarjeta(activos.Activos[2]);
+        informacionFinancieraTarjeta.ConfigurarActivoTarjeta(activos.Activos[3]);
+        servicioWebTarjeta.ConfigurarActivoTarjeta(activos.Activos[4]);
     }
 
     /*

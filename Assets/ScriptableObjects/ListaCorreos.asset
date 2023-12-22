@@ -34,7 +34,7 @@ MonoBehaviour:
     EstadoCorreo: 3
     Visibilidad: 1
     Publicado: 0
-    IdTarea: 1
+    IdTarea: 25
     IDCorreoRespuesta: 0
     NombreVariableInkRemitente: 
     VariableCambiada: 0
@@ -56,6 +56,39 @@ MonoBehaviour:
     NombreRemitente: Boris Scott
     CorreoRemitente: <boris_scott@empresa.com>
     IconoRemitente: {fileID: -1496754446, guid: 24b2acca6130c2442a768166169bb716, type: 3}
+    AsuntoCorreo: Respuesta
+    CuerpoCorreo: 'Estimado:
+
+      Nos vemos en 15 minutos'
+    identificador: 2
+  - Nombre: "Correo Reuni\xF2n"
+    TipoCorreo: 0
+    EstadoCorreo: 1
+    Visibilidad: 0
+    Publicado: 0
+    IdTarea: 1
+    IDCorreoRespuesta: 4
+    NombreVariableInkRemitente: sofia_direccion
+    VariableCambiada: 0
+    NombreRemitente: Sofia Figueroa
+    CorreoRemitente: <sofia_figueroa@empresa.com>
+    IconoRemitente: {fileID: 1990151097, guid: 2040301af6b20b24ba5f14f518c39259, type: 3}
+    AsuntoCorreo: "Correo reuni\xF3n"
+    CuerpoCorreo: "Estimada:\nMe comunico con usted, solicitando una reuni\xF3n \xBFpuedo
+      pasar a tu oficina? "
+    identificador: 2
+  - Nombre: Respuesta Sofia
+    TipoCorreo: 0
+    EstadoCorreo: 2
+    Visibilidad: 0
+    Publicado: 0
+    IdTarea: 25
+    IDCorreoRespuesta: 3
+    NombreVariableInkRemitente: 
+    VariableCambiada: 0
+    NombreRemitente: Sofia Figueroa
+    CorreoRemitente: <sofia_figueroa@empresa.com>
+    IconoRemitente: {fileID: 1990151097, guid: 2040301af6b20b24ba5f14f518c39259, type: 3}
     AsuntoCorreo: Respuesta
     CuerpoCorreo: 'Estimado:
 

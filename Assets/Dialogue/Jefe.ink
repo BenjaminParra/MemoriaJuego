@@ -48,7 +48,6 @@ Y, ¿Qué te pareció? ¿Tienes alguna duda?
 -> DONE
 
 === asignaNumero ===
-
 {contrato_obtuvo_pista_1 == true && contrato_obtuvo_pista_2 == true && contrato_obtuvo_pista_3 == false:
 ~preguntas_ID = 12
 -> despliegaPreguntas
@@ -151,7 +150,7 @@ Y, ¿Qué te pareció? ¿Tienes alguna duda?
 -> END
 
 === final ===
-Perfecto, no sé qué debas hacer ni en qué trabajas, pero ve a hacer tus cosas por ahí. Nos vemos.
+Perfecto, no sé qué debas hacer ni en qué trabajas, pero ve a hacer tus cosas por ahí. Nos vemos. Ahora puedes ingresar a la oficina
 ~abrir_acceso = true
 ~jefe_direccion = 3
 -> END

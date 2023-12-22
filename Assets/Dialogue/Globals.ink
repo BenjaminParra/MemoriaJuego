@@ -4,7 +4,7 @@ VAR aprobo_prueba = false
 
 // Variable numérica que depende de la cantidad de NPCs interactuables.
 // Esta variable controla el acceso al puesto de trabajo del usuario.
-VAR contador_interacciones_restantes = 3
+VAR contador_interacciones_restantes = 8
 
 // Variable booleana que controla el acceso al puesto de trabajo del usuario.
 VAR abrir_oficina = false

@@ -14,6 +14,7 @@ INCLUDE variables_documentacionProyectos.ink
 ¡Hola! Soy Alonso. Mi sexto sentido me dice que eres el experto en ciberseguridad...
 Como ves, pertenezco al área de informáticos... #speaker: Alonso #portrait: pnj_gorroLana_neutral #layout: izq
 ~alonso_sombrero_direccion = 1
+~contador_interacciones_restantes -= 1
 ->primeraInteraccion
 ->DONE
 

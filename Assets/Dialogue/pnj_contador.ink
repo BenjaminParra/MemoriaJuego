@@ -12,7 +12,7 @@ INCLUDE variables_infoFinanciera.ink
 ~contador_inicio_conversacion = true
 ¡Hola! Soy el encargado de ciberseguridad. #speaker: Personaje Principal #portrait: personaje_principal_neutral #layout: der
 (silencio) #speaker: ??? #portrait: pnj_sombrero_neutral #layout: izq
-
+~contador_interacciones_restantes -= 1
 +[Insistir]
 ¿Hola? ¿Estás muy ocupado? #speaker: Personaje Principal #portrait: personaje_principal_neutral #layout: der
 ¿Disculpa? ¿Acaso no se ve? No me molestes, por favor. #speaker: ??? #portrait: pnj_sombrero_neutral #layout: izq

@@ -13,6 +13,7 @@ public class ComputadorItem : ScriptableObject
     public bool Visible;
     public bool Publicado;
     public bool EsTecnologia;
+    public float TiempoInstalacion;
 
     [Header("Informacion")]
     public bool EsInteractuable;

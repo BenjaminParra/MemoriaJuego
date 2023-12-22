@@ -11,6 +11,7 @@ Deberías ir a conocer a los demás. #speaker: Recepcionista #portrait: recepcio
 
 === completada === 
 Veo que has conocido toda la empresa. Ahora dirígete a tu lugar de trabajo. #speaker: Recepcionista #portrait: recepcionista_feliz #layout: izq
+Este se encuentra en la última oficina a la izquierda
 ~abrir_oficina = true
 
 ->END

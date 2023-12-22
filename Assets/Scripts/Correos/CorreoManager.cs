@@ -148,6 +148,7 @@ public class CorreoManager : Singleton<CorreoManager>
         //TareaManager.Instance.CargarTareaConID(CorreoSeleccionado.IdTarea);
         CambiaEstado();
         CargarCorreoConID(CorreoSeleccionado.IDCorreoRespuesta);
+        VentanaEmergenteManager.Instance.MuestraVentana();
         
     }
     

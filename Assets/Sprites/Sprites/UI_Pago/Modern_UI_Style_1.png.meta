@@ -470,7 +470,7 @@ TextureImporter:
         width: 16
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -478,6 +478,69 @@ TextureImporter:
       bones: []
       spriteID: 949aa536dd6c49b4ea6935e97556a650
       internalID: 392822393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: correo
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 624
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e4a3864cb3d1c47ad8b37882ebec64
+      internalID: -773936282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconoMenu
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 640
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8204f7983711d0448a3963af91d650d1
+      internalID: 1661763762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconoSeguro
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 656
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648a1e773ccf43d4e8364485a52894e3
+      internalID: -997167007
       vertices: []
       indices: 
       edges: []
@@ -498,9 +561,11 @@ TextureImporter:
       fondo_icono: -1348577031
       boton_sinSeleccionar: -2079526827
       icono_x: -1455375158
+      iconoSeguro: -997167007
       icono_persona: -812884478
       Fondo_dialogo: -1430143170
       cerrar: 432638064
+      correo: -773936282
       continuar: -210796397
       Tarea: 392822393
       boton_seleccionado: -1833509964
@@ -511,6 +576,7 @@ TextureImporter:
       apuntes: -996588431
       Fondo_tiempo: 1390992590
       "icono_tecnolog\xECa": -197891010
+      iconoMenu: 1661763762
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

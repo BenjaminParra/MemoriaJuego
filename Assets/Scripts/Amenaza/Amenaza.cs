@@ -1,73 +1,18 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Estado
+public class Amenaza : MonoBehaviour
 {
-    Activa,
-    Mitigado
-}
+    [Header("Configuracion Amenaza")]
+    [SerializeField] private AmenazaMadre amenazaMadre;
+    [SerializeField] private GameObject npcAsociadoOriginal;
+    [SerializeField] private GameObject npcAsociadoAlterado;
+    [SerializeField] private string variableInkNPCAsociado;
 
-[Serializable]
-public class Amenaza  
-{
-    public string Nombre;
-    public Estado Estado;
-    public string Tipo;
-    [TextArea] public string Consejos;
-    [TextArea] public string ControlesRecomendados;
-    public int CantidadDeAmenazas;
+    public AmenazaMadre AmenazaMadre => amenazaMadre;
+    public GameObject NpcAsociadoOriginal => npcAsociadoOriginal;
+    public GameObject NpcAsociadoAlterado => npcAsociadoAlterado;
 
-
-
-    public void CrearAmenaza(AmenazaMadre amenazaPrefab)
-    {
-        Nombre = amenazaPrefab.nombreOriginal;
-        Estado = amenazaPrefab.estadoOriginal;
-        Tipo = amenazaPrefab.tipoOriginal;
-        Consejos = amenazaPrefab.consejosOriginal;
-        ControlesRecomendados = amenazaPrefab.controlesRecomendadosOriginal;
-        CantidadDeAmenazas = 1;
-
-       
-    }
-
-    public void ModificarCantidad(int numero) 
-    {
-        if (numero < 0)
-        {
-            if (CantidadDeAmenazas == 1)
-            {
-                CantidadDeAmenazas = 0;
-                Estado = Estado.Mitigado;
-            }
-        }
-        else 
-        {
-            CantidadDeAmenazas = 2;
-        }
-    }
-
-    /*
-    public bool ExisteEstaAmenaza()
-    {
-        if (cantidadDeAmenazas != 0)
-        {
-            return true;
-        }
-        return false;
-    }
-    public void AumentaCandidadAmenazas()
-    {
-        if (ExisteEstaAmenaza())
-        {
-            cantidadDeAmenazas += 1;
-        }
-        else
-        {
-            cantidadDeAmenazas = 1;
-        }
-    }*/
-
+    public string VariableInkNPCAsociado => variableInkNPCAsociado;
 }

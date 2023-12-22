@@ -6,8 +6,26 @@ INCLUDE variables_documentacionProyectos.ink
     -1:->previaPreguntas
     -2:->finalMalo
     -3:->finalBueno
+    -11:->correo
 }
 
+=== correo ===
+{tiempoFinalizado_sofia:
+    Es muy tarde, no puedo verte #speaker: Sofia #portrait: pnj_sofia_triste #layout: izq
+    -> DONE
+  - else:
+    Hola bienvenido ¿Que debemos hablar? #speaker: Sofia #portrait: pnj_sofia_neutral #layout: izq
+    Necesitaba conversar contigo debido a que necesito que me ayudes #speaker: Personaje Principal #portrait: personaje_principal_neutral #layout: der
+    Actualmente carecemos de un encargado para el establecimiento y mantenimiento del inventario de los activos de la empresa #speaker: Personaje Principal #portrait: personaje_principal_neutral #layout: der
+    Es por esto que el encargado de realizarlo serás tú. 
+    Ante cualquier duda, puedes contactarme...
+    ->postCorreo
+    ->DONE
+}
+
+=== postCorreo ==
+Todo va de maravilla #speaker: Sofia #portrait: pnj_sofia_feliz #layout: izq
+->DONE
 === main ===
 ~sofia_inicio_conversacion = true
 ¡Hey! ¿Eres el encargado de ciberseguridad? #speaker: Sofia #portrait: pnj_sofia_triste #layout: izq
@@ -16,9 +34,11 @@ necesito comunicarte algunas cosas sobre la documentación de los proyectos. #sp
 Pero... ¿Crees que podrás entender lo que tengo que decir?
 Me gustaría asegurarme, así que quiero hacerte algunas preguntas. ¿Te parece?
 +[Si]
+~contador_interacciones_restantes -= 1
 ->pregunta1
 +[No]
 Vuelve cuando estés listo para hablar. #speaker: Sofia #portrait: pnj_sofia_neutral #layout: izq
+~contador_interacciones_restantes -= 1
 ~sofia_direccion = 1
 ->DONE
 

@@ -15,3 +15,5 @@ VAR sofiar_id = 2
 // Variable numérica que se utiliza para guiar la conversación en el archivo "ink",
 // permitiendo usar una estructura "switch case" para dirigir a cada sección del diálogo.
 VAR sofia_direccion = 0
+
+VAR tiempoFinalizado_sofia = false

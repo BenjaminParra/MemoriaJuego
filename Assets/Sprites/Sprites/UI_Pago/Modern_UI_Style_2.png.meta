@@ -323,7 +323,7 @@ TextureImporter:
         width: 9
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -331,6 +331,132 @@ TextureImporter:
       bones: []
       spriteID: d2bed0da36e6b474a931cf02ee819b54
       internalID: -2029404106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo_atras
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 275
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 0, z: 3, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2cbbbb4cc47a8e45a419d6425da81e2
+      internalID: 1347799622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo_delante
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 259
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff46a3fb370e439499111708eb21ab3e
+      internalID: 1673557499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra_llenadora
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 243
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdd0291d2096f6448badcfc50eaebf6
+      internalID: -1552067898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo_atras_empresa
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 419
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 3, y: 0, z: 3, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef4e1bae4f983045aa1e71219091f95
+      internalID: 717273690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo_delante_empresa
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 403
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886c15e6821994e42ac01a6475699c87
+      internalID: -1625198675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrallenadora_empresa
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 387
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752bd3b8587e6bd4ea90cdd9e928dbf9
+      internalID: 2053955654
       vertices: []
       indices: 
       edges: []
@@ -346,16 +472,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      fondo_atras: 1347799622
       rayo: -2029404106
       fondo1_oscuro: 1627792462
       fondo_titulo: -290214255
       Opciones: -1975694904
+      barra_llenadora: -1552067898
       cerrar: 2059924255
+      fondo_delante: 1673557499
       Fondo_1: 206351630
       cruz_roja: -1790827728
       emoji_triste: 1510624121
       fondo_activos_texto: -1848596215
       emoji_feliz: 1799201478
+      barrallenadora_empresa: 2053955654
+      fondo_delante_empresa: -1625198675
+      fondo_atras_empresa: 717273690
       fondo_subtitulo: 637990624
   spritePackingTag: 
   pSDRemoveMatte: 0

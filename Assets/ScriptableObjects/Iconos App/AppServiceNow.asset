@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c505f69204509354a85d520e263e6e8e, type: 3}
   m_Name: AppServiceNow
   m_EditorClassIdentifier: 
-  ID: 
-  Nombre: 
-  Icono: {fileID: 0}
-  Descripcion: 
-  Visible: 0
+  ID: servicenow
+  Nombre: Service Now
+  Icono: {fileID: 21300000, guid: 4978c2ad4a7d9df48aa0232fe821424e, type: 3}
+  Descripcion: "ServiceNow es una plataforma de gesti\xF3n de servicios empresariales
+    que incluye m\xF3dulos de gesti\xF3n de activos. "
+  Visible: 1
   Publicado: 0
-  EsTecnologia: 0
-  EsInteractuable: 0
+  EsTecnologia: 1
+  EsInteractuable: 1

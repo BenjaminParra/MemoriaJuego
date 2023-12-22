@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0bb6bdce9f92b142ae43332692e6e31, type: 3}
+  m_Name: Tampering
+  m_EditorClassIdentifier: 
+  nombre: Tampering
+  descripcion: " La amenaza de manipulaci\xF3n implica la alteraci\xF3n no autorizada
+    de datos."
+  idActivoAsociado: 0
+  estadoAmenaza: 2
+  controlAsociado: {fileID: 11400000, guid: 35e7b4b7cbb32544a8c74c110f52f5c0, type: 2}
+  porcentajePrimerAtaque: 25
+  tiempoPrimerAtaque: 45
+  primerAtaqueRealizado: 0
+  porcentajeSegundoAtaque: 25
+  tiempoSegundoAtaque: 30
+  segundoAtaqueRealizado: 0
+  porcentajeTercerAtaque: 25
+  tiempoTercerAtaque: 15
+  tercerAtaqueRealizado: 0

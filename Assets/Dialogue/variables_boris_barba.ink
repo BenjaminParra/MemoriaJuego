@@ -12,6 +12,8 @@ VAR boris_pista_string = "No logré obtener nada interesante"
 //??????????????????????????????????????
 VAR boris_id = 2
 
+VAR tiempoFinalizado_boris = false
+
 // Variable numérica que se utiliza para guiar la conversación en el archivo "ink",
 // permitiendo usar una estructura "switch case" para dirigir a cada sección del diálogo.
 VAR boris_direccion = 0

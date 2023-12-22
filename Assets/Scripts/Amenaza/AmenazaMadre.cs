@@ -2,39 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class AmenazaMadre : MonoBehaviour
+public enum Estado 
 {
-    public string nombreOriginal;
-    public Estado estadoOriginal;
-    public string tipoOriginal;
-    public string consejosOriginal;
-    public string controlesRecomendadosOriginal;
-    public int cantidadDeAmenazas;
-    public string controlParaSerMitigado;  //esto puede ser un enum (debilidad)
+    Activo, 
+    Mitigado,
+    Inactivo
+}
+
+[CreateAssetMenu(menuName = "Amenaza")]
+public class AmenazaMadre : ScriptableObject
+{
+    [Header("Parametros")]
+    public string nombre;
+    public string descripcion;
+    public int idActivoAsociado;
+    public Estado estadoAmenaza;
+    public InventarioControl controlAsociado;
+    
+
+    [Header("Primer ataque")]
+    public float porcentajePrimerAtaque;
+    public float tiempoPrimerAtaque;
+    public bool primerAtaqueRealizado;
+
+    [Header("Segundo ataque")]
+    public float porcentajeSegundoAtaque;
+    public float tiempoSegundoAtaque;
+    public bool segundoAtaqueRealizado;
 
 
+    [Header("Tercer ataque")]
+    public float porcentajeTercerAtaque;
+    public float tiempoTercerAtaque;
+    public bool tercerAtaqueRealizado;
 
 
-    public bool ExisteEstaAmenaza()
-    {
-        if (cantidadDeAmenazas != 0)
-        {
-            return true;
-        }
-        return false;
-    }
-
-    public void AumentaCandidadAmenazas() 
-    {
-        if (ExisteEstaAmenaza())
-        {
-            cantidadDeAmenazas += 1;
-        }
-        else 
-        {
-            cantidadDeAmenazas = 1;
-        }
-    }
-
+    //agregar metodo que puedan ser operados por la amenaza
+    // ya se modificar variables
 }

@@ -8,7 +8,7 @@ INCLUDE variables_listadoClientes.ink
 
 === main ===
 Hola, ¿Eres el encargado de ciberseguridad? #speaker: ??? #portrait: pnj_leonardo_neutral #layout: izq
-
+~contador_interacciones_restantes -= 1
 Soy Leonardo y trabajo en el área de soporte de post-venta. #speaker: Leonardo #portrait: pnj_leonardo_triste #layout: izq
 
 ¿Has escuchado acerca de la posible filtración de datos del listado de clientes? Acabo de descubrir que un ex-empleado todavía tiene acceso a la base de datos de clientes y está consultando información de los mismos. #speaker: Leonardo #portrait: pnj_leonardo_neutral #layout: izq

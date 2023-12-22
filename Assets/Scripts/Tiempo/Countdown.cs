@@ -21,6 +21,7 @@ public class Countdown : MonoBehaviour
     void Update()
     {
         IniciarCountdown();
+        FinalizarTarea();
     }
 
     public void IniciarCountdown() 
@@ -35,6 +36,8 @@ public class Countdown : MonoBehaviour
             if (tiempoRestante < 0)
             {
                 tiempoRestante = 0;
+                TareaTarjeta tarjetita = GetComponent<TareaTarjeta>();
+                DialogoMedianoManager.GetInstance().ModificarVariable(tarjetita.TareaCargada.VariableInkTiempoFinalizado);
             }
             int minutos = Mathf.FloorToInt(tiempoRestante / 60);
             int segundos = Mathf.FloorToInt(tiempoRestante % 60);
@@ -46,4 +49,15 @@ public class Countdown : MonoBehaviour
     {
         inicioTemporizador = false;
     }
+
+    public void FinalizarTarea() 
+    {
+        TareaTarjeta tarjetita = GetComponent<TareaTarjeta>();
+        bool tiempoFinalizado = ((Ink.Runtime.BoolValue)DialogoMedianoManager.GetInstance().GetVariableState(tarjetita.TareaCargada.VariableInkTiempoFinalizado)).value;
+        if (tiempoFinalizado && inicioTemporizador) 
+        {
+            textoTiempo.text = "FIN";
+        }
+    }
+    // ((Ink.Runtime.BoolValue)DialogoMedianoManager.GetInstance().GetVariableState(nombreVariableInk)).value;
 }
