@@ -11,6 +11,8 @@ public class DialogoManager : Singleton<DialogoManager>
     [SerializeField] private TextMeshProUGUI npcNombreTMP;
     [SerializeField] private TextMeshProUGUI npcConversacionTMP;
 
+    
+
     public NPCInteraccion NPCDisponible { get; set; }
 
     public Queue<string> dialogosSecuencia { get; set; }

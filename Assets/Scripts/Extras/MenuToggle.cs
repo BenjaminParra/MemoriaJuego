@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class MenuToggle : MonoBehaviour
+public class MenuToggle : Singleton<MenuToggle>
 {
     [SerializeField] bool estadoInicial;
     bool estadoActual;

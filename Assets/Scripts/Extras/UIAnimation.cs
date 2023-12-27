@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIAnimation : MonoBehaviour
+public class UIAnimation : Singleton<UIAnimation> 
 {
     [SerializeField] float duracion;
     [SerializeField] float espera;

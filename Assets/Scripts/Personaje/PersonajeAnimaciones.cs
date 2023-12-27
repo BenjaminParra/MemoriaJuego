@@ -14,6 +14,8 @@ public class PersonajeAnimaciones : MonoBehaviour
     private Animator animator;
     private PersonajeMovimiento personajeMovimiento;
     private PersonajeAtaque personajeAtaque;
+
+    [SerializeField] private GameObject mensaje;
     
 
     private void Awake()
@@ -64,10 +66,13 @@ public class PersonajeAnimaciones : MonoBehaviour
         else if (personajeMovimiento.EnMovimiento)
         {
             ActivarLayer(layerCaminar);
+            mensaje.SetActive(false);
         }
         else
         {
             ActivarLayer(layerIdle);
+            mensaje.SetActive(true);
+
         }
     }
 

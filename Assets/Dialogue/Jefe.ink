@@ -189,7 +189,6 @@ Deberíamos considerarlo, ya que ahí almacenamos la información de los cliente
 
 === comunicaActivos ===
 Vi que enviaste un informe de activos #speaker: Jefe #portrait: jefe_neutral #layout: izq
-
 {pista_servicioWeb:
     Veo que seleccionaste el servicio web como activo con {cantidad_argumentos_servicioWeb} de argumentos.
     {cantidad_argumentos_servicioWeb == 0:

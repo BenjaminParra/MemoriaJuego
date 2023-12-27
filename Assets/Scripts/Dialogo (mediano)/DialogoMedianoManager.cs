@@ -25,7 +25,8 @@ public class DialogoMedianoManager : MonoBehaviour
     [SerializeField] private GameObject continuarIcono;
     [SerializeField] private Animator portraitAnimator;
 
-    
+    [SerializeField] private GameObject botonMenu;
+
     [Header("Respuestas")]
 
     [SerializeField] private GameObject[] respuestas;
@@ -91,6 +92,8 @@ public class DialogoMedianoManager : MonoBehaviour
     public void EntrarModoDialogoMediano(TextAsset inkJSON)
     {
         UIManager.Instance.AbrirCerrarPanelBotonesCiber(false);
+        //MenuToggle.Instance.ToggleState();
+        botonMenu.SetActive(false);
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialogoMedianoPanel.SetActive(true);
