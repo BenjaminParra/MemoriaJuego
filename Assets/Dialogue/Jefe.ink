@@ -10,7 +10,7 @@ INCLUDE preguntas_activos.ink
     - 3: -> finPrimerDialogo
     - 4: -> main
     - 5: -> preguntaActivos
-    - 6: -> comunicaActivos
+    - 11: -> comunicaActivos
     - else: que
 }
 

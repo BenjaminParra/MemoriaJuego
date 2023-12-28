@@ -34,6 +34,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject panelTareas;
     [SerializeField] private GameObject panelEmpresa;
     [SerializeField] private GameObject panelPopUp;
+    [SerializeField] private GameObject panelConfirmacionCierre;
 
     [Header("Paneles asociados al correo")]
     [SerializeField] private GameObject panelBandejaSalida;
@@ -191,6 +192,15 @@ public class UIManager : Singleton<UIManager>
         panelStats.SetActive(!panelStats.activeSelf);
     }
 
+    public void AbrirPanelConfirmacionCierre() 
+    {
+        panelConfirmacionCierre.SetActive(true);
+    }
+
+    public void CerrarPanelConfirmacionCierre()
+    {
+        panelConfirmacionCierre.SetActive(false);
+    }
     public void AbrirCerrarPanelWallet()
     {
         WalletManager.Instance.ActualizaNumeros();
@@ -399,6 +409,12 @@ public class UIManager : Singleton<UIManager>
     }
 
 
+
+    public void Cerrar()
+    {
+        Debug.Log("Saliendo");
+        Application.Quit();
+    }
 
     #endregion
 

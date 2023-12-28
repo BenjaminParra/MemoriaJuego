@@ -92,4 +92,5 @@ Se ha añadido un 0.1 al multiplicador de bonificación de presupuesto#speaker:S
 
 === fin_preguntasActivos ===
 Perfecto ahora me queda un poco mas claro lo que son los activos...#speaker:Jefe #portrait:jefe_feliz #layout:izq
+
 ->DONE

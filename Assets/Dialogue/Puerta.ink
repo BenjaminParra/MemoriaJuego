@@ -57,7 +57,7 @@ Un control se gestiona para mitigar el riesgo inherente.
         ->error
     +[Confidencialidad, Integridad, Seguridad]
         ->error
-    +[confidencialidad, Integridad, Disponibilidad]
+    +[Confidencialidad, Integridad, Disponibilidad]
         Correcto
         ~contador_interacciones_restantes -= 1
         ->ganaste

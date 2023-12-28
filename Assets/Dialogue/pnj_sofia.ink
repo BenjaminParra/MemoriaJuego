@@ -120,4 +120,3 @@ Lo siento, no puedo contarte lo que sucede... No me entenderías. #speaker: Sofi
 === finalBueno ===
 Ten en consideración lo que te acabo de decir, por favor. #speaker: Sofia #portrait: pnj_sofia_triste #layout: izq
 ->DONE
-
