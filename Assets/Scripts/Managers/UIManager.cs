@@ -36,6 +36,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject panelPopUp;
     [SerializeField] private GameObject panelConfirmacionCierre;
 
+    [SerializeField] private GameObject panelConfirmacionInstalacion;
+
     [Header("Paneles asociados al correo")]
     [SerializeField] private GameObject panelBandejaSalida;
     [SerializeField] private GameObject panelBandejaEntrada;
@@ -195,6 +197,11 @@ public class UIManager : Singleton<UIManager>
     public void AbrirPanelConfirmacionCierre() 
     {
         panelConfirmacionCierre.SetActive(true);
+    }
+
+    public void AbrirCerrarPanelConfirmacionInstalacion() 
+    {
+        panelConfirmacionInstalacion.SetActive(!panelConfirmacionInstalacion.activeSelf);
     }
 
     public void CerrarPanelConfirmacionCierre()

@@ -14,7 +14,7 @@ INCLUDE variables_control_1_1.ink
 
 === correo ===
 {tiempoFinalizado_boris:
-    Es muy tarde, no puedo verte#speaker: Boris #portrait: pnj_boris_triste #layout: izq
+    Es muy tarde, no puedo atenderte#speaker: Boris #portrait: pnj_boris_triste #layout: izq
     ->DONE
   - else:
     Hola bienvenido ¿Que debemos hablar? #speaker: Boris #portrait: pnj_boris_neutral #layout: izq

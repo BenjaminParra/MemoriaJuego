@@ -109,10 +109,8 @@ public class ComputadorUI : Singleton<ComputadorUI>
     {
         if (Computador.Instance.ItemsComputador[SlotSeleccionado.Index].EsTecnologia && !Computador.Instance.ItemsComputador[SlotSeleccionado.Index].Publicado)
         {
-            InstalarAplicacion(Computador.Instance.ItemsComputador[SlotSeleccionado.Index].TiempoInstalacion.ToString());
-            timerManager.sumarTiempo(Computador.Instance.ItemsComputador[SlotSeleccionado.Index].TiempoInstalacion);
-            
-            Computador.Instance.ItemsComputador[SlotSeleccionado.Index].Publicado = true;
+
+            UIManager.Instance.AbrirCerrarPanelConfirmacionInstalacion();
 
         }else if (SlotSeleccionado != null && !Computador.Instance.ItemsComputador[SlotSeleccionado.Index].EsTecnologia)
         {
@@ -124,9 +122,12 @@ public class ComputadorUI : Singleton<ComputadorUI>
         }
     }
 
-    public void InstalarAplicacion(string hora) 
+    public void InstalarAplicacion() 
     {
-        StartCoroutine(MostrarVentanaPorSegundos(5f, hora));
+        UIManager.Instance.AbrirCerrarPanelConfirmacionInstalacion();
+        StartCoroutine(MostrarVentanaPorSegundos(5f, Computador.Instance.ItemsComputador[SlotSeleccionado.Index].TiempoInstalacion.ToString()));
+        timerManager.sumarTiempo(Computador.Instance.ItemsComputador[SlotSeleccionado.Index].TiempoInstalacion);
+        Computador.Instance.ItemsComputador[SlotSeleccionado.Index].Publicado = true;
 
     }
 
